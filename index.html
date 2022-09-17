@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/uao.css" />
+    <link rel="stylesheet" href="./css/test.css" />
     <title>Document</title>
   </head>
   <body>
@@ -114,5 +115,34 @@
         <span class="scroll-indicator"></span>
       </div>
     </header>
+
+    <main class="main-detail-container investigacion header-margin">
+      <div class="main-hero-container">
+        <div class="vhh-search">
+          <h1>Repositorio Educativo Digital</h1>
+          <form
+            action="/discover"
+            method="post"
+            id="ds-search-form"
+            class="form-search"
+          >
+            <div class="input-form-search">
+              <input
+                required="required"
+                type="search"
+                id="search-module-input"
+                name="query"
+              /><label for="search-module-input">
+                Buscar tesis, trabajos, documentos...
+              </label>
+            </div>
+            <button value="" type="submit" id="search-module-submit">
+              <span class="icon icon-search"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
