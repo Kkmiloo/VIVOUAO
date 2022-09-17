@@ -1,0 +1,119 @@
+.main-hero-container {
+    display: flex;
+    height: 330px;
+    background-color: gray;
+    justify-content: center;
+}
+
+.main-hero-container .vhh-search {
+    margin: 2.625rem 0 1.25rem;
+    padding: 0 0.75rem;
+    max-width: 34.625rem;
+    width: 100%;
+}
+
+.vhh-search>h1 {
+    font-size: 34px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.hero .article {
+    width: 80%;
+}
+
+.date-article {
+    width: 100%;
+}
+
+.date-article:after {
+    content: '';
+    background-color: #d1d1d1;
+    bottom: 0.1875rem;
+    display: block;
+    height: 0.08rem;
+    left: 0;
+    width: 100%;
+
+}
+
+#pca-list {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 1rem 0 2rem 0;
+
+}
+
+#pca-list li {
+
+    margin-right: 2rem;
+}
+
+#pca-list>li>.profile-card-article>a>.pca-top>.pca-figure {
+    height: 4.125rem;
+    margin-left: 0.375rem;
+    width: 4.125rem;
+    min-width: 4.125rem;
+}
+
+#pca-list>li>.profile-card-article>a>.pca-top>.pca-figure img {
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 0.5625rem 0 rgb(0 0 0 / 30%);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border: 0.0625rem solid #ababab;
+}
+
+figure.pca-figure {
+    margin-right: 0;
+}
+
+.pca-top {
+    display: flex;
+    margin-bottom: 0.4rem;
+}
+
+.pca-top div {
+
+    display: flex;
+    flex-direction: column;
+    padding: 0.375rem 0.625rem 0.25rem 0.475rem;
+}
+
+.pca-name {
+    color: #ed1d24;
+    font-family: roboto condensed, sans-serif;
+    font-size: 1rem;
+    line-height: 1.31;
+    text-decoration: underline;
+}
+
+.pca-occupation {
+    color: #666666;
+
+    font-family: roboto condensed, sans-serif;
+    font-weight: 100;
+}
+
+.hero .details {
+    height: auto;
+}
+
+.hero .hero-container:before {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.margin-details h4 {
+
+    color: #666;
+    margin-top: 20px;
+}
