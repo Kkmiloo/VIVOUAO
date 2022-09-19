@@ -23,11 +23,11 @@
     width: 80%;
 }
 
-.date-article {
+.date-article .line-separator {
     width: 100%;
 }
 
-.date-article:after {
+.line-separator:after {
     content: '';
     background-color: #d1d1d1;
     bottom: 0.1875rem;
@@ -101,6 +101,14 @@ figure.pca-figure {
 
 .hero .details {
     height: auto;
+}
+
+.hero .hero-container {
+    flex-direction: column;
+}
+
+.hero .article-container {
+    flex-direction: row;
 }
 
 .hero .hero-container:before {
