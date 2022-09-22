@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .header-margin {
     margin-top: 97px;
 }
@@ -79,7 +81,6 @@
     width: 100%;
     border: 0.0625rem solid #ababab;
 }
-
 
 figure.pc-figure {
     margin-right: 0;
@@ -180,5 +181,77 @@ figure.pc-figure {
 }
 
 .ontology-tag span {
+    text-decoration: none;
+}
+
+.group-image-container {
+    margin: 2rem 0;
+}
+
+.contact-info {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-info .margin-profile-card {
+
+    grid-row: 2;
+}
+
+.contact-info .tel-email {
+    grid-row: 1/3;
+}
+
+.contact-title {
+
+    margin-top: 20px;
+    font-weight: 100;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+.property-container {
+
+    margin: 0 271px;
+}
+
+article.property {
+
+    margin-bottom: 1.5rem;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+article.property h3 {
+
+    padding: 5px 0 5px 20px;
+    background: #C4161C;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.property-list {
+
+    padding-bottom: 1.5rem;
+}
+
+
+.property-list li {
+
+    padding: 10px 20px 5px 20px;
+}
+
+#hmd-bottom ul li a {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
     text-decoration: none;
 }
