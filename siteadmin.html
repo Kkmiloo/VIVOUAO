@@ -14,11 +14,95 @@
     <div id="backgroundweb">
       <!-- Nav. Menu -->
       <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+        <div id="hmd-search-dropdown">
+          <div class="hmdsd-container">
+            <a id="hmdsd-close" href="">
+              <div class="circle-icon">
+                <span class="icon icon-close"></span>
+              </div>
+            </a>
+            <form class="hmdsdc-form-search" action="https://www.uao.edu.co/">
+              <div class="input-form-search">
+                <input id="hmdsdc-search" type="search" name="s" required="required">
+                <label for="hmdsdc-search">¿Qué estás buscando?</label>
+              </div>
+              <button id="hmdsdc-submit" type="submit" value="">
+                <span class="icon icon-search"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div id="hmd-profile-dropdown">
+          <div class="hmdpd-wrap">
+            <a id="hmdpdw-close" href="">
+              <div class="circle-icon">
+                <span class="icon icon-close"></span>
+              </div>
+            </a>
+            <div class="hmdpdw-container">
+              <h1>Elige tu Perfil</h1>
+              <span>
+                Selecciona uno de los perfiles y encuentra información de tu
+                interés.
+              </span>
+              <ul>
+                <a href="https://www.uao.edu.co/aspirante/">
+                  <li>
+                    <div class="circle-icon">
+                      <span class="icon icon-user-plus"></span>
+                    </div>
+                    <p>Aspirante</p>
+                  </li>
+                </a>
+                <a href="https://www.uao.edu.co/estudiante/">
+                  <li>
+                    <div class="circle-icon">
+                      <span class="icon icon-users"></span>
+                    </div>
+                    <p>Estudiante</p>
+                  </li>
+                </a>
+                <a href="https://www.uao.edu.co/egresados/">
+                  <li>
+                    <div class="circle-icon">
+                      <span class="icon icon-graduation-cap"></span>
+                    </div>
+                    <p>Egresado</p>
+                  </li>
+                </a>
+                <a href="https://www.uao.edu.co/docente/">
+                  <li>
+                    <div class="circle-icon">
+                      <span class="icon icon-book"></span>
+                    </div>
+                    <p>Docente</p>
+                  </li>
+                </a>
+                <a href="https://www.uao.edu.co/colaborador/">
+                  <li>
+                    <div class="circle-icon">
+                      <span class="icon icon-address-card"></span>
+                    </div>
+                    <p>Colaborador</p>
+                  </li>
+                </a>
+                <a href="https://www.uao.edu.co/entidad/">
+                  <li>
+                    <div class="circle-icon">
+                      <span class="icon icon-university"></span>
+                    </div>
+                    <p>Entidad</p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div id="hmd-bottom">
           <span class="hmdb-line-left"></span>
           <span class="hmdb-line-right"></span>
           <div id="hmdb-logo-container">
-            <a id="hmdb-logo" href="https://seeklogo.com/images/U/UAO-logo-95ECDA52E8-seeklogo.com.png"></a>
+            <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
           </div>
           <ul>
             <li>Inicio</li>
@@ -27,6 +111,7 @@
             <li>Publicaciones</li>
             <li>Administrador</li>
           </ul>
+          <span class="scroll-indicator"></span>
         </div>
       </header>
 
@@ -549,7 +634,7 @@
           </a>
         </li>
         <li>
-          <!--
+<!--
   Variable Styles (for dark backgrounds)
   mustache:   -  class: dark-background
   mustache:   -  class: white-arrow
