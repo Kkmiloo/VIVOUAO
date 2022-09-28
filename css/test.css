@@ -255,3 +255,58 @@ article.property h3 {
     color: black;
     text-decoration: none;
 }
+
+#individual-in-class {
+
+    max-width: 1050px;
+    margin: auto;
+}
+
+#individual-in-class ul {
+    /*! display: grid; */
+    /*! grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#individual-in-class ul li {
+    /*! display: grid; */
+    /*! grid-template-columns: 1fr 1fr; */
+    flex: 50%;
+}
+
+#individual-in-class ul li article {
+    width: 300px;
+    margin: auto;
+}
+
+
+
+#individual-in-class article a .pc-top figure {
+
+    height: 3.75rem;
+    width: 3.75rem;
+    min-width: 3.75rem;
+}
+
+#individual-in-class article a .pc-top figure img {
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 0.5625rem 0 rgb(0 0 0 / 30%);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border: 0.0625rem solid #ababab;
+}
+
+#menu-page-intro {
+    height: 90px;
+    text-align: center;
+    /*! justify-content: center; */
+    background: #C4161C;
+    color: white;
+}
+
+
+#menu-page-intro h2 {
+    padding-top: 1.6rem;
+}

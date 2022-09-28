@@ -1,0 +1,114 @@
+.body{
+    font-family: Roboto, sans-serif;
+    word-break: break-word   
+}
+.container-log {
+    background-image: url("../images/example-image.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+
+.login-form {
+    background-color: white;
+    padding: 40px;
+    width: 500px;
+}
+
+.flex-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 30px;
+   
+}
+
+input [type="text"]
+ {
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+
+.input-login{
+    font-size: 15px;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid gray;
+    outline: 0;
+    color: black;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.o-h2{
+    color: #9e0b0f;
+}
+
+label {
+    flex-basis: 130px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.MyButton
+ {
+   
+    margin-top: 30px;
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    background-color:  #666666;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 220px;
+}
+
+.MyButton:hover{
+    cursor: pointer;
+    background-color: #8b0304;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+.avisos-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+   
+}
+.avisoSeguridad{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
+.o-h3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.text-container{
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+p{
+    font-family: Roboto, sans-serif;
+    word-break: break-word  ;
+    font-size: 15px;
+}
