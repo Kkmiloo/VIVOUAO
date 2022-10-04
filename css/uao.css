@@ -2358,15 +2358,15 @@ svg {
     height: 1em;
     stroke-width: 0;
     stroke: currentColor;
-    fill: currentColor
+    fill: currentColor;
 }
 
 .icon-hamburguesa:before {
-    content: "\e900"
+    content: "\e900";
 }
 
 .icon-address-book:before {
-    content: "\e902"
+    content: "\e902";
 }
 
 .icon-address-card:before {
@@ -3030,7 +3030,7 @@ svg {
 }
 
 .icon-Facebook:before {
-    content: "\e9a8"
+    content: "\e9a8";
 }
 
 .icon-fast-backward:before {
@@ -8291,7 +8291,7 @@ article.profile-card .link-btn {
 
 .share-container .share-options li a.icon-Facebook:hover,
 .share-container .share-options li amp-social-share.icon-Facebook:hover {
-    color: #1778f2
+    color: #1778f2;
 }
 
 .share-container .share-options li a.icon-Linkedin:hover,
@@ -8354,7 +8354,7 @@ ul.social-links li a::before {
 }
 
 ul.social-links li a.icon-Facebook:hover {
-    color: #1778f2
+    color: #1778f2;
 }
 
 ul.social-links li a.icon-Twitter:hover {
@@ -10280,7 +10280,7 @@ section.academic-offer-links .section-title {
 section.academic-offer-links>div {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
     -ms-flex-pack: center;
     justify-content: center;
@@ -10862,7 +10862,7 @@ section.circulation-of-links h2 {
 section.circulation-of-links .col-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
     -ms-flex-pack: center;
     justify-content: center;
@@ -12562,7 +12562,7 @@ footer .footer-links a::after {
 footer .end {
     -ms-flex-align: center;
     align-items: center;
-    background: url(../../images/footer-flower.png) no-repeat right bottom;
+    background: url(https://pattern.uao.edu.co/images/footer-flower.png) no-repeat right bottom;
     background-size: 10rem;
     display: -ms-flexbox;
     display: flex;
@@ -12783,9 +12783,9 @@ footer .end .end-text p:last-child {
     display: grid;
     grid-column-gap: 2.438rem;
     grid-row-gap: 4rem;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
-    -ms-grid-rows: (auto)[2];
+    -ms-grid-rows: (auto)2;
     grid-template-rows: repeat(2, auto);
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -19388,7 +19388,7 @@ section.testimony-comments:after {
     margin-top: 1.6rem;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto)
 }
 
@@ -19663,7 +19663,7 @@ section.video-with-text:before {
 section.video-with-text .grid-row {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (50%)[2];
+    -ms-grid-columns: (50%)2;
     grid-template-columns: repeat(2, 50%);
     position: relative;
     margin: 4.1875rem auto 3.688rem;
@@ -19984,7 +19984,7 @@ main.directory-home {
 main.directory-home .list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
     margin-bottom: 4.5625rem;
     max-width: 77.5rem;
@@ -20229,7 +20229,7 @@ main.directory-home .circulation-of-links {
 .events-home .list-events.all-events .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
     -ms-flex-pack: inherit;
     justify-content: inherit
@@ -20342,7 +20342,7 @@ main.directory-home .circulation-of-links {
 .events-home .list-events .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
     -ms-flex-pack: distribute;
     justify-content: space-around
@@ -21359,7 +21359,7 @@ main.directory-home .circulation-of-links {
 .news-home .list-news.newspaper .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto)
 }
 
@@ -21447,7 +21447,7 @@ main.directory-home .circulation-of-links {
 .news-home .list-news.all-news .wrapper {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto)
 }
 
@@ -21538,7 +21538,7 @@ main.directory-home .circulation-of-links {
 .news-home .list-news .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr (1fr)[2];
+    -ms-grid-columns: 1fr (1fr)2;
     grid-template-columns: 1fr repeat(2, 1fr);
     -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
@@ -21575,7 +21575,7 @@ main.profiles-home {
 main.profiles-home .list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
+    -ms-grid-columns: (auto)3;
     grid-template-columns: repeat(3, auto);
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -21586,7 +21586,7 @@ main.profiles-home .list {
 
 @media(max-width:1024px) {
     main.profiles-home .list {
-        -ms-grid-columns: (auto)[2];
+        -ms-grid-columns: (auto)2;
         grid-template-columns: repeat(2, auto)
     }
 }
@@ -23104,7 +23104,7 @@ main.special-home section.special-video.special-video:before {
 main.special-home section.special-video.special-video .grid-row {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (50%)[2];
+    -ms-grid-columns: (50%)2;
     grid-template-columns: repeat(2, 50%);
     position: relative;
     margin: auto;
@@ -24889,3 +24889,4 @@ main.special-home .more-info-wrapper .circulation-of-links h2 {
 .bienestar .resources-section .rs-title {
     background-image: url(../images/vertical-bg-bienestar.jpg)
 }
+

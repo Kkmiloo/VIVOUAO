@@ -427,3 +427,273 @@ footer {
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
 }
+
+.row {
+    display: block;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#admin {}
+
+#admin h3 {
+    background-color: #510608;
+    color: #fff;
+}
+
+#verbose-mode .small {
+    cursor: pointer;
+}
+
+.profile-hero {
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-ingenieria.jpg) no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 2.9375rem;
+    padding-top: 1.5625rem;
+    position: relative;
+    height: 500px;
+}
+
+.edit-individual {
+    width: 20px;
+    height: 20px;
+}
+
+
+.edit-mainImage {
+    position: absolute;
+    right: 36px;
+    filter: invert(100);
+}
+
+.edit-mainImage:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+body>div.profile-hero>div>div.info>h1>span>a:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+#RO_0000053-LeaderRole-List>li>div>div>a.edit-overview:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+#RO_0000053-LeaderRole-List>li>div>div>a.delete-overview:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+#RO_0000053>a:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+.delete-individual {
+    width: 20px;
+    height: 22px;
+    filter: invert(100);
+
+}
+
+.delete-individual:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+a.delete-mainImage {
+    position: absolute;
+    right: 9px;
+}
+
+#iconControlsLeftSide {
+    padding-left: 40px;
+}
+
+#right-hand-column {
+    z-index: 10;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    float: right;
+    right: 98%;
+    right: 4%;
+    width: 250px;
+    color: #5e6363;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 1.25rem;
+}
+
+.collaboratorship-link-separator {
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    color: #595b5b;
+    font-weight: normal;
+    margin-top: 15px;
+    border-top: 1px dotted #A6B1B0;
+    padding-top: 15px;
+}
+
+#coauthorship_link_container {
+    width: 180px;
+}
+
+.collaboratorship-icon {
+    float: left;
+    padding-right: 8px;
+}
+
+.titlehindex {
+    position: static;
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    font-family: roboto condensed;
+}
+
+#pub_count_short_sparkline_vis_img>table>tbody>tr>td>img {
+    mix-blend-mode: multiply;
+}
+
+#tabcontent {
+    height: 550px;
+    background-image: url(https://pattern.uao.edu.co/images/bg-desktop-white.png);
+}
+
+#verbose-mode {
+    margin-top: 33px;
+}
+
+#right-hand-column>form:nth-child(10)>a {
+    padding: 0.313rem 2rem;
+}
+
+#right-hand-column>form:nth-child(11)>a {
+    padding: 0.313rem 1rem;
+}
+
+#RO_0000053-LeaderRole-List>li>div>div>a.delete-overview>img {
+    filter: invert(0);
+    width: 18px;
+    height: auto;
+}
+
+#RO_0000053-LeaderRole-List>li>div>div>a.edit-overview>img {
+    margin-left: 10px;
+    width: 18px;
+    height: auto;
+}
+
+#tabcontent>article {
+    margin-bottom: 2%;
+    background-color: #C4161C;
+    width: 70%;
+}
+
+#tabcontent>article h3 {
+    color: white;
+}
+
+#RO_0000053>a>img {
+    filter: invert(100);
+    width: 20px;
+    height: auto;
+}
+
+#hasResearchArea {
+    border: 0;
+    font-style: normal;
+    vertical-align: baseline;
+    padding: 10px 0 12px 0;
+    line-height: 1.5em;
+    padding-bottom: 6px;
+    padding-top: 0px;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#individual-hasResearchArea>li {
+    display: flex;
+    float: left;
+    margin: 10px;
+}
+
+#individual-hasResearchArea {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#researcharea {
+    z-index: 1;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.profile-hero::after {
+    left: 6.875rem;
+    bottom: 0.9375rem;
+    width: 100%;
+    height: 7rem;
+    border-bottom: 0.0625rem solid rgb(255, 255, 255);
+    border-bottom-left-radius: 1rem;
+    border-left: 0.0625rem solid rgb(255, 255, 255);
+    content: "";
+    display: block;
+}
+
+#researchAreaIcon {
+    position: relative;
+    left: 5px;
+    top: 5px;
+    filter: invert(100);
+    height: auto;
+    width: 20px;
+}
+
+#hasResearchArea>a>img {
+    position: relative;
+    filter: invert(100);
+    height: auto;
+    width: 20px;
+    left: 10px;
+}
+
+#hasResearchArea>a>img:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+
+#individual-hasResearchArea>li>a {
+    padding: 10px;
+}
+
+#geographicFocus>a>img {
+    filter: invert(100);
+    height: auto;
+    width: 18px;
+}
+
+#geographicFocus-GeographicRegion-List > li > a.delete-geographicFocus > img{
+    filter: invert(0);
+    height: auto;
+    width: 18px;
+}
