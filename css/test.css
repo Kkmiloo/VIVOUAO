@@ -208,19 +208,20 @@ figure.pc-figure {
 
 /* Lista */
 #VClassURI {
-    -webkit-appearance: none;
-    background-color: #510608;
-    border-radius: 1.25rem;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: -.03125rem;
-    margin: 0 auto;
-    min-width: 13.75rem;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #e0dfdf;
+    -webkit-border-radius: 5px;
+    margin-bottom: .8em;
+    margin-right: .5em;
+    margin-top: .3em;
+    background-color: #fff;
+    border-color: #e0dfdf;
+    font-size: 1em;
+    border-width: 1px;
+    color: #595B5B;
+    padding: .3em;
+    width: 305px;
 }
 
 #individual-in-class {
@@ -700,4 +701,13 @@ p {
 
 #adminPanel{
     border-radius: 1.25rem;
+}
+#adminDashboard > ul > section.pageBodyGroup > h2{
+    margin-bottom: 25px;
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 1px dotted #AFB2B2;
+    font-weight: bold;
+    padding: .625em;
+    margin-bottom: .625em;
 }
