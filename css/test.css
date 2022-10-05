@@ -697,3 +697,7 @@ p {
     height: auto;
     width: 18px;
 }
+
+#adminPanel{
+    border-radius: 1.25rem;
+}
