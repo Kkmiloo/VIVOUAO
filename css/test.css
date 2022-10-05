@@ -457,14 +457,9 @@ footer {
     height: 550px;
 }
 
-.edit-individual {
-    width: 20px;
-    height: 20px;
-}
-
-
 .edit-mainImage {
-    position: absolute;
+    position: static;
+    font-size: 20px;
     right: 36px;
     filter: invert(100);
 }
@@ -512,7 +507,8 @@ a.delete-mainImage {
 }
 
 #iconControlsLeftSide {
-    padding-left: 40px;
+    position: relative;
+    top: 5px;
 }
 
 #right-hand-column {
@@ -592,11 +588,6 @@ p {
     height: auto;
 }
 
-#RO_0000053-LeaderRole-List>li>div>div>a.edit-overview>img {
-    margin-left: 10px;
-    width: 18px;
-    height: auto;
-}
 
 #tabcontent>article {
     margin-bottom: 2%;
@@ -693,16 +684,17 @@ p {
     width: 18px;
 }
 
-#geographicFocus-GeographicRegion-List > li > a.delete-geographicFocus > img{
+#geographicFocus-GeographicRegion-List>li>a.delete-geographicFocus>img {
     filter: invert(0);
     height: auto;
     width: 18px;
 }
 
-#adminPanel{
+#adminPanel {
     border-radius: 1.25rem;
 }
-#adminDashboard > ul > section.pageBodyGroup > h2{
+
+#adminDashboard>ul>section.pageBodyGroup>h2 {
     margin-bottom: 25px;
     margin: 0;
     background-color: #fff;
@@ -712,15 +704,87 @@ p {
     margin-bottom: .625em;
 }
 
-#tabcontent > article > section{
+#tabcontent>article>section {
     width: 100%;
 }
 
-#researcharea > section{
+#researcharea>section {
+    position: relative;
+    top: -7px;
     width: 700px;
-    padding: 5px;
+    border-top: 2px dotted #AFB2B2;
+    padding: 7px;
     border-radius: 1.25rem;
-    padding-bottom: 2px;
 }
 
+#ARG_2000028>a>img {
+    width: 18px;
+}
 
+#individual-ARG_2000028 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#ARG_2000028>a>div {
+    color: black;
+    position: relative;
+    vertical-align: middle;
+}
+
+#web-group {
+    position: relative;
+    top: 5px;
+}
+
+#ARG_2000028 {
+    color: #666;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+body>div.profile-hero>div.hero-container>div.info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body>div.profile-hero>div.hero-container>div.info>p.department {
+    margin-bottom: 0px;
+}
+
+body>div.profile-hero>div.hero-container>div.info>section {
+    width: 650px;
+    position: relative;
+    right: 250px;
+}
+
+/* Info */
+.profile-hero .info {
+    max-width: 418px !important;
+}
+
+#relatedBy {
+    color: #666;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.icon-pencil-alt:before { 
+    text-decoration: none;
+    color:black;
+}
+.icon-trash-alt:before {
+    color:black;
+    text-decoration: none;
+}
+.icon-plus-circle:before {
+    color:black;
+    text-decoration: none;
+    
+}
+/* List Item */
+.profile-hero .hero-container .info #individual-personInPosition li{
+    width:101% !important;
+   }

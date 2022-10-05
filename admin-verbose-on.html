@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./css/test.css" />
   <link rel="stylesheet" href="./css/adm-profile-editor.css">
 
-  <title>Profile editor</title>
+  <title>Verbose</title>
 </head>
 
 <body>
@@ -176,8 +176,44 @@
                 src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
           </span>
         </h1>
+
         <p class="phone">Ext. 11363</p>
+        <section class="verbosePropertyListing">
+          <a class="propertyLink" href="/editForm?controller=FauxProperty&amp;baseUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Work" title="name">
+          primary email</a>
+          is a faux property of
+     <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028" title="name">obo:ARG_2000028</a>
+     (<span>object</span> property);
+     order in group: <span>20</span>;
+     display level: <span>all users, including public</span>;
+     update level: <span>all users who can log in</span>;
+     publish level: <span></span>
+ </section>
         <a target="_blank" href="mailto:jvpradilla@uao.edu.co" rel="noopener">jvpradilla@uao.edu.co</a>
+        <!-- Websites -->
+        <div id="web-group">
+          <h6 id="ARG_2000028" title="">Websites <a class="add-ARG_2000028"
+              href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23URL"
+              title="Manage list of websites">
+              <div href="" class="icon icon-globe"></div>
+            </a>
+          </h6>
+          <ul id="individual-ARG_2000028" class="individual-urls" role="list">
+            <li role="listitem">
+  
+  
+  
+              <a href="https://www.uao.edu.co/perfil/juan-vicente-pradilla-ceron/" title="Portal UAO">Portal UAO</a>
+            </li>
+            <li role="listitem">
+              <a href="https://www.linkedin.com/in/juan-vicente-pradilla/?originalSubdomain=co"
+                title="LinkedIn">LinkedIn</a>
+            </li>
+            <li role="listitem">
+              <a href="https://scholar.google.com/citations?user=Qmhr8h0AAAAJ&amp;hl=es" title="Scholar">Scholar</a>
+            </li>
+          </ul>
+        </div>
         <!--URI AND QR-->
         <span id="iconControlsLeftSide">
           <img id="uriIcon" src="http://20.197.178.150:8080/images/individual/uriIcon.gif" alt="uri icon"
@@ -229,13 +265,14 @@ END:VCARD&amp;choe=UTF-8"></a>
             src="https://cdn-icons-png.flaticon.com/512/861/861319.png" alt="manage"></a>
       </h2>
       <section class="verbosePropertyListing">
-        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea" title="name">vivo:hasResearchArea</a>
+        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea"
+          title="name">vivo:hasResearchArea</a>
         (<span>object</span> property);
         order in group: <span>10</span>;
         display level: <span>all users, including public</span>;
         update level: <span>all users who can log in</span>;
         publish level: <span>all users, including public</span>
-    </section>
+      </section>
       <ul id="individual-hasResearchArea" role="list">
         <li role="listitem">
           <a class="primary-btn  white" href="/display/n5938" title="concept name">Cloud &amp; Fog Computing
