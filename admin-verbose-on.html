@@ -123,13 +123,13 @@
 
         <section id="admin">
           <h3 id="adminPanel">Admin Panel</h3>
-          <a class="edit-individual"
-            href="/entityEdit?uri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438" title="Edit this individual">Edit
+          <a class="edit-individual" href="/entityEdit?uri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438"
+            title="Edit this individual">Edit
             this individual</a>
 
           <section id="verbose-mode">
-            <span>Verbose property display is <b>off</b> | </span>
-            <input type="submit" id="submit" value="Turn on" role="button" class="verbose-toggle small"
+            <span>Verbose property display is <b>on</b> | </span>
+            <input type="submit" id="submit" value="Turn off" role="button" class="verbose-toggle small"
               href="/display/n6438?verbose=true" title="verbose control">
           </section>
 
@@ -216,43 +216,50 @@ END:VCARD&amp;choe=UTF-8"></a>
         </a>
       </div>
     </div>
-      <!-- Research Areas -->
-  <div id="researcharea">
-    <h2 id="hasResearchArea" class="mainPropGroup" title="">
-      Research Areas
-      <img id="researchAreaIcon" src="https://cdn-icons-png.flaticon.com/512/3127/3127995.png"
-        alt="research areas" data-hasqtip="0" aria-describedby="qtip-0">
-      <a class="add-hasResearchArea"
-        href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea"
-        title="Manage list of research areas">
-        <img class="add-individual" data-domain="" data-range=""
-          src="https://cdn-icons-png.flaticon.com/512/861/861319.png" alt="manage"></a>
-    </h2>
-    <div class="collaboratorship-link-separator" style="width: 500px;position: absolute;left: 50%;margin-right: -50%;transform: translate(-50%, -50%); top:55px;"></div>
-    <ul id="individual-hasResearchArea" role="list">
-      <li role="listitem">
-        <a class="primary-btn  white" href="/display/n5938" title="concept name">Cloud &amp; Fog Computing
-        </a>
-  
-      </li>
-      <li role="listitem">
-        <a class="primary-btn white" href="/display/n5239" title="concept name">Cyber-Physical Systems</a>
-  
-      </li>
-      <li role="listitem">
-        <a class="primary-btn white" href="/display/n2759" title="concept name">Internet of Things</a>
-  
-      </li>
-      <li role="listitem">
-        <a class="primary-btn white" href="/display/n1689" title="concept name">Physical Computing</a>
-  
-      </li>
-      <li role="listitem">
-        <a class="primary-btn white" href="/display/n1233" title="concept name">Sensor Networks</a>
-  
-      </li>
-    </ul>
-  </div>
+    <!-- Research Areas -->
+    <div id="researcharea">
+      <h2 id="hasResearchArea" class="mainPropGroup" title="">
+        Research Areas
+        <img id="researchAreaIcon" src="https://cdn-icons-png.flaticon.com/512/3127/3127995.png" alt="research areas"
+          data-hasqtip="0" aria-describedby="qtip-0">
+        <a class="add-hasResearchArea"
+          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea"
+          title="Manage list of research areas">
+          <img class="add-individual" data-domain="" data-range=""
+            src="https://cdn-icons-png.flaticon.com/512/861/861319.png" alt="manage"></a>
+      </h2>
+      <section class="verbosePropertyListing">
+        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea" title="name">vivo:hasResearchArea</a>
+        (<span>object</span> property);
+        order in group: <span>10</span>;
+        display level: <span>all users, including public</span>;
+        update level: <span>all users who can log in</span>;
+        publish level: <span>all users, including public</span>
+    </section>
+      <ul id="individual-hasResearchArea" role="list">
+        <li role="listitem">
+          <a class="primary-btn  white" href="/display/n5938" title="concept name">Cloud &amp; Fog Computing
+          </a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n5239" title="concept name">Cyber-Physical Systems</a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n2759" title="concept name">Internet of Things</a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n1689" title="concept name">Physical Computing</a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n1233" title="concept name">Sensor Networks</a>
+
+        </li>
+      </ul>
+    </div>
     <!--H index-->
     <section id="right-hand-column" role="region">
       <h2 class="titlehindex">Publications</h2>
@@ -644,8 +651,18 @@ END:VCARD&amp;choe=UTF-8"></a>
           title="Add new head of entry">
           <img class="add-individual" data-domain="http://xmlns.com/foaf/0.1/Person"
             data-range="http://vivoweb.org/ontology/core#LeaderRole"
-            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
+            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add">
+        </a>
       </h3>
+      <section class="verbosePropertyListing">
+        <a class="propertyLink" href="/datapropEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview"
+          title="name">vivo:overview</a>
+        (<span>data</span> property);
+        order in group: <span>10</span>;
+        display level: <span>all users, including public</span>;
+        update level: <span>all users who can log in</span>;
+        publish level: <span>all users, including public</span>
+      </section>
       <ul class="property-list" role="list" id="RO_0000053-LeaderRole-List" displaylimit="5">
         <li>
           <div class="individual-overview">
@@ -671,21 +688,41 @@ END:VCARD&amp;choe=UTF-8"></a>
       </ul>
     </article>
     <article class="property" role="article">
-      <h3 id="geographicFocus" title="">geographic focus         <a class="add-geographicFocus" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion" title="Add new geographic focus entry">
-<img class="add-individual" data-domain="" data-range="http://vivoweb.org/ontology/core#GeographicRegion" src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
-</h3>
+      <h3 id="geographicFocus" title="">geographic focus <a class="add-geographicFocus"
+          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion"
+          title="Add new geographic focus entry">
+          <img class="add-individual" data-domain="" data-range="http://vivoweb.org/ontology/core#GeographicRegion"
+            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
+      </h3>
+      <section class="verbosePropertyListing">
+        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus"
+          title="name">vivo:geographicFocus</a>
+        (<span>object</span> property);
+        order in group: <span>70</span>;
+        display level: <span>all users, including public</span>;
+        update level: <span>all users who can log in</span>;
+        publish level: <span>all users, including public</span>
+      </section>
+      <ul class="property-list" role="list" id="geographicFocus-GeographicRegion-List" displaylimit="5">
+        <li role="listitem">
 
-  <ul class="property-list" role="list" id="geographicFocus-GeographicRegion-List" displaylimit="5">
-<li role="listitem">
+          <a href="/individual?uri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia"
+            title="name">Colombia</a>&nbsp; Country
 
-<a href="/individual?uri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia" title="name">Colombia</a>&nbsp; Country
+          <a class="edit-geographicFocus"
+            href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion"
+            title="edit this entry"><img class="edit-individual"
+              data-range="http://vivoweb.org/ontology/core#GeographicRegion"
+              src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
+          <a class="delete-geographicFocus"
+            href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;cmd=delete&amp;objectKey=object&amp;statement_specificObjectType=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23self_governing&amp;statement_localName=Colombia&amp;statement_label=Colombia&amp;statement_type=Country&amp;statement_object=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion&amp;templateName=propStatement-default.ftl"
+            title="delete this entry"><img class="delete-individual"
+              data-range="http://vivoweb.org/ontology/core#GeographicRegion"
+              src="https://cdn-icons-png.flaticon.com/512/484/484611.png" alt="delete this entry"></a>
+        </li>
+      </ul>
+    </article>
 
-<a class="edit-geographicFocus" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion" title="edit this entry"><img class="edit-individual" data-range="http://vivoweb.org/ontology/core#GeographicRegion" src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
-<a class="delete-geographicFocus" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;cmd=delete&amp;objectKey=object&amp;statement_specificObjectType=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23self_governing&amp;statement_localName=Colombia&amp;statement_label=Colombia&amp;statement_type=Country&amp;statement_object=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion&amp;templateName=propStatement-default.ftl" title="delete this entry"><img class="delete-individual" data-range="http://vivoweb.org/ontology/core#GeographicRegion" src="https://cdn-icons-png.flaticon.com/512/484/484611.png" alt="delete this entry"></a>
-</li>
-  </ul>
-</article>
-    
   </div>
   <!--Footer-->
   <footer>

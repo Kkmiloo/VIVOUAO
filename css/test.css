@@ -454,7 +454,7 @@ footer {
     padding-bottom: 2.9375rem;
     padding-top: 1.5625rem;
     position: relative;
-    height: 500px;
+    height: 550px;
 }
 
 .edit-individual {
@@ -635,7 +635,7 @@ p {
 
 #individual-hasResearchArea {
     position: absolute;
-    top: 70px;
+    top: 120px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -651,9 +651,9 @@ p {
 
 .profile-hero::after {
     left: 6.875rem;
-    bottom: 0.9375rem;
+    bottom: 3rem;
     width: 100%;
-    height: 7rem;
+    height: 9rem;
     border-bottom: 0.0625rem solid rgb(255, 255, 255);
     border-bottom-left-radius: 1rem;
     border-left: 0.0625rem solid rgb(255, 255, 255);
@@ -711,3 +711,16 @@ p {
     padding: .625em;
     margin-bottom: .625em;
 }
+
+#tabcontent > article > section{
+    width: 100%;
+}
+
+#researcharea > section{
+    width: 700px;
+    padding: 5px;
+    border-radius: 1.25rem;
+    padding-bottom: 2px;
+}
+
+
