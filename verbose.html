@@ -8,8 +8,9 @@
   <link rel="stylesheet" href="./css/uao.css" />
   <link rel="stylesheet" href="./css/test.css" />
   <link rel="stylesheet" href="./css/adm-profile-editor.css">
+  <link rel="stylesheet" href="css/verbose.css">
 
-  <title>Verbose</title>
+  <title>Verbose On</title>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <label for="hmdsdc-search">¿Qué estás buscando?</label>
           </div>
           <button id="hmdsdc-submit" type="submit" value="">
-            <span class="icon icon-search"></span>
+            <span class="icon icon-search" style="text-decoration: none;"></span>
           </button>
         </form>
       </div>
@@ -169,15 +170,24 @@
       <div class="info">
         <p class="department">Departamento de Operaciones y Sistemas</p>
         <h1 class="foaf-person">
-          <span itemprop="name" class="fn"> Pradilla Cerón, Juan Vicente
+          <span itemprop="name" class="fn"> Pradilla, Juan Vicente
             <a class="edit-label"
               href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label&amp;datapropKey=922636124&amp;deleteProhibited=prohibited"
-              title="edit this entry"><img class="edit-individual" data-range=""
-                src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
+              title="edit this entry">
+              <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label&amp;datapropKey=922636124&amp;deleteProhibited=prohibited" class="icon-pencil-alt" style="text-decoration: none;">
+              </a>
+            </a>
           </span>
         </h1>
-
-        <p class="phone">Ext. 11363</p>
+        <!--verbose phone-->
+        
+        <p class="phone">Ext. 11363
+          <a class="edit-ARG_2000028" href="" title="edit this entry">
+            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Telephone&amp;phoneUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn8152"
+              class="icon-pencil-alt" style="text-decoration: none;"></a>
+          </a>
+        </p>
+        <!--verbose mail-->
         <section class="verbosePropertyListing">
           <a class="propertyLink" href="/editForm?controller=FauxProperty&amp;baseUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Work" title="name">
           primary email</a>
@@ -190,36 +200,91 @@
      publish level: <span></span>
  </section>
         <a target="_blank" href="mailto:jvpradilla@uao.edu.co" rel="noopener">jvpradilla@uao.edu.co</a>
-        <!-- Websites -->
-        <div id="web-group">
-          <h6 id="ARG_2000028" title="">Websites <a class="add-ARG_2000028"
-              href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23URL"
-              title="Manage list of websites">
-              <div href="" class="icon icon-globe"></div>
+        <a class="edit-ARG_2000028" href="" title="edit this entry">
+          <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Work&amp;emailUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn2503"
+            class="icon-pencil-alt" style="text-decoration: none;"></a>
+        </a>
+        <a class="delete-ARG_2000028" href="" title="delete this entry">
+          <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;cmd=delete&amp;objectKey=vcard&amp;statement_emailAddress=jvpradilla%40uao.edu.co&amp;statement_vcard=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;statement_email=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn2503&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Work&amp;templateName=propStatement-emailAddress.ftl&amp;deleteObjectUri=http://vivo.mydomain.edu/individual/n2503"
+            class="icon-trash-alt" style="text-decoration: none;">
+          </a>
+          <!--Position-->
+          <h2 id="relatedBy" class="mainPropGroup" title="">Positions <a class="add-relatedBy"
+              href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position"
+              title="Add new positions entry">
+              <span class="icon  icon-plus-circle"></span>
             </a>
-          </h6>
-          <ul id="individual-ARG_2000028" class="individual-urls" role="list">
+          </h2>
+          <!--verbose position-->
+          <section class="verbosePropertyListing">
+            <a class="propertyLink" href="/editForm?controller=FauxProperty&amp;baseUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position" title="name">
+            positions</a>
+            is a faux property of
+       <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy" title="name">vivo:relatedBy</a>
+       (<span>object</span> property);
+       order in group: <span>40</span>;
+       display level: <span>all users, including public</span>;
+       update level: <span>all users who can log in</span>;
+       publish level: <span></span>
+   </section>
+          <ul id="individual-personInPosition" role="list">
             <li role="listitem">
-  
-  
-  
-              <a href="https://www.uao.edu.co/perfil/juan-vicente-pradilla-ceron/" title="Portal UAO">Portal UAO</a>
-            </li>
-            <li role="listitem">
-              <a href="https://www.linkedin.com/in/juan-vicente-pradilla/?originalSubdomain=co"
-                title="LinkedIn">LinkedIn</a>
-            </li>
-            <li role="listitem">
-              <a href="https://scholar.google.com/citations?user=Qmhr8h0AAAAJ&amp;hl=es" title="Scholar">Scholar</a>
+              <span itemprop="jobTitle">Docente</span>,
+              <span itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
+                <a href="/display/n7934" title="organization name"><span itemprop="name">Universidad Autónoma De
+                    Occidente</span></a>
+              </span> <span class="listDateTime">2016&nbsp;-</span>
+              <a class="edit-relatedBy"
+                href="">
+                <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn3136&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position"
+                title="edit this entry" class="icon-pencil-alt" style="text-decoration: none;"></a>
+              </a>
+              <a class="delete-relatedBy"
+                href=""
+                title="delete this entry">
+                <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn3136&amp;cmd=delete&amp;objectKey=position&amp;statement_positionTitle=Docente&amp;statement_orgName=Universidad+Aut%C3%B3noma+De+Occidente&amp;statement_position=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn3136&amp;statement_org=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn7934&amp;statement_dateTimeStart=2016-01-01T00%3A00%3A00&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position&amp;templateName=propStatement-personInPosition.ftl" class="icon-trash-alt" style="text-decoration: none;"></a>
+              </a>
             </li>
           </ul>
-        </div>
-        <!--URI AND QR-->
-        <span id="iconControlsLeftSide">
-          <img id="uriIcon" src="http://20.197.178.150:8080/images/individual/uriIcon.gif" alt="uri icon"
-            data-hasqtip="1" oldtitle="http://vivo.mydomain.edu/individual/n6438" title="" aria-describedby="qtip-1">
-          <img id="qrIcon" src="http://20.197.178.150:8080/images/individual/qr_icon.png" alt="qr icon">
-          <!--             <span id="qrCodeImage" onclick="showElement()"><a title="${i18n().export_qr_codes?js_string}" href="/qrcode?uri=http://vivo.mydomain.edu/individual/n6438"><img id="codeImage" src="https://chart.googleapis.com/chart?cht=qr&amp;chs=125x125&amp;chl=BEGIN:VCARD
+          <!-- Websites -->
+          <div id="web-group">
+            <h6 id="ARG_2000028" title="">Websites <a class="add-ARG_2000028"
+                href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23URL"
+                title="Manage list of websites">
+                <div href="" class="icon icon-globe"></div>
+              </a>
+            <!--verbose websites-->
+            <section class="verbosePropertyListing">
+              <a class="propertyLink" href="/editForm?controller=FauxProperty&amp;baseUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23URL" title="name">
+              webpage</a>
+              is a faux property of
+         <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028" title="name">obo:ARG_2000028</a>
+         (<span>object</span> property);
+         order in group: <span>40</span>;
+         display level: <span>all users, including public</span>;
+         update level: <span>all users who can log in</span>;
+         publish level: <span></span>
+     </section>
+            </h6>
+            <ul id="individual-ARG_2000028" class="individual-urls" role="list">
+              <li role="listitem">
+                <a href="https://www.uao.edu.co/perfil/juan-vicente-pradilla-ceron/" title="Portal UAO">Portal UAO</a>
+              </li>
+              <li role="listitem">
+                <a href="https://www.linkedin.com/in/juan-vicente-pradilla/?originalSubdomain=co"
+                  title="LinkedIn">LinkedIn</a>
+              </li>
+              <li role="listitem">
+                <a href="https://scholar.google.com/citations?user=Qmhr8h0AAAAJ&amp;hl=es" title="Scholar">Scholar</a>
+              </li>
+            </ul>
+          </div>
+          <!--URI AND QR-->
+          <span id="iconControlsLeftSide">
+            <img id="uriIcon" src="http://20.197.178.150:8080/images/individual/uriIcon.gif" alt="uri icon"
+              data-hasqtip="1" oldtitle="http://vivo.mydomain.edu/individual/n6438" title="" aria-describedby="qtip-1">
+            <img id="qrIcon" src="http://20.197.178.150:8080/images/individual/qr_icon.png" alt="qr icon">
+            <!--             <span id="qrCodeImage" onclick="showElement()"><a title="${i18n().export_qr_codes?js_string}" href="/qrcode?uri=http://vivo.mydomain.edu/individual/n6438"><img id="codeImage" src="https://chart.googleapis.com/chart?cht=qr&amp;chs=125x125&amp;chl=BEGIN:VCARD
 VERSION:3.0
 N:Pradilla
 FN:Juan
@@ -229,7 +294,7 @@ URL:http://vivo.mydomain.edu/individual/n6438
 END:VCARD&amp;choe=UTF-8"></a>
       <a class="qrCloseLink" href="#" title="QR Code" onclick="hideElement()">Close</a>
     </span> -->
-        </span>
+          </span>
       </div>
       <!--imagen-->
       <div id="photo-wrapper">
@@ -241,14 +306,10 @@ END:VCARD&amp;choe=UTF-8"></a>
               sizes="(max-width: 670px) 100vw, 670px" title="click to view larger image">
           </a>
         </figure>
-        <a class="edit-mainImage"
-          href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=edit"
-          title="edit this entry"><img class="edit-individual" data-range=""
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
-        <a class="delete-mainImage"
-          href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=delete"
-          title="delete this entry"><img class="delete-individual" data-range=""
-            src="https://cdn-icons-png.flaticon.com/512/484/484611.png" alt="delete this entry">
+        <a class="edit-mainImage icon-pencil-alt" href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=edit" title="edit this entry" style="text-decoration: none;">
+        <a alt="delete this entry"title="delete this entry"class="delete-mainImage icon-trash-alt" href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=delete"
+          title="delete this entry" style="text-decoration: none;">
+        </a>
         </a>
       </div>
     </div>
@@ -264,15 +325,18 @@ END:VCARD&amp;choe=UTF-8"></a>
           <img class="add-individual" data-domain="" data-range=""
             src="https://cdn-icons-png.flaticon.com/512/861/861319.png" alt="manage"></a>
       </h2>
-      <section class="verbosePropertyListing">
-        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea"
-          title="name">vivo:hasResearchArea</a>
+      <!--verbose research areas-->
+      <section class="verbosePropertyListing" style="z-index: 1;">
+        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea" title="name">vivo:hasResearchArea</a>
         (<span>object</span> property);
         order in group: <span>10</span>;
         display level: <span>all users, including public</span>;
         update level: <span>all users who can log in</span>;
         publish level: <span>all users, including public</span>
-      </section>
+    </section>
+      <div class="collaboratorship-link-separator"
+        style="width: 500px;position: absolute;left: 50%;margin-right: -50%;transform: translate(-50%, -50%); top:55px;">
+      </div>
       <ul id="individual-hasResearchArea" role="list">
         <li role="listitem">
           <a class="primary-btn  white" href="/display/n5938" title="concept name">Cloud &amp; Fog Computing
@@ -389,18 +453,11 @@ END:VCARD&amp;choe=UTF-8"></a>
 
                 var sparklineDataView = new google.visualization.DataView(data);
                 sparklineDataView.setColumns([1]);
-
-
-
-
                 sparklineDataView.setRows(data.getFilteredRows([{
                   column: 0,
                   minValue: '2012',
                   maxValue: '2021'
                 }]));
-
-
-
                 /*
                 This means that all the publications have unknown years & we do not need to display
                 the sparkline.
@@ -456,15 +513,9 @@ END:VCARD&amp;choe=UTF-8"></a>
                         imageContainer.empty();
                       }
                     );
-
                   }
-
                 }
-
                 var totalPublicationCount = knownYearPublicationCounts + unknownYearPublicationCounts;
-
-
-
                 var shortSparkRows = sparklineDataView.getViewRows();
                 var renderedShortSparks = 0;
                 $.each(shortSparkRows, function (index, value) {
@@ -501,9 +552,7 @@ END:VCARD&amp;choe=UTF-8"></a>
                   ).attr("class", "grey-text");
                 }
 
-
                 $('#pub_count_short_sparkline_vis td.sparkline_text').html(sparksText);
-
 
               }
 
@@ -571,16 +620,10 @@ END:VCARD&amp;choe=UTF-8"></a>
                 });
               });
             </script>
-
           </div> <!-- Sparkline Viz -->
-
-
-
         </div>
       </div>
-
       <div class="collaboratorship-link-separator"></div>
-
       <div id="coauthorship_link_container" class="collaboratorship-link-container">
         <div class="collaboratorship-icon">
           <a href="/vis/author-network/n6438" title="co-author"><img
@@ -590,9 +633,7 @@ END:VCARD&amp;choe=UTF-8"></a>
         <div class="collaboratorship-link"><a href="/vis/author-network/n6438" title="Co-author Network">Co-author
             Network</a></div>
       </div>
-
       <div class="collaboratorship-link-separator"></div>
-
       <div id="mapofscience_link_container" class="collaboratorship-link-container">
         <div class="collaboratorship-icon">
           <a href="/vis/map-of-science/n6438" title="map of science"><img
@@ -602,27 +643,18 @@ END:VCARD&amp;choe=UTF-8"></a>
         <div class="collaboratorship-link"><a href="/vis/map-of-science/n6438" title="map of science">Map of Science</a>
         </div>
       </div>
-
-
-
       <script type="text/javascript">
         var visualizationUrl =
           '/visualizationAjax?uri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&template=foaf-person-wilma';
         var infoIconSrc = '/images/iconInfo.png';
       </script>
-
-
       <br>Claim publications by<br>
-
-
       <form action="/createAndLink/doi" method="get" style="float: left;">
         <input type="hidden" name="profileUri" value="http://vivo.mydomain.edu/individual/n6438">
         <br>
         <a class="primary-btn  white" href="#">DOI
           <!-- <input type="submit" class="verbose-toggle small" value="DOI" role="button"> -->
         </a>
-
-
       </form>
       <form action="/createAndLink/pmid" method="get" style="float: right;">
         <input type="hidden" name="profileUri" value="http://vivo.mydomain.edu/individual/n6438">
@@ -684,22 +716,21 @@ END:VCARD&amp;choe=UTF-8"></a>
   <div id="tabcontent">
     <article class="property" role="article">
       <h3 id="RO_0000053" title="">Overview <a class="add-RO_0000053"
-          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FRO_0000053&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23LeaderRole"
+          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview"
           title="Add new head of entry">
           <img class="add-individual" data-domain="http://xmlns.com/foaf/0.1/Person"
             data-range="http://vivoweb.org/ontology/core#LeaderRole"
-            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add">
-        </a>
+            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
       </h3>
+      <!--Verbose Overview-->
       <section class="verbosePropertyListing">
-        <a class="propertyLink" href="/datapropEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview"
-          title="name">vivo:overview</a>
+        <a class="propertyLink" href="/datapropEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview" title="name">vivo:overview</a>
         (<span>data</span> property);
         order in group: <span>10</span>;
         display level: <span>all users, including public</span>;
         update level: <span>all users who can log in</span>;
         publish level: <span>all users, including public</span>
-      </section>
+    </section>
       <ul class="property-list" role="list" id="RO_0000053-LeaderRole-List" displaylimit="5">
         <li>
           <div class="individual-overview">
@@ -707,12 +738,13 @@ END:VCARD&amp;choe=UTF-8"></a>
               Me apasiona aprender de forma constante y apoyar a las personas en su desarrollo profesional; trabajando
               en proyectos tecnológicos y de innovación en los que pueda crear y diseñar soluciones tecnológicas
               innovadoras que funcionen de manera simple y eficiente, generando alto impacto en la sociedad y buscando
-              mejorar la calidad de vida de las personas, a su vez que se alcanzan los objetivos estratégicos de la
-              organización.
+              mejorar la calidad de vida de las personas, a su vez que se alcanzan los objetivos estratégicos de la organización.
               <a class="edit-overview"
-                href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview&amp;datapropKey=-2021098106"
-                title="edit this entry"><img class="edit-individual" data-range=""
-                  src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
+                href=""
+                title="edit this entry">
+                <a class="edit-individual icon-pencil-alt" data-range="" alt="edit this entry" style="text-decoration: none; font-size:20px;" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview&amp;datapropKey=-2021098106">
+                </a>
+              </a>
               <a class="delete-overview"
                 href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview&amp;datapropKey=-2021098106&amp;cmd=delete&amp;templateName=propStatement-dataDefault.ftl"
                 title="delete this entry"><img class="delete-individual" data-range=""
@@ -731,26 +763,28 @@ END:VCARD&amp;choe=UTF-8"></a>
           <img class="add-individual" data-domain="" data-range="http://vivoweb.org/ontology/core#GeographicRegion"
             src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
       </h3>
+      <!--Verbose geographic-->
       <section class="verbosePropertyListing">
-        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus"
-          title="name">vivo:geographicFocus</a>
+        <a class="propertyLink" href="/propertyEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus" title="name">vivo:geographicFocus</a>
         (<span>object</span> property);
         order in group: <span>70</span>;
         display level: <span>all users, including public</span>;
         update level: <span>all users who can log in</span>;
         publish level: <span>all users, including public</span>
-      </section>
+    </section>
       <ul class="property-list" role="list" id="geographicFocus-GeographicRegion-List" displaylimit="5">
         <li role="listitem">
 
           <a href="/individual?uri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia"
             title="name">Colombia</a>&nbsp; Country
 
-          <a class="edit-geographicFocus"
-            href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion"
-            title="edit this entry"><img class="edit-individual"
-              data-range="http://vivoweb.org/ontology/core#GeographicRegion"
-              src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="edit this entry"></a>
+            <a class="edit-geographicFocus" href="" title="edit this entry">
+
+              <a class="edit-individual icon-pencil-alt" data-range="http://vivoweb.org/ontology/core#GeographicRegion" alt="edit this entry" style="text-decoration:none; font-size:20px;" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion">
+              
+              </a>
+            </a>
+
           <a class="delete-geographicFocus"
             href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;cmd=delete&amp;objectKey=object&amp;statement_specificObjectType=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23self_governing&amp;statement_localName=Colombia&amp;statement_label=Colombia&amp;statement_type=Country&amp;statement_object=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion&amp;templateName=propStatement-default.ftl"
             title="delete this entry"><img class="delete-individual"

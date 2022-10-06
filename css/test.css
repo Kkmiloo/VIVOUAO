@@ -769,12 +769,6 @@ body>div.profile-hero>div.hero-container>div.info>p.department {
     margin-bottom: 0px;
 }
 
-body>div.profile-hero>div.hero-container>div.info>section {
-    width: 650px;
-    position: relative;
-    right: 250px;
-}
-
 /* Info */
 .profile-hero .info {
     max-width: 418px !important;
@@ -802,3 +796,4 @@ body>div.profile-hero>div.hero-container>div.info>section {
 .profile-hero .hero-container .info #individual-personInPosition li{
     width:101% !important;
    }
+
