@@ -2334,7 +2334,7 @@ h6 {
 @font-face {
     font-family: icomoon;
     src: url(https://pattern.uao.edu.co/fonts/icomoon.eot?pzqusl);
-    src: url(https://pattern.uao.edu.co/fonts/icomoon.eot?pzqusl#iefix) format("embedded-opentype"), url(../../fonts/icomoon.ttf?pzqusl) format("truetype"), url(https://pattern.uao.edu.co/fonts/icomoon.woff?pzqusl) format("woff"), url(https://pattern.uao.edu.co/fonts/icomoon.svg?pzqusl#icomoon) format("svg");
+    src: url(https://pattern.uao.edu.co/fonts/icomoon.eot?pzqusl#iefix) format("embedded-opentype"), url(https://pattern.uao.edu.co/fonts/icomoon.eot?pzqusl) format("truetype"), url(https://pattern.uao.edu.co/fonts/icomoon.woff?pzqusl) format("woff"), url(https://pattern.uao.edu.co/fonts/icomoon.svg?pzqusl#icomoon) format("svg");
     font-display: swap;
     font-weight: 400;
     font-style: normal
@@ -5602,7 +5602,7 @@ a.category-tag:hover:before {
 }
 
 .cookies:before {
-    background: url(../images/bg-desktop-black.jpg) no-repeat;
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-black.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     content: '';
@@ -13110,7 +13110,7 @@ footer .end .end-text p:last-child {
 }
 
 #header-menu-desktop #hmd-search-dropdown .hmdsd-container:before {
-    background: url(../images/bg-desktop-black.jpg) no-repeat;
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-black.jpg) no-repeat;
     background-size: cover;
     content: '';
     display: block;
@@ -13912,7 +13912,7 @@ footer .end .end-text p:last-child {
 }
 
 #header-menu-mobile #hmm-search-dropdown .hmmsd-container:before {
-    background: url(../images/bg-desktop-black.jpg) no-repeat;
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-black.jpg) no-repeat;
     background-size: cover;
     content: '';
     display: block;

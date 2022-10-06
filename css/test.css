@@ -468,6 +468,10 @@ footer {
     filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
     transition: .3s ease-out;
 }
+.delete-mainImage:hover {
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
 
 body>div.profile-hero>div>div.info>h1>span>a:hover {
     filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
@@ -483,6 +487,15 @@ body>div.profile-hero>div>div.info>h1>span>a:hover {
     filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
     transition: .3s ease-out;
 }
+#geographicFocus-GeographicRegion-List > li > a.delete-geographicFocus:hover{
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+}
+#RO_0000053-LeaderRole-List > li > div > div > a.edit-individual.icon-pencil-alt:hover{
+    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
+    transition: .3s ease-out;
+    z-index: 10;
+}
 
 #RO_0000053>a:hover {
     filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
@@ -495,15 +508,16 @@ body>div.profile-hero>div>div.info>h1>span>a:hover {
     filter: invert(100);
 
 }
-
-.delete-individual:hover {
-    filter: invert(72%) sepia(7%) saturate(8%) hue-rotate(344deg) brightness(86%) contrast(91%);
-    transition: .3s ease-out;
+.edit-individual {
+    width: 20px;
+    height: 22px;
 }
 
 a.delete-mainImage {
     position: absolute;
     right: 9px;
+    font-size: 20px;
+    filter: invert(100);
 }
 
 #iconControlsLeftSide {
@@ -584,7 +598,7 @@ p {
 
 #RO_0000053-LeaderRole-List>li>div>div>a.delete-overview>img {
     filter: invert(0);
-    width: 18px;
+    width: 20px;
     height: auto;
 }
 
