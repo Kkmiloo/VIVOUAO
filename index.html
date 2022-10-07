@@ -1,148 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/uao.css" />
-    <link rel="stylesheet" href="./css/test.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header id="header-menu-desktop" class="fixed has-scroll-indicator">
-      <div id="hmd-search-dropdown">
-        <div class="hmdsd-container">
-          <a id="hmdsd-close" href="">
-            <div class="circle-icon">
-              <span class="icon icon-close"></span>
-            </div>
-          </a>
-          <form class="hmdsdc-form-search" action="https://www.uao.edu.co/">
-            <div class="input-form-search">
-              <input
-                id="hmdsdc-search"
-                type="search"
-                name="s"
-                required="required"
-              />
-              <label for="hmdsdc-search">¿Qué estás buscando?</label>
-            </div>
-            <button id="hmdsdc-submit" type="submit" value="">
-              <span class="icon icon-search"></span>
-            </button>
-          </form>
-        </div>
-      </div>
-      <div id="hmd-profile-dropdown">
-        <div class="hmdpd-wrap">
-          <a id="hmdpdw-close" href="">
-            <div class="circle-icon">
-              <span class="icon icon-close"></span>
-            </div>
-          </a>
-          <div class="hmdpdw-container">
-            <h1>Elige tu Perfil</h1>
-            <span>
-              Selecciona uno de los perfiles y encuentra información de tu
-              interés.
-            </span>
-            <ul>
-              <a href="https://www.uao.edu.co/aspirante/">
-                <li>
-                  <div class="circle-icon">
-                    <span class="icon icon-user-plus"></span>
-                  </div>
-                  <p>Aspirante</p>
-                </li>
-              </a>
-              <a href="https://www.uao.edu.co/estudiante/">
-                <li>
-                  <div class="circle-icon">
-                    <span class="icon icon-users"></span>
-                  </div>
-                  <p>Estudiante</p>
-                </li>
-              </a>
-              <a href="https://www.uao.edu.co/egresados/">
-                <li>
-                  <div class="circle-icon">
-                    <span class="icon icon-graduation-cap"></span>
-                  </div>
-                  <p>Egresado</p>
-                </li>
-              </a>
-              <a href="https://www.uao.edu.co/docente/">
-                <li>
-                  <div class="circle-icon">
-                    <span class="icon icon-book"></span>
-                  </div>
-                  <p>Docente</p>
-                </li>
-              </a>
-              <a href="https://www.uao.edu.co/colaborador/">
-                <li>
-                  <div class="circle-icon">
-                    <span class="icon icon-address-card"></span>
-                  </div>
-                  <p>Colaborador</p>
-                </li>
-              </a>
-              <a href="https://www.uao.edu.co/entidad/">
-                <li>
-                  <div class="circle-icon">
-                    <span class="icon icon-university"></span>
-                  </div>
-                  <p>Entidad</p>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div id="hmd-bottom">
-        <span class="hmdb-line-left"></span>
-        <span class="hmdb-line-right"></span>
-        <div id="hmdb-logo-container">
-          <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
-        </div>
-        <ul>
-          <li>hola</li>
-          <li>hola</li>
-          <li>hola</li>
-          <li>hola</li>
-          <li>hola</li>
-        </ul>
-        <span class="scroll-indicator"></span>
-      </div>
-    </header>
 
-    <main class="main-detail-container investigacion header-margin">
-      <div class="main-hero-container">
-        <div class="vhh-search">
-          <h1>Repositorio Educativo Digital</h1>
-          <form
-            action="/discover"
-            method="post"
-            id="ds-search-form"
-            class="form-search"
-          >
-            <div class="input-form-search">
-              <input
-                required="required"
-                type="search"
-                id="search-module-input"
-                name="query"
-              /><label for="search-module-input">
-                Buscar tesis, trabajos, documentos...
-              </label>
-            </div>
-            <button value="" type="submit" id="search-module-submit">
-              <span class="icon icon-search"></span>
-            </button>
-          </form>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/uao.css" />
+  <link rel="stylesheet" href="./css/test.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+    <div id="hmd-search-dropdown">
+      <div class="hmdsd-container">
+        <a id="hmdsd-close" href="">
+          <div class="circle-icon">
+            <span class="icon icon-close"></span>
+          </div>
+        </a>
+        <form class="hmdsdc-form-search" action="https://www.uao.edu.co/">
+          <div class="input-form-search">
+            <input id="hmdsdc-search" type="search" name="s" required="required" />
+            <label for="hmdsdc-search">¿Qué estás buscando?</label>
+          </div>
+          <button id="hmdsdc-submit" type="submit" value="">
+            <span class="icon icon-search"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="hmd-profile-dropdown">
+      <div class="hmdpd-wrap">
+        <a id="hmdpdw-close" href="">
+          <div class="circle-icon">
+            <span class="icon icon-close"></span>
+          </div>
+        </a>
+        <div class="hmdpdw-container">
+          <h1>Elige tu Perfil</h1>
+          <span>
+            Selecciona uno de los perfiles y encuentra información de tu
+            interés.
+          </span>
+          <ul>
+            <a href="https://www.uao.edu.co/aspirante/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-user-plus"></span>
+                </div>
+                <p>Aspirante</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/estudiante/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-users"></span>
+                </div>
+                <p>Estudiante</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/egresados/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-graduation-cap"></span>
+                </div>
+                <p>Egresado</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/docente/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-book"></span>
+                </div>
+                <p>Docente</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/colaborador/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-address-card"></span>
+                </div>
+                <p>Colaborador</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/entidad/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-university"></span>
+                </div>
+                <p>Entidad</p>
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
-    </main>
-    <footer></footer>
-  </body>
+    </div>
+    <div id="hmd-bottom">
+      <span class="hmdb-line-left"></span>
+      <span class="hmdb-line-right"></span>
+      <div id="hmdb-logo-container">
+        <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+      </div>
+      <ul>
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+      </ul>
+      <span class="scroll-indicator"></span>
+    </div>
+  </header>
+
+  <main class="main-detail-container investigacion header-margin">
+    <div class="main-hero-container">
+      <div class="vhh-search">
+        <h1>Repositorio Educativo Digital</h1>
+        <form action="/discover" method="post" id="ds-search-form" class="form-search">
+          <div class="input-form-search">
+            <input required="required" type="search" id="search-module-input" name="query" /><label
+              for="search-module-input">
+              Buscar tesis, trabajos, documentos...
+            </label>
+          </div>
+          <button value="" type="submit" id="search-module-submit">
+            <span class="icon icon-search"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <!--SLIDER CONTAINER-->
+  <section class="container">
+    <h2>Publicaciones recientes</h2>
+    <div class="testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <!--diapo 1-->
+        <div class="slide swiper-slide">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQHAcJt732zmZQ/profile-displayphoto-shrink_200_200/0/1634672711579?e=1670457600&v=beta&t=wpmCJSgCErHuRnjK7oSX3DHp53leZobXE8fn1CZrEkU"
+            alt="" class="image" />
+          <ul class="subclass-property-list">
+            <li role="listitem">
+
+              <h5 href="/display/n7410" title="resource name">Chapter 7 - Micro Virtual Machines (MicroVMs) for
+                Cloud-assisted Cyber-Physical Systems (CPS).</h5>&nbsp;<br>
+              <em>Internet of Things: Principles and Paradigms</em>.
+              Ed.&nbsp;Buyya, Rajkumar.&nbsp;
+              <span class="listDateTime">2016</span>
+
+              <div data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.1016/C2015-0-04135-1"
+                data-hide-no-mentions="true" class="altmetric-embed" style="display: inline;"
+                data-uuid="22da92b1-2aa2-6f95-e368-ce704d7d20c6"><a target="_self"
+                  href="https://www.altmetric.com/details.php?domain=20.197.178.150&amp;citation_id=9271202"
+                  rel="popover" data-content="<div>    <div style='padding-left: 10px; line-height:18px; border-left: 16px solid #FF0000;'>
+                <a class='link-to-altmetric-details-tab' target='_self' href='https://www.altmetric.com/details.php?domain=20.197.178.150&amp;citation_id=9271202&amp;tab=news'>
+                    Picked up by <b>1</b> news outlets
+                </a>
+              </div>
+              <div style='padding-left: 10px; line-height:18px; border-left: 16px solid #74CFED;'>
+                <a class='link-to-altmetric-details-tab' target='_self' href='https://www.altmetric.com/details.php?domain=20.197.178.150&amp;citation_id=9271202&amp;tab=twitter'>
+                    Tweeted by <b>27</b>
+                </a>
+              </div>
+              <div style='padding-left: 10px; line-height:18px; border-left: 16px solid #2445bd;'>
+                <a class='link-to-altmetric-details-tab' target='_self' href='https://www.altmetric.com/details.php?domain=20.197.178.150&amp;citation_id=9271202&amp;tab=facebook'>
+                    On <b>1</b> Facebook pages
+                </a>
+              </div>
+              <div style='padding-left: 10px; line-height:18px; border-left: 16px solid #958899;'>
+                <a class='link-to-altmetric-details-tab' target='_self' href='https://www.altmetric.com/details.php?domain=20.197.178.150&amp;citation_id=9271202&amp;tab=wikipedia'>
+                    Referenced in <b>1</b> Wikipedia pages
+                </a>
+              </div>
+          
+              <div class='altmetric-embed readers' style='margin-top: 10px;'>
+                    <div class='altmetric-embed tip_mendeley'
+                         style='padding-left: 10px; line-height:18px; border-left: 16px solid #A60000;'>
+                        <b>402</b> readers on Mendeley
+                    </div>
+              </div>
+              <div style='margin-top: 10px; text-align: center;'>
+                  <a class='altmetric_details' target='_self' href='https://www.altmetric.com/details.php?domain=20.197.178.150&amp;citation_id=9271202'>
+                      See more details
+                  </a>
+              </div>
+          </div>" style="display:inline-block;" data-badge-popover="right">
+                  <img alt="Article has an altmetric score of 30" src="https://d1uo4w7k31k5mn.cloudfront.net/v4/30.png"
+                    width="85" height="15" style="border:0; margin:0; max-width: none;">
+                </a></div>
+              <div class="plum-print-wrapper" style="display: inline-block; vertical-align: top">
+                <a class="plumx-plum-print-popup"
+                  href="https://plu.mx/plum/a/?doi=https://doi.org/10.1016/C2015-0-04135-1" data-popup="hidden"
+                  data-hide-when-empty="true" data-site="plum" data-size="tiny" data-badge="true"></a>
+              </div>
+
+
+            </li>
+          </ul>
+          <ul class="property-list" role="list" id="relatedBy-Authorship-List" displaylimit="5">
+            <li role="listitem">
+
+              <a href="/display/n6438" title="author name">Pradilla, Juan Vicente</a>
+
+
+            </li>
+          </ul>
+          <a class="primary-btn" href="/display/n7410">Conoce más</a>
+        </div>
+        <!--diapo 2-->
+        <div class="slide swiper-slide">
+          <img src="https://www.uao.edu.co/wp-content/uploads/2020/04/Andres-Fernando-Solano.jpg" alt=""
+            class="image" />
+          <section id="individual-info" role="region">
+            <div class="individual-altmetric-badge">
+              <div class="altmetric-embed altmetric-hidden"
+                style="float: right; padding-left: 15px; padding-right: 15px;" data-badge-type="donut"
+                data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"
+                data-doi="https://doi.org/10.2307/j.ctvckq8mf" data-uuid="4b877a47-773a-7914-e197-ba4f8f6a6763"></div>
+            </div>
+
+            <div class="individual-plum-print" style="float: right; position: relative; z-index: 1;">
+              <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi=https://doi.org/10.2307/j.ctvckq8mf"
+                data-popup="right" data-hide-when-empty="true" data-site="plum" data-size="medium" data-badge="false"
+                data-popover="true"></a>
+            </div>
+
+
+            <header>
+              <ul class="subclass-property-list">
+                <li role="listitem">
+                  <h5 href="" title="resource name">Evaluación colaborativa de la usabilidad en el
+                    desarrollo de sistemas software interactivos.</h5>&nbsp;<br>
+                  Ed.&nbsp;Universidad Autónoma de Occidente, Programa Editorial.&nbsp;
+                  <span class="listDateTime">2016</span>
+
+                  <div data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.2307/j.ctvckq8mf"
+                    data-hide-no-mentions="true" class="altmetric-embed altmetric-hidden" style="display: inline;"
+                    data-uuid="552b2b44-8367-e694-d1db-94281070cf00"></div>
+                  <div class="plum-print-wrapper" style="display: inline-block; vertical-align: top">
+                    <a class="plumx-plum-print-popup"
+                      href="https://plu.mx/plum/a/?doi=https://doi.org/10.2307/j.ctvckq8mf" data-popup="hidden"
+                      data-hide-when-empty="true" data-site="plum" data-size="tiny" data-badge="true"></a>
+                  </div>
+                </li>
+              </ul>
+            </header>
+          </section>
+          <a href="/display/n5353" title="author name">Solano, Andrés Fernando</a>
+          <a class="primary-btn" href="/display/n2807">Conoce más</a>
+        </div>
+        <!--diapo 3-->
+        <div class="slide swiper-slide">
+          <img src="https://www.uao.edu.co/wp-content/uploads/2020/04/Andres-Fernando-Solano.jpg" alt=""
+            class="image" />
+
+          <section id="individual-info" role="region">
+
+
+
+            <div class="individual-altmetric-badge">
+              <div class="altmetric-embed altmetric-hidden"
+                style="float: right; padding-left: 15px; padding-right: 15px;" data-badge-type="donut"
+                data-badge-popover="right" data-hide-no-mentions="true" data-link-target="_blank"
+                data-doi="https://doi.org/10.2307/j.ctvckq8mf" data-uuid="4b877a47-773a-7914-e197-ba4f8f6a6763"></div>
+            </div>
+
+            <div class="individual-plum-print" style="float: right; position: relative; z-index: 1;">
+              <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi=https://doi.org/10.2307/j.ctvckq8mf"
+                data-popup="right" data-hide-when-empty="true" data-site="plum" data-size="medium" data-badge="false"
+                data-popover="true"></a>
+            </div>
+
+
+            <header>
+              <ul class="subclass-property-list">
+                <li role="listitem">
+                  <h5 href="" title="resource name">Evaluación colaborativa de la usabilidad en el
+                    desarrollo de sistemas software interactivos.</h5>&nbsp;<br>
+                  Ed.&nbsp;Universidad Autónoma de Occidente, Programa Editorial.&nbsp;
+                  <span class="listDateTime">2016</span>
+
+                  <div data-badge-popover="right" data-badge-type="4" data-doi="https://doi.org/10.2307/j.ctvckq8mf"
+                    data-hide-no-mentions="true" class="altmetric-embed altmetric-hidden" style="display: inline;"
+                    data-uuid="552b2b44-8367-e694-d1db-94281070cf00"></div>
+                  <div class="plum-print-wrapper" style="display: inline-block; vertical-align: top">
+                    <a class="plumx-plum-print-popup"
+                      href="https://plu.mx/plum/a/?doi=https://doi.org/10.2307/j.ctvckq8mf" data-popup="hidden"
+                      data-hide-when-empty="true" data-site="plum" data-size="tiny" data-badge="true"></a>
+                  </div>
+                </li>
+              </ul>
+            </header>
+          </section>
+          <a href="/display/n5353" title="author name">Solano, Andrés Fernando</a>
+          <a class="primary-btn" href="/display/n2807">Conoce más</a>
+        </div>
+
+      </div>
+      <!--next-->
+      <div class="swiper-button-next nav-btn"></div>
+      <!--prev-->
+      <div class="swiper-button-prev nav-btn"></div>
+      <!---->
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+  <!-- SLIDER Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!--SLIDER JavaScript -->
+  <script src="js/script.js"></script>
+  <footer></footer>
+</body>
+
 </html>
