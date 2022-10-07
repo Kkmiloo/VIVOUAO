@@ -1,0 +1,244 @@
+#submit:hover {
+    transition: .3s ease-out;
+    background-color: #363636;
+    box-shadow: 0 1.25rem .3125rem -.9375rem rgba(54, 54, 54, .35);
+}
+
+/*Diseño verbose mode on*/
+/* Profile hero */
+.profile-hero {
+    min-height: 790px;
+    transform: translatex(0px) translatey(0px);
+    padding-bottom:0px;
+    min-height:5px;
+    height:734px;
+}
+
+/* Info */
+.profile-hero .info {
+    max-width: 902px !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+/* Verbose property listing */
+.profile-hero .info .verbosePropertyListing {
+    max-width: 902px;
+    width: 902px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Hero container */
+.profile-hero .hero-container {
+    min-height: 563px;
+}
+
+/* Has research area */
+#hasResearchArea {
+    transform: translatex(4px) translatey(-17px);
+    text-align:center;
+    letter-spacing:-0.85px;
+    position:relative;
+    left:-8px;
+}
+
+/* Verbose property listing */
+#researcharea .verbosePropertyListing {
+    top: -6px;
+    width: 1177px;
+}
+
+.profile-hero .hero-container::before {
+    background-color: #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    left: 0;
+}
+
+/* Photo wrapper */
+#photo-wrapper {
+    position: absolute;
+    float: left;
+    width: 323px;
+    max-width: 323px;
+    transform: translatex(70px) translatey(0px);
+    left: -70px !important;
+    right: auto !important;
+    margin-right: 138.5px;
+    margin-left: 138.5px;
+}
+
+/* Image */
+#photo-wrapper a img {
+    transform: translatex(0px) translatey(0px);
+    padding: 5px;
+    position: relative;
+    width: 323px;
+    max-width: 323px;
+}
+
+/* Right hand column */
+#right-hand-column {
+    -webkit-font-smoothing: antialiased;
+    word-break: break-word;
+    font-size: 16px;
+    box-sizing: inherit;
+    font-family: roboto condensed, sans-serif;
+    z-index: 10;
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    width: 250px;
+    color: #5e6363;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 5px 5px 20px -8px rgba(0, 0, 0, 0.3);
+    min-height: 418px;
+    height: 418px;
+    float: right;
+    right: 0% !important;
+    margin-right: 37px !important;
+    margin-left: 37px !important;
+}
+
+.profile-hero .hero-container {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+
+/* Info */
+.profile-hero .info {
+    min-width: 7px;
+    width: 710px;
+}
+
+/* Verbose property listing */
+.profile-hero .info .verbosePropertyListing {
+    display: inline-block;
+    transform: translatex(0px) translatey(0px) !important;
+    min-width: 710px;
+    width: 89%;
+}
+
+/* Edit main image */
+#photo-wrapper .edit-mainImage {
+    filter: invert(0.01) saturate(0.1);
+    font-size: 25px;
+}
+
+/* Delete main image */
+#photo-wrapper .delete-mainImage {
+    filter: invert(0.01);
+    font-size: 25px;
+}
+
+@media (max-width:1366px) {
+
+    /* Info */
+    .profile-hero .info {
+        min-width: 7px;
+        width: 710px;
+    }
+
+    /* Verbose property listing */
+    .profile-hero .info .verbosePropertyListing {
+        display: inline-block;
+        transform: translatex(0px) translatey(0px) !important;
+        min-width: 710px;
+        width: 89%;
+    }
+
+    /* Photo wrapper */
+    #photo-wrapper {
+        transform: scale(0.80);
+        margin-left: 70px;
+        margin-right: 30px;
+    }
+
+    /* Edit main image */
+    #photo-wrapper .edit-mainImage {
+        filter: invert(0.01) saturate(0.1);
+        font-size: 25px;
+    }
+
+    /* Delete main image */
+    #photo-wrapper .delete-mainImage {
+        filter: invert(0.01);
+        font-size: 25px;
+    }
+
+    /* Right hand column */
+    #right-hand-column {
+        margin-right: 37px !important;
+        margin-left: 37px !important;
+    }
+}
+
+/*NUEVO*/
+/* Info */
+.profile-hero .info{
+ max-width:430px !important;
+}
+
+/* Profile hero */
+.profile-hero{
+ transform:translatex(0px) translatey(0px);
+}
+
+@media (min-width:801px){
+
+ /* Info */
+ .profile-hero .info{
+  margin-right:0px !important;
+ }
+ 
+}
+
+@media (min-width:1367px){
+
+ /* Info */
+ .profile-hero .info{
+  min-width:1px;
+  width:430px;
+ }
+ 
+ /* Photo wrapper */
+ #photo-wrapper{
+  margin-right:209px;
+  margin-left:209px;
+ }
+ 
+ /* Right hand column */
+ #right-hand-column{
+  margin-right:251px !important;
+  margin-left:251px !important;
+ }
+ 
+}
+
+/* Individual has research area */
+#individual-hasResearchArea{
+    top:50px;
+    bottom:0px;
+   }
+   
+   /* Researcharea */
+   #researcharea{
+    min-height:87px;
+   }

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/uao.css" />
+  <link rel="stylesheet" href="./css/test.css" />
+  <link rel="stylesheet" href="./css/adm-profile-editor.css">
+  <link rel="stylesheet" href="css/admin.css">
+
+  <title>admin</title>
+</head>
+
+<body>
+  <!-- Nav. Menu -->
+  <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+    <div id="hmd-search-dropdown">
+      <div class="hmdsd-container">
+        <a id="hmdsd-close" href="">
+          <div class="circle-icon">
+            <span class="icon icon-close"></span>
+          </div>
+        </a>
+        <form class="hmdsdc-form-search" action="https://www.uao.edu.co/">
+          <div class="input-form-search">
+            <input id="hmdsdc-search" type="search" name="s" required="required">
+            <label for="hmdsdc-search">¿Qué estás buscando?</label>
+          </div>
+          <button id="hmdsdc-submit" type="submit" value="">
+            <span class="icon icon-search" style="text-decoration: none;"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="hmd-profile-dropdown">
+      <div class="hmdpd-wrap">
+        <a id="hmdpdw-close" href="">
+          <div class="circle-icon">
+            <span class="icon icon-close"></span>
+          </div>
+        </a>
+        <div class="hmdpdw-container">
+          <h1>Elige tu Perfil</h1>
+          <span>
+            Selecciona uno de los perfiles y encuentra información de tu
+            interés.
+          </span>
+          <ul>
+            <a href="https://www.uao.edu.co/aspirante/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-user-plus"></span>
+                </div>
+                <p>Aspirante</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/estudiante/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-users"></span>
+                </div>
+                <p>Estudiante</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/egresados/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-graduation-cap"></span>
+                </div>
+                <p>Egresado</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/docente/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-book"></span>
+                </div>
+                <p>Docente</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/colaborador/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-address-card"></span>
+                </div>
+                <p>Colaborador</p>
+              </li>
+            </a>
+            <a href="https://www.uao.edu.co/entidad/">
+              <li>
+                <div class="circle-icon">
+                  <span class="icon icon-university"></span>
+                </div>
+                <p>Entidad</p>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="hmd-bottom">
+      <span class="hmdb-line-left"></span>
+      <span class="hmdb-line-right"></span>
+      <div id="hmdb-logo-container">
+        <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+      </div>
+      <ul>
+        <li>Inicio</li>
+        <li>Investigadores</li>
+        <li>Grupos de Investigación</li>
+        <li>Publicaciones</li>
+        <li>Administrador</li>
+      </ul>
+      <span class="scroll-indicator"></span>
+    </div>
+  </header>
+
+  <!-- Admin panel -->
+  <section id="individual-admin">
+    <div class="row">
+      <div class="col-md-12">
+
+        <section id="admin">
+          <h3 id="adminPanel">Admin Panel</h3>
+          <a class="edit-individual" href="/entityEdit?uri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438"
+            title="Edit this individual">Edit
+            this individual</a>
+
+          <section id="verbose-mode">
+            <span>Verbose property display is <b>on</b> | </span>
+            <input type="submit" id="submit" value="Turn off" role="button" class="verbose-toggle small"
+              href="/display/n6438?verbose=true" title="verbose control">
+          </section>
+
+          <p class="uri-link">Resource URI: <a href="http://vivo.mydomain.edu/individual/n6438" target="_blank"
+              title="Resource URI">http://vivo.mydomain.edu/individual/n6438</a></p>
+        </section>
+      </div>
+    </div>
+  </section>
+  <!--Perfil del investigador-->
+  <div class="profile-hero">
+    <script type="application/ld+json">
+      {
+        "@context": "https:\/\/schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          [], {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https:\/\/www.uao.edu.co"
+          }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Facultad de Ingenier\u00eda",
+            "item": "https:\/\/www.uao.edu.co\/ingenieria\/"
+          }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Juan Vicente Pradilla Cer\u00f3n",
+            "item": "https:\/\/www.uao.edu.co\/perfil\/juan-vicente-pradilla-ceron\/"
+          }
+        ]
+      }
+    </script>
+    <div class="hero-container">
+      <div class="info">
+        <p class="department">Departamento de Operaciones y Sistemas</p>
+        <h1 class="foaf-person">
+          <span itemprop="name" class="fn"> Pradilla, Juan Vicente
+            <a class="edit-label"
+              href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label&amp;datapropKey=922636124&amp;deleteProhibited=prohibited"
+              title="edit this entry">
+              <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label&amp;datapropKey=922636124&amp;deleteProhibited=prohibited" class="icon-pencil-alt" style="text-decoration: none;">
+              </a>
+            </a>
+          </span>
+        </h1>
+        <!--verbose phone-->
+
+        <!--verbose mail-->
+        <a target="_blank" href="mailto:jvpradilla@uao.edu.co" rel="noopener">jvpradilla@uao.edu.co</a>
+        <a class="edit-ARG_2000028" href="" title="edit this entry">
+          <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Work&amp;emailUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn2503"
+            class="icon-pencil-alt" style="text-decoration: none;"></a>
+        </a>
+        <a class="delete-ARG_2000028" href="" title="delete this entry">
+          <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;cmd=delete&amp;objectKey=vcard&amp;statement_emailAddress=jvpradilla%40uao.edu.co&amp;statement_vcard=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn5826&amp;statement_email=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn2503&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23Work&amp;templateName=propStatement-emailAddress.ftl&amp;deleteObjectUri=http://vivo.mydomain.edu/individual/n2503"
+            class="icon-trash-alt" style="text-decoration: none;">
+          </a>
+          <!--Position-->
+          <h2 id="relatedBy" class="mainPropGroup" title="">Positions <a class="add-relatedBy"
+              href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position"
+              title="Add new positions entry">
+              <span class="icon  icon-plus-circle"></span>
+            </a>
+          </h2>
+          <!--verbose position-->
+          <ul id="individual-personInPosition" role="list">
+            <li role="listitem">
+              <span itemprop="jobTitle">Docente</span>,
+              <span itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
+                <a href="/display/n7934" title="organization name"><span itemprop="name">Universidad Autónoma De
+                    Occidente</span></a>
+              </span> <span class="listDateTime">2016&nbsp;-</span>
+              <a class="edit-relatedBy"
+                href="">
+                <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn3136&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position"
+                title="edit this entry" class="icon-pencil-alt" style="text-decoration: none;"></a>
+              </a>
+              <a class="delete-relatedBy"
+                href=""
+                title="delete this entry">
+                <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23relatedBy&amp;objectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn3136&amp;cmd=delete&amp;objectKey=position&amp;statement_positionTitle=Docente&amp;statement_orgName=Universidad+Aut%C3%B3noma+De+Occidente&amp;statement_position=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn3136&amp;statement_org=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn7934&amp;statement_dateTimeStart=2016-01-01T00%3A00%3A00&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23Position&amp;templateName=propStatement-personInPosition.ftl" class="icon-trash-alt" style="text-decoration: none;"></a>
+              </a>
+            </li>
+          </ul>
+          <!-- Websites -->
+          <div id="web-group">
+            <h6 id="ARG_2000028" title="">Websites <a class="add-ARG_2000028"
+                href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FARG_2000028&amp;domainUri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson&amp;rangeUri=http%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23URL"
+                title="Manage list of websites">
+                <div href="" class="icon icon-globe"></div>
+              </a>
+            <!--verbose websites-->
+            </h6>
+            <ul id="individual-ARG_2000028" class="individual-urls" role="list">
+              <li role="listitem">
+                <a href="https://www.uao.edu.co/perfil/juan-vicente-pradilla-ceron/" title="Portal UAO">Portal UAO</a>
+              </li>
+              <li role="listitem">
+                <a href="https://www.linkedin.com/in/juan-vicente-pradilla/?originalSubdomain=co"
+                  title="LinkedIn">LinkedIn</a>
+              </li>
+              <li role="listitem">
+                <a href="https://scholar.google.com/citations?user=Qmhr8h0AAAAJ&amp;hl=es" title="Scholar">Scholar</a>
+              </li>
+            </ul>
+          </div>
+          <!--URI AND QR-->
+          <span id="iconControlsLeftSide">
+            <img id="uriIcon" src="http://20.197.178.150:8080/images/individual/uriIcon.gif" alt="uri icon"
+              data-hasqtip="1" oldtitle="http://vivo.mydomain.edu/individual/n6438" title="" aria-describedby="qtip-1">
+            <img id="qrIcon" src="http://20.197.178.150:8080/images/individual/qr_icon.png" alt="qr icon">
+            <!--             <span id="qrCodeImage" onclick="showElement()"><a title="${i18n().export_qr_codes?js_string}" href="/qrcode?uri=http://vivo.mydomain.edu/individual/n6438"><img id="codeImage" src="https://chart.googleapis.com/chart?cht=qr&amp;chs=125x125&amp;chl=BEGIN:VCARD
+VERSION:3.0
+N:Pradilla
+FN:Juan
+TITLE:Ingeniero Telemático
+EMAIL;TYPE=PREF,INTERNET:jvpradilla@uao.edu.co
+URL:http://vivo.mydomain.edu/individual/n6438
+END:VCARD&amp;choe=UTF-8"></a>
+      <a class="qrCloseLink" href="#" title="QR Code" onclick="hideElement()">Close</a>
+    </span> -->
+          </span>
+      </div>
+      <!--imagen-->
+      <div id="photo-wrapper">
+        <figure>
+          <a href="https://media-exp1.licdn.com/dms/image/C4D03AQHAcJt732zmZQ/profile-displayphoto-shrink_200_200/0/1634672711579?e=1670457600&v=beta&t=wpmCJSgCErHuRnjK7oSX3DHp53leZobXE8fn1CZrEkU"
+            title="Individual photo">
+            <img width="670" height="670" alt="Pradilla, Juan Vicente" loading="lazy" class="individual-photo"
+              src="https://media-exp1.licdn.com/dms/image/C4D03AQHAcJt732zmZQ/profile-displayphoto-shrink_200_200/0/1634672711579?e=1670457600&v=beta&t=wpmCJSgCErHuRnjK7oSX3DHp53leZobXE8fn1CZrEkU"
+              sizes="(max-width: 670px) 100vw, 670px" title="click to view larger image">
+          </a>
+        </figure>
+        <a class="edit-mainImage icon-pencil-alt" href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=edit" title="edit this entry" style="text-decoration: none;">
+        <a alt="delete this entry"title="delete this entry"class="delete-mainImage icon-trash-alt" href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=delete"
+          title="delete this entry" style="text-decoration: none;">
+        </a>
+        </a>
+      </div>
+    </div>
+    <!-- Research Areas -->
+    <div id="researcharea">
+      <h2 id="hasResearchArea" class="mainPropGroup" title="">
+        Research Areas
+        <img id="researchAreaIcon" src="https://cdn-icons-png.flaticon.com/512/3127/3127995.png" alt="research areas"
+          data-hasqtip="0" aria-describedby="qtip-0">
+        <a class="add-hasResearchArea"
+          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23hasResearchArea"
+          title="Manage list of research areas">
+          <img class="add-individual" data-domain="" data-range=""
+            src="https://cdn-icons-png.flaticon.com/512/861/861319.png" alt="manage"></a>
+      </h2>
+      <!--verbose research areas-->
+      <ul id="individual-hasResearchArea" role="list">
+        <li role="listitem">
+          <a class="primary-btn  white" href="/display/n5938" title="concept name">Cloud &amp; Fog Computing
+          </a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n5239" title="concept name">Cyber-Physical Systems</a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n2759" title="concept name">Internet of Things</a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n1689" title="concept name">Physical Computing</a>
+
+        </li>
+        <li role="listitem">
+          <a class="primary-btn white" href="/display/n1233" title="concept name">Sensor Networks</a>
+
+        </li>
+      </ul>
+    </div>
+    <!--H index-->
+    <section id="right-hand-column" role="region">
+      <h2 class="titlehindex">Publications</h2>
+      <div id="vis_container_coauthor">
+        <div id="pub_count_short_sparkline_vis" class="sparkline_style">
+          <table class="sparkline_wrapper_table">
+            <tbody>
+              <tr>
+                <td id="pub_count_short_sparkline_vis_img" width="250" class="sparkline_style">
+                  <table class="google-visualization-sparkline-default">
+                    <tbody class="google-visualization-sparkline-default">
+                      <tr class="google-visualization-sparkline-default">
+                        <td class="google-visualization-sparkline-default"><img
+                            src="//chart.googleapis.com/chart?cht=ls&amp;chs=148x58&amp;chdlp=r&amp;chco=3399CC&amp;chd=e%3AAAf.AAf...AAAAAAAAAA"
+                            class="google-visualization-sparkline-image" width="250" height="58"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="grey-text" style="text-align: left;">4 in the last 10 full</td>
+              </tr>
+
+              <tr>
+                <td class="sparkline_text">years&nbsp;
+                  <img class="infoIcon" src="http://20.197.178.150:8080/images/iconInfo.png" height="16px" width="16px"
+                    alt="info icon"
+                    title="These numbers are based solely on publications that have been loaded into this VIVO application. If this is your profile, you can enter additional publications below.">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+        <div class="staticPageBackground">
+          <div id="vis_container_coauthor">
+            <script type="text/javascript">
+              var visualizationOptions = {
+                width: 150,
+                height: 60,
+                color: '3399CC',
+                chartType: 'ls',
+                chartLabel: 'r'
+              };
+
+              function drawPubCountVisualization(providedSparklineImgTD) {
+
+                var unknownYearPublicationCounts = 0;
+                var onlyUnknownYearPublications = false;
+
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'Year');
+                data.addColumn('number', 'Publications');
+                data.addRows(10);
+
+                var knownYearPublicationCounts = 0;
+
+                data.setValue(0, 0, '2012');
+                data.setValue(0, 1, 0);
+                knownYearPublicationCounts += 0;
+                data.setValue(1, 0, '2013');
+                data.setValue(1, 1, 1);
+                knownYearPublicationCounts += 1;
+                data.setValue(2, 0, '2014');
+                data.setValue(2, 1, 0);
+                knownYearPublicationCounts += 0;
+                data.setValue(3, 0, '2015');
+                data.setValue(3, 1, 1);
+                knownYearPublicationCounts += 1;
+                data.setValue(4, 0, '2016');
+                data.setValue(4, 1, 2);
+                knownYearPublicationCounts += 2;
+                data.setValue(5, 0, '2017');
+                data.setValue(5, 1, 0);
+                knownYearPublicationCounts += 0;
+                data.setValue(6, 0, '2018');
+                data.setValue(6, 1, 0);
+                knownYearPublicationCounts += 0;
+                data.setValue(7, 0, '2019');
+                data.setValue(7, 1, 0);
+                knownYearPublicationCounts += 0;
+                data.setValue(8, 0, '2020');
+                data.setValue(8, 1, 0);
+                knownYearPublicationCounts += 0;
+                data.setValue(9, 0, '2021');
+                data.setValue(9, 1, 0);
+                knownYearPublicationCounts += 0;
+
+                var sparklineDataView = new google.visualization.DataView(data);
+                sparklineDataView.setColumns([1]);
+                sparklineDataView.setRows(data.getFilteredRows([{
+                  column: 0,
+                  minValue: '2012',
+                  maxValue: '2021'
+                }]));
+                /*
+                This means that all the publications have unknown years & we do not need to display
+                the sparkline.
+                */
+                if (unknownYearPublicationCounts > 0 && knownYearPublicationCounts < 1) {
+
+                  onlyUnknownYearPublications = true;
+
+                } else {
+
+                  /*
+                  Test if we want to go for the approach when serving visualizations from a secure site..
+                  If "https:" is not found in location.protocol then we do everything normally.
+                  */
+                  if (location.protocol.indexOf("https") == -1) {
+                    /*
+                    This condition will make sure that the location protocol (http, https, etc) does not have
+                    for word https in it.
+                    */
+
+                    var sparkline = new google.visualization.ImageSparkLine(providedSparklineImgTD[0]);
+                    sparkline.draw(sparklineDataView, {
+                      width: visualizationOptions.width,
+                      height: visualizationOptions.height,
+                      showAxisLines: false,
+                      showValueLabels: false,
+                      labelPosition: 'none'
+                    });
+
+                  } else {
+
+                    var chartValuesForEncoding = new Array();
+
+                    $.each(sparklineDataView.getViewRows(), function (index, value) {
+                      chartValuesForEncoding.push(data.getValue(value, 1));
+                    });
+
+                    var chartImageURL = constructVisualizationURLForSparkline(
+                      extendedEncodeDataForChartURL(chartValuesForEncoding,
+                        sparklineDataView.getColumnRange(0).max),
+                      visualizationOptions);
+
+                    var imageContainer = $(providedSparklineImgTD[0]);
+
+                    imageContainer.image(chartImageURL,
+                      function () {
+                        imageContainer.empty().append(this);
+                        $(this).addClass("google-visualization-sparkline-image");
+                      },
+                      function () {
+                        // For performing any action on failure to
+                        // find the image.
+                        imageContainer.empty();
+                      }
+                    );
+                  }
+                }
+                var totalPublicationCount = knownYearPublicationCounts + unknownYearPublicationCounts;
+                var shortSparkRows = sparklineDataView.getViewRows();
+                var renderedShortSparks = 0;
+                $.each(shortSparkRows, function (index, value) {
+                  renderedShortSparks += data.getValue(value, 1);
+                });
+
+                /*
+                In case that there are only unknown publications we want the text to mention these counts,
+                which would not be mentioned in the other case because the renderedShortSparks only hold counts
+                of publications which have any date associated with it.
+                */
+
+                var totalPubs = onlyUnknownYearPublications ? unknownYearPublicationCounts : renderedShortSparks;
+                var sparksText = "";
+                if (!onlyUnknownYearPublications) {
+
+                  $('#pub_count_short_sparkline_vis td.sparkline_number').text(totalPubs + " in the last 10 full").attr(
+                    "class", "grey-text");
+
+                  sparksText += "years";
+
+                  if (totalPubs !== totalPublicationCount) {
+                    //sparksText += ' (' + totalPublicationCount + ' total)' ;
+                  }
+                  sparksText += "&nbsp;<img class='infoIcon' src='" + infoIconSrc +
+                    "' height='16px' width='16px' alt='info icon' title='These numbers are based solely on publications that have been loaded into this VIVO application. If this is your profile, you can enter additional publications below.' />";
+
+                } else {
+                  var totalPubs = onlyUnknownYearPublications ? unknownYearPublicationCounts : renderedSparks;
+
+                  $('#pub_count_short_sparkline_vis td.sparkline_number').html(totalPubs +
+                    "  total <img class='infoIcon' src='" + infoIconSrc +
+                    "' height='16px' width='16px' alt='info icon' title='These numbers are based solely on publications that have been loaded into this VIVO application. If this is your profile, you can enter additional publications below.' />"
+                  ).attr("class", "grey-text");
+                }
+
+                $('#pub_count_short_sparkline_vis td.sparkline_text').html(sparksText);
+
+              }
+
+              /*
+               * This will activate the visualization. It takes care of creating
+               * div elements to hold the actual sparkline image and then calling the
+               * drawPubCountVisualization function.
+               * */
+
+              $(document).ready(function () {
+                var sparklineImgTD;
+
+                /*
+                 * This is a nuclear option (creating the container in which everything goes)
+                 * the only reason this will be ever used is the API user never submitted a
+                 * container ID in which everything goes. The alternative was to let the
+                 * vis not appear in the calling page at all. So now at least vis appears but
+                 * appended at the bottom of the body.
+                 * */
+
+                if ($('#vis_container_coauthor').length === 0) {
+                  $('<div></div>', {
+                    'id': 'vis_container_coauthor'
+                  }).appendTo('body');
+                }
+
+                if ($('#pub_count_short_sparkline_vis').length === 0) {
+
+                  $('<div></div>', {
+                    'id': 'pub_count_short_sparkline_vis',
+                    'class': 'sparkline_style'
+                  }).prependTo('#vis_container_coauthor');
+
+                  var table = $('<table>');
+                  table.attr('class', 'sparkline_wrapper_table');
+                  var row = $('<tr>');
+                  sparklineImgTD = $('<td>');
+                  sparklineImgTD.attr('id', 'pub_count_short_sparkline_vis_img');
+                  sparklineImgTD.attr('width', visualizationOptions.width);
+                  sparklineImgTD.attr('class', 'sparkline_style');
+
+                  row.append(sparklineImgTD);
+                  var row2 = $('<tr>');
+                  var sparklineNumberTD = $('<td>');
+                  sparklineNumberTD.attr('class', 'sparkline_number');
+                  sparklineNumberTD.css('text-align', 'left');
+                  row2.append(sparklineNumberTD);
+                  var row3 = $('<tr>');
+
+                  var sparklineTextTD = $('<td>');
+                  sparklineTextTD.attr('class', 'sparkline_text');
+                  row3.append(sparklineTextTD);
+                  table.append(row);
+                  table.append(row2);
+                  table.append(row3);
+                  table.prependTo('#pub_count_short_sparkline_vis');
+
+                }
+
+                google.charts.load('current', {
+                  callback: function () {
+                    drawPubCountVisualization(sparklineImgTD)
+                  },
+                  packages: ['bar', 'corechart', 'table', 'imagesparkline']
+                });
+              });
+            </script>
+          </div> <!-- Sparkline Viz -->
+        </div>
+      </div>
+      <div class="collaboratorship-link-separator"></div>
+      <div id="coauthorship_link_container" class="collaboratorship-link-container">
+        <div class="collaboratorship-icon">
+          <a href="/vis/author-network/n6438" title="co-author"><img
+              src="http://20.197.178.150:8080/images/visualization/coauthorship/co_author_icon.png" alt="co-author"
+              width="25px" height="25px"></a>
+        </div>
+        <div class="collaboratorship-link"><a href="/vis/author-network/n6438" title="Co-author Network">Co-author
+            Network</a></div>
+      </div>
+      <div class="collaboratorship-link-separator"></div>
+      <div id="mapofscience_link_container" class="collaboratorship-link-container">
+        <div class="collaboratorship-icon">
+          <a href="/vis/map-of-science/n6438" title="map of science"><img
+              src="http://20.197.178.150:8080/images/visualization/mapofscience/scimap_icon.png" alt="map of science"
+              width="25px" height="25px"></a>
+        </div>
+        <div class="collaboratorship-link"><a href="/vis/map-of-science/n6438" title="map of science">Map of Science</a>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var visualizationUrl =
+          '/visualizationAjax?uri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&template=foaf-person-wilma';
+        var infoIconSrc = '/images/iconInfo.png';
+      </script>
+      <br>Claim publications by<br>
+      <form action="/createAndLink/doi" method="get" style="float: left;">
+        <input type="hidden" name="profileUri" value="http://vivo.mydomain.edu/individual/n6438">
+        <br>
+        <a class="primary-btn  white" href="#">DOI
+          <!-- <input type="submit" class="verbose-toggle small" value="DOI" role="button"> -->
+        </a>
+      </form>
+      <form action="/createAndLink/pmid" method="get" style="float: right;">
+        <input type="hidden" name="profileUri" value="http://vivo.mydomain.edu/individual/n6438">
+        <br>
+        <a class="primary-btn  white" href="#">PubMed ID
+          <!-- <input type="submit" class="submit" value="PubMed ID"> -->
+        </a>
+
+      </form>
+    </section>
+  </div>
+  <!--submenu-->
+  <div class="subsections-scroll">
+    <div class="ss-desktop">
+      <ul class="ssd-first-level">
+        <li><a href="#step1">Acerca de</a></li>
+        <li><a href="#step2">Afiliaciones</a></li>
+        <li><a href="#step3">Publicaciones</a></li>
+        <li><a href="#step4">Actividades de investigación</a></li>
+        <li><a href="#step5">Formación</a></li>
+      </ul>
+    </div>
+    <div class="ss-mobile">
+      <ul class="ssm-container">
+        <li>
+
+          <a class="secondary-btn  " href="#step1">
+            Descarga el recibo
+          </a>
+        </li>
+        <li>
+
+          <a class="secondary-btn  " href="#step2">
+            Diligencia el formulario
+          </a>
+        </li>
+        <li>
+
+          <a class="secondary-btn  " href="#">
+            Consulta la hora y fecha de tu entrevista
+          </a>
+        </li>
+        <li>
+
+          <a class="secondary-btn  " href="#">
+            Selecciona el medio de pago
+          </a>
+        </li>
+        <li>
+
+          <a class="secondary-btn  " href="#">
+            Revisa tu horario
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--TABS CONTENT-->
+  <div id="tabcontent">
+    <article class="property" role="article">
+      <h3 id="RO_0000053" title="">Overview <a class="add-RO_0000053"
+          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview"
+          title="Add new head of entry">
+          <img class="add-individual" data-domain="http://xmlns.com/foaf/0.1/Person"
+            data-range="http://vivoweb.org/ontology/core#LeaderRole"
+            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
+      </h3>
+      <!--Verbose Overview-->
+      <ul class="property-list" role="list" id="RO_0000053-LeaderRole-List" displaylimit="5">
+        <li>
+          <div class="individual-overview">
+            <div class="overview-value">
+              Me apasiona aprender de forma constante y apoyar a las personas en su desarrollo profesional; trabajando
+              en proyectos tecnológicos y de innovación en los que pueda crear y diseñar soluciones tecnológicas
+              innovadoras que funcionen de manera simple y eficiente, generando alto impacto en la sociedad y buscando
+              mejorar la calidad de vida de las personas, a su vez que se alcanzan los objetivos estratégicos de la organización.
+              <a class="edit-overview"
+                href=""
+                title="edit this entry">
+                <a class="edit-individual icon-pencil-alt" data-range="" alt="edit this entry" style="text-decoration: none; font-size:20px;" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview&amp;datapropKey=-2021098106">
+                </a>
+              </a>
+              <a class="delete-overview"
+                href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23overview&amp;datapropKey=-2021098106&amp;cmd=delete&amp;templateName=propStatement-dataDefault.ftl"
+                title="delete this entry"><img class="delete-individual" data-range=""
+                  src="https://cdn-icons-png.flaticon.com/512/484/484611.png" alt="delete this entry">
+              </a>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </article>
+    <article class="property" role="article">
+      <h3 id="geographicFocus" title="">geographic focus <a class="add-geographicFocus"
+          href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion"
+          title="Add new geographic focus entry">
+          <img class="add-individual" data-domain="" data-range="http://vivoweb.org/ontology/core#GeographicRegion"
+            src="https://cdn-icons-png.flaticon.com/512/3416/3416075.png" alt="add"></a>
+      </h3>
+      <!--Verbose geographic-->
+      <ul class="property-list" role="list" id="geographicFocus-GeographicRegion-List" displaylimit="5">
+        <li role="listitem">
+
+          <a href="/individual?uri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia"
+            title="name">Colombia</a>&nbsp; Country
+
+            <a class="edit-geographicFocus" href="" title="edit this entry">
+
+              <a class="edit-individual icon-pencil-alt" data-range="http://vivoweb.org/ontology/core#GeographicRegion" alt="edit this entry" style="text-decoration:none; font-size:20px;" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion">
+              
+              </a>
+            </a>
+
+          <a class="delete-geographicFocus"
+            href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;predicateUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23geographicFocus&amp;objectUri=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;cmd=delete&amp;objectKey=object&amp;statement_specificObjectType=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23self_governing&amp;statement_localName=Colombia&amp;statement_label=Colombia&amp;statement_type=Country&amp;statement_object=http%3A%2F%2Faims.fao.org%2Faos%2Fgeopolitical.owl%23Colombia&amp;rangeUri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23GeographicRegion&amp;templateName=propStatement-default.ftl"
+            title="delete this entry"><img class="delete-individual"
+              data-range="http://vivoweb.org/ontology/core#GeographicRegion"
+              src="https://cdn-icons-png.flaticon.com/512/484/484611.png" alt="delete this entry"></a>
+        </li>
+      </ul>
+    </article>
+
+  </div>
+  <!--Footer-->
+  <footer>
+    <div class="main">
+      <div class="top-container ">
+        <div class="hashtag">
+          <p><span>#</span>SomosUAO</p>
+          <span class="bottom-line"></span>
+        </div>
+
+        <ul class="social-links">
+          <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+          <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+          <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+          <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+          <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+        </ul>
+
+        <div class="info">
+          <div class="section">
+            <p>Teléfono</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-phone"></span>
+              </div>
+              <div class="right">
+                <p>PBX:+ 2 318 8000</p>
+                <p>Línea gratuita: 01 8000 91 34 35</p>
+                <a href="">Ver directorio general ></a>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Correo Electrónico</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-envelope"></span>
+              </div>
+              <div class="right">
+                <a href="">buzon@uao.edu.co</a>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Dirección de Campus principal</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-university"></span>
+              </div>
+              <div class="right">
+                <p>Cll 25 # 115-85</p>
+                <p>Km 2 Vía Cali - Jamundi</p>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Ciudad</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-map-marker-alt"></span>
+              </div>
+              <div class="right">
+                <p>Cali, Colombia</p>
+                <p>Código Postal: 760030</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact-mobile">
+          <a class="list-btn" href="#">
+            <div class="lb-text">
+              Contacto
+            </div>
+            <div class="lb-arrow">
+              <span class="icon icon-chevron-right"></span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="prices">
+        <h1 class="section-title">Valores de Matrículas</h1>
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Pregrados 2019</a>
+        </div>
+
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Posgrados 2019</a>
+        </div>
+
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="footer-links">
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Política de Tratamiento de Datos Personales
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Reglamento Estudiantil
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Documentos Legales
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Transparencia y Acceso a la Información Pública
+        </a>
+      </li>
+    </ul>
+
+    <div class="end">
+      <div class="logos">
+        <figure class="gf-figure-logo">
+          <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+        </figure>
+      </div>
+
+      <div class="end-text">
+        <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de 1970.<br>
+          Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+          noviembre
+          de 2003.<br>
+          Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia hasta
+          el
+          2021.<br>
+          Universidad Vigilada MinEducación</p>
+
+        <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de Educación
+          Nacional - Artículo 39 del decreto 1295 de 2010</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
