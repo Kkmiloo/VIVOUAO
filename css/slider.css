@@ -62,17 +62,20 @@
   width: 40px;
   border-radius: 50%;
   transform: translateY(30px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(158, 11, 16, .2);
   transition: 0.2s;
 }
 .nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgb(158, 11, 16);
 }
 .nav-btn::after,
 .nav-btn::before {
   font-size: 20px;
   color: #fff;
 }
+.container .swiper-backface-hidden{
+  min-height:518px;
+ }
 .swiper-slide-active{
   text-align:center;
 }

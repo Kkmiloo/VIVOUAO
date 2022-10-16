@@ -18,125 +18,68 @@
 
 <body>
   <header id="header-menu-desktop" class="fixed has-scroll-indicator">
-    <div id="hmd-search-dropdown">
-      <div class="hmdsd-container">
-        <a id="hmdsd-close" href="">
-          <div class="circle-icon">
-            <span class="icon icon-close"></span>
-          </div>
-        </a>
-        <form class="hmdsdc-form-search" action="https://www.uao.edu.co/">
-          <div class="input-form-search">
-            <input id="hmdsdc-search" type="search" name="s" required="required" />
-            <label for="hmdsdc-search">¿Qué estás buscando?</label>
-          </div>
-          <button id="hmdsdc-submit" type="submit" value="">
-            <span class="icon icon-search"></span>
-          </button>
-        </form>
-      </div>
-    </div>
-    <div id="hmd-profile-dropdown">
-      <div class="hmdpd-wrap">
-        <a id="hmdpdw-close" href="">
-          <div class="circle-icon">
-            <span class="icon icon-close"></span>
-          </div>
-        </a>
-        <div class="hmdpdw-container">
-          <h1>Elige tu Perfil</h1>
-          <span>
-            Selecciona uno de los perfiles y encuentra información de tu
-            interés.
-          </span>
-          <ul>
-            <a href="https://www.uao.edu.co/aspirante/">
-              <li>
-                <div class="circle-icon">
-                  <span class="icon icon-user-plus"></span>
-                </div>
-                <p>Aspirante</p>
-              </li>
-            </a>
-            <a href="https://www.uao.edu.co/estudiante/">
-              <li>
-                <div class="circle-icon">
-                  <span class="icon icon-users"></span>
-                </div>
-                <p>Estudiante</p>
-              </li>
-            </a>
-            <a href="https://www.uao.edu.co/egresados/">
-              <li>
-                <div class="circle-icon">
-                  <span class="icon icon-graduation-cap"></span>
-                </div>
-                <p>Egresado</p>
-              </li>
-            </a>
-            <a href="https://www.uao.edu.co/docente/">
-              <li>
-                <div class="circle-icon">
-                  <span class="icon icon-book"></span>
-                </div>
-                <p>Docente</p>
-              </li>
-            </a>
-            <a href="https://www.uao.edu.co/colaborador/">
-              <li>
-                <div class="circle-icon">
-                  <span class="icon icon-address-card"></span>
-                </div>
-                <p>Colaborador</p>
-              </li>
-            </a>
-            <a href="https://www.uao.edu.co/entidad/">
-              <li>
-                <div class="circle-icon">
-                  <span class="icon icon-university"></span>
-                </div>
-                <p>Entidad</p>
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div id="hmd-bottom">
-      <span class="hmdb-line-left"></span>
-      <span class="hmdb-line-right"></span>
       <div id="hmdb-logo-container">
         <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
       </div>
-      <ul>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
-        <li>hola</li>
+      <ul role="list">
+        <li role="listitem"><a href="/" title="Home menu item" class="selected" style="">Home</a></li>
+        <li role="listitem"><a href="/people" title="People menu item" style="text-decoration: none;">People</a></li>
+        <li role="listitem"><a href="/organizations" title="Organizations menu item"
+            style="text-decoration: none;">Organizations</a></li>
+        <li role="listitem"><a href="/research" title="Research menu item" style="text-decoration: none;">Research</a>
+        </li>
+        <li role="listitem"><a href="#" style="text-decoration: none;">Admin</a></li>
       </ul>
-      <span class="scroll-indicator"></span>
     </div>
   </header>
 
-  <main class="main-detail-container investigacion header-margin">
-    <div class="main-hero-container">
-      <div class="vhh-search">
-        <h1>Repositorio Educativo Digital</h1>
-        <form action="/discover" method="post" id="ds-search-form" class="form-search">
-          <div class="input-form-search">
-            <input required="required" type="search" id="search-module-input" name="query" /><label
-              for="search-module-input">
-              Buscar tesis, trabajos, documentos...
-            </label>
+  <!--VIVO-->
+  <article class="main-detail-container header-margin" role="main">
+    <section id="intro" role="region" style="margin-bottom: 5rem;">
+      <div class="library-hero">
+        <img src="https://i.ibb.co/Vq554pg/CRISUAOLOGO.png" class="vivouaologo" alt="Travelling">
+        <div class="hero-container">
+          <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+            class="form-search">
+            <div id="search-home-field" class="input-form-search">
+              <input id="search-module-input" type="search" required="required" name="querytext" class="search-homepage"
+                value="" style="text-align: left; opacity: 1;">
+              <label for="search-module-input">Buscar artículos, libros, conferencias...</label>
+            </div>
+            <button id="search-module-submit" type="submit" value="Search" class="search">
+              <span class="icon icon-search"></span>
+            </button>
+          </form>
+          <!--search abajo-->
+          <h2>¿Qué estás buscando?</h2>
+          <div class="btnslist">
+            <a class="primary-btn  white" href="#">
+              Article
+              </a>
+              
+              <a class="primary-btn  white" href="#">
+              Book
+              </a>
+              
+              <a class="primary-btn  white" href="#">
+              Chapter
+              </a>
+              
+              <a class="primary-btn  white" href="#">
+              Conference Paper
+              </a>
+              
+              <a class="primary-btn  white" href="#">
+              Journals
+              </a>
           </div>
-          <button value="" type="submit" id="search-module-submit">
-            <span class="icon icon-search"></span>
-          </button>
-        </form>
+
+        </div>
       </div>
-    </div>
-  </main>
+    </section>
+
+  <!-- #intro -->
   <!--SLIDER CONTAINER-->
   <section class="container">
     <h2>Publicaciones recientes</h2>
@@ -259,8 +202,7 @@
         </div>
         <!--diapo 3-->
         <div class="slide swiper-slide">
-          <img src="https://www.uao.edu.co/wp-content/uploads/2020/04/Zeida-Solarte.jpg" alt=""
-            class="image" />
+          <img src="https://www.uao.edu.co/wp-content/uploads/2020/04/Zeida-Solarte.jpg" alt="" class="image" />
 
           <section id="individual-info" role="region">
 
@@ -322,7 +264,225 @@
   <script src="js/swiper-bundle.min.js"></script>
   <!--SLIDER JavaScript -->
   <script src="js/script.js"></script>
-  <footer></footer>
+
+    <section id="home-stats" class="home-sections">
+      <h2 style="text-align:center;">Statistics</h2>
+      <ul id="stats">
+        <a href="/people">
+          <li>
+            <h4 class="stats-type">People</h4>
+            <h2 class="stats-count">
+              5<span>&nbsp;</span>
+            </h2>
+          </li>
+        </a>
+        <a href="/events">
+          <li>
+            <h4 class="stats-type">Events</h4>
+            <h2 class="stats-count">
+              3<span>&nbsp;</span>
+            </h2>
+          </li>
+        </a>
+        <a href="/organizations">
+          <li>
+            <h4 class="stats-type">Organizations</h4>
+            <h2 class="stats-count">
+              7<span>&nbsp;</span>
+            </h2>
+          </li>
+        </a>
+        <a href="/research">
+          <li>
+
+            <h4 class="stats-type">Research</h4>
+            <h2 class="stats-count">
+              23<span>&nbsp;</span>
+            </h2>
+          </li>
+        </a>
+      </ul>
+    </section>
+    <!--fin section-->
+  </article>
+  <!--Footer-->
+  <footer>
+    <div class="main">
+      <div class="top-container ">
+        <div class="hashtag">
+          <p><span>#</span>SomosUAO</p>
+          <span class="bottom-line"></span>
+        </div>
+
+        <ul class="social-links">
+          <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+          <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+          <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+          <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+          <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+        </ul>
+
+        <div class="info">
+          <div class="section">
+            <p>Teléfono</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-phone"></span>
+              </div>
+              <div class="right">
+                <p>PBX:+ 2 318 8000</p>
+                <p>Línea gratuita: 01 8000 91 34 35</p>
+                <a href="">Ver directorio general ></a>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Correo Electrónico</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-envelope"></span>
+              </div>
+              <div class="right">
+                <a href="">buzon@uao.edu.co</a>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Dirección de Campus principal</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-university"></span>
+              </div>
+              <div class="right">
+                <p>Cll 25 # 115-85</p>
+                <p>Km 2 Vía Cali - Jamundi</p>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Ciudad</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-map-marker-alt"></span>
+              </div>
+              <div class="right">
+                <p>Cali, Colombia</p>
+                <p>Código Postal: 760030</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact-mobile">
+          <a class="list-btn" href="#">
+            <div class="lb-text">
+              Contacto
+            </div>
+            <div class="lb-arrow">
+              <span class="icon icon-chevron-right"></span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="prices">
+        <h1 class="section-title">Valores de Matrículas</h1>
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Pregrados 2019</a>
+        </div>
+
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Posgrados 2019</a>
+        </div>
+
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="footer-links">
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Política de Tratamiento de Datos Personales
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Reglamento Estudiantil
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Documentos Legales
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Transparencia y Acceso a la Información Pública
+        </a>
+      </li>
+    </ul>
+
+    <div class="end">
+      <div class="logos">
+        <figure class="gf-figure-logo">
+          <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+        </figure>
+      </div>
+
+      <div class="end-text">
+        <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de 1970.<br>
+          Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+          noviembre
+          de 2003.<br>
+          Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia hasta
+          el
+          2021.<br>
+          Universidad Vigilada MinEducación</p>
+
+        <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de Educación
+          Nacional - Artículo 39 del decreto 1295 de 2010</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
