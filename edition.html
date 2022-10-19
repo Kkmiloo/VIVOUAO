@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/uao.css" />
+  <link rel="stylesheet" href="./css/test.css" />
+  <link rel="stylesheet" href="css/edits.css" />
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <title>Edit</title>
+</head>
+
+<body>
+  <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+    <div id="hmd-bottom">
+      <div id="hmdb-logo-container">
+        <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+      </div>
+      <ul role="list">
+        <li role="listitem"><a href="/" title="Home menu item" class="selected" style="">Home</a></li>
+        <li role="listitem"><a href="/people" title="People menu item" style="text-decoration: none;">People</a></li>
+        <li role="listitem"><a href="/organizations" title="Organizations menu item"
+            style="text-decoration: none;">Organizations</a></li>
+        <li role="listitem"><a href="/research" title="Research menu item" style="text-decoration: none;">Research</a>
+        </li>
+        <li role="listitem"><a href="#" style="text-decoration: none;">Admin</a></li>
+      </ul>
+    </div>
+  </header>
+  <!--Photo Upload-->
+  <article class="main-detail-container header-margin" role="main">
+    <section id="photoUpload" role="region">
+      <h2>Photo Upload</h2>
+      <section id="photoUploadDefaultImage" role="region">
+        <img src="http://20.197.178.150:8080/file/n298/thumbnail_1634672711579.jpg" width="115" alt="Individual photo">
+        <a class="thumbnail"
+          href="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=deleteEdit">Delete
+          photo</a>
+      </section>
+      <form id="photoUploadForm"
+        action="/uploadImages?entityUri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;action=upload"
+        enctype="multipart/form-data" method="post" role="form">
+        <label>Replace Photo <span>(JPEG, GIF or PNG)</span></label>
+        <label for="datafile" class="customupload">
+          Selecciona una imágen
+        </label>
+        <input type="file" id="datafile" size="30">
+        <p class="note">Maximum file size: 6 megabytes<br>
+          Minimum image dimensions: 200 x 200 pixels</p>
+        <a href="" class="primary-btn">
+          <input class="submit" type="submit" value="Upload photo">
+        </a>
+        <span class="or"> or <a class="cancel"
+            href="http://20.197.178.150:8080/individual?uri=http%3A%2F%2Fvivo.mydomain.edu%2Findividual%2Fn6438&amp;extra=true"
+            title="cancel">Cancel</a></span>
+      </form>
+    </section>
+    <script type="text/javascript">
+      i18n_confirmDelete = "Are you sure you want to delete this photo?";
+    </script>
+  </article>
+  <!--Edit label-->
+  <article class="main-detail-container header-margin" role="main">
+    <h2>Edit <em>label</em> for Pradilla, Juan Vicente</h2>
+    <form class="editForm" action="/edit/process" method="post">
+      <input type="text" name="label" id="label" size="70" value="Pradilla, Juan Vicente" role="input">
+      <input type="hidden" name="editKey" id="editKey" value="53401549" role="input">
+      <input type="hidden" name="vitroNsProp" value="true" role="input">
+      <p class="submit">
+        <input type="submit" id="submit" value="Edit label" role="input">
+        or <a href="/postEditCleanupController?editKey=53401549&amp;cancel=true" class="cancel"
+          title="cancel">Cancel</a>
+      </p>
+    </form>
+  </article>
+  <!--Edit telephone number-->
+  <article class="main-detail-container header-margin" role="main">
+    <h2>Edit&nbsp;telephone number for Pradilla, Juan Vicente</h2>
+    <div id="ie67DisableWrapper">
+      <div id="ie67DisableContent">
+        <a href="" class="icon icon-exclamation-circle" style="font-size: 30px;"></a>
+        <p>This form is not supported in versions of Internet Explorer below version 8. Please upgrade your browser, or
+          switch to another browser, such as FireFox.</p>
+      </div>
+    </div>
+    <section id="personHasTelephoneNumber" role="region">
+      <form id="personHasTelephoneNumber" class="customForm noIE67" action="/edit/process" role="add/edit phone">
+        <p>
+          <label for="telephoneNumber">Telephone Number <span class="requiredHint"> *</span></label>
+          <input size="25" type="text" id="telephoneNumber" name="telephoneNumber" value="3188000 Ext. 11363">
+        </p>
+        <input type="hidden" id="editKey" name="editKey" value="54366248">
+        <p class="submit">
+          <input type="submit" id="submit" value="Save"><span class="or"> or </span>
+          <a class="cancel" href="/postEditCleanupController?editKey=54366248&amp;cancel=true" title="cancel">Cancel</a>
+        </p>
+        <p id="requiredLegend" class="requiredHint">* required fields</p>
+      </form>
+    </section>
+  </article>
+  <!--Edit email-->
+  <article class="main-detail-container header-margin" role="main">
+    <h2>Edit&nbsp;email address for Pradilla, Juan Vicente</h2>
+    <div id="ie67DisableWrapper">
+      <div id="ie67DisableContent">
+        <a href="" class="icon icon-exclamation-circle" style="font-size: 30px;"></a>
+        <p>This form is not supported in versions of Internet Explorer below version 8. Please upgrade your browser, or
+          switch to another browser, such as FireFox.</p>
+      </div>
+    </div>
+    <section id="personHasAdditionalEmail" role="region">
+      <form id="personHasAdditionalEmail" class="customForm noIE67" action="/edit/process" role="add/edit phone">
+        <p>
+          <label for="additionalEmail">Email address <span class="requiredHint"> *</span></label>
+          <input size="35" type="text" id="emailAddress" name="emailAddress" value="jvpradilla@uao.edu.co">
+        </p>
+        <input type="hidden" id="editKey" name="editKey" value="55987663">
+        <p class="submit">
+          <input type="submit" id="submit" value="Save"><span class="or"> or </span>
+          <a class="cancel" href="/postEditCleanupController?editKey=55987663&amp;cancel=true" title="cancel">Cancel</a>
+        </p>
+        <p id="requiredLegend" class="requiredHint">* required fields</p>
+      </form>
+    </section>
+  </article>
+  <!--Footer-->
+  <footer>
+    <div class="main">
+      <div class="top-container ">
+        <div class="hashtag">
+          <p><span>#</span>SomosUAO</p>
+          <span class="bottom-line"></span>
+        </div>
+        <ul class="social-links">
+          <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+          <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+          <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+          <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+          <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+        </ul>
+        <div class="info">
+          <div class="section">
+            <p>Teléfono</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-phone"></span>
+              </div>
+              <div class="right">
+                <p>PBX:+ 2 318 8000</p>
+                <p>Línea gratuita: 01 8000 91 34 35</p>
+                <a href="">Ver directorio general ></a>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Correo Electrónico</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-envelope"></span>
+              </div>
+              <div class="right">
+                <a href="">buzon@uao.edu.co</a>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Dirección de Campus principal</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-university"></span>
+              </div>
+              <div class="right">
+                <p>Cll 25 # 115-85</p>
+                <p>Km 2 Vía Cali - Jamundi</p>
+              </div>
+            </div>
+          </div>
+          <span class="separator"></span>
+          <div class="section">
+            <p>Ciudad</p>
+            <div class="flex-container">
+              <div class="circle-icon">
+                <span class="icon icon-map-marker-alt"></span>
+              </div>
+              <div class="right">
+                <p>Cali, Colombia</p>
+                <p>Código Postal: 760030</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact-mobile">
+          <a class="list-btn" href="#">
+            <div class="lb-text">
+              Contacto
+            </div>
+            <div class="lb-arrow">
+              <span class="icon icon-chevron-right"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="prices">
+        <h1 class="section-title">Valores de Matrículas</h1>
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Pregrados 2019</a>
+        </div>
+
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Posgrados 2019</a>
+        </div>
+
+        <div class="link-container">
+          <div class="circle-icon">
+            <span class="icon icon-download"></span>
+          </div>
+          <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="footer-links">
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Política de Tratamiento de Datos Personales
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Reglamento Estudiantil
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Documentos Legales
+        </a>
+      </li>
+      <li>
+        <!--
+  Variable Styles (for dark backgrounds)
+  mustache:   -  class: dark-background
+  mustache:   -  class: white-arrow
+-->
+
+        <a class="secondary-btn  " href="#">
+          Transparencia y Acceso a la Información Pública
+        </a>
+      </li>
+    </ul>
+
+    <div class="end">
+      <div class="logos">
+        <figure class="gf-figure-logo">
+          <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+        </figure>
+      </div>
+
+      <div class="end-text">
+        <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de 1970.<br>
+          Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+          noviembre
+          de 2003.<br>
+          Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia hasta
+          el
+          2021.<br>
+          Universidad Vigilada MinEducación</p>
+
+        <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de Educación
+          Nacional - Artículo 39 del decreto 1295 de 2010</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
