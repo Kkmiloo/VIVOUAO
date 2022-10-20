@@ -1035,6 +1035,7 @@ video {
     right:-63px;
     width: 200px;
     margin-top: 70px;
+    
 }
 
 /* List Item */
@@ -1073,3 +1074,15 @@ video {
     position: relative;
     left:-50px;
    }
+
+   /* List Item */
+#hmd-bottom > ul > li{
+ display:inline-flex;
+ justify-content:center;
+ align-items:center;
+}
+
+/* Icon user circle */
+#hmd-bottom ul .icon-user-circle{
+ margin-left:20px;
+}
