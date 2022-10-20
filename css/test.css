@@ -411,11 +411,11 @@ footer .main .top-container:before {
 footer {
     position: relative;
     top: 50px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    position:static;
-    top:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: static;
+    top: 0px;
 }
 
 /*titles siteadmin*/
@@ -829,14 +829,15 @@ body>div.profile-hero>div.hero-container>div.info>p.department {
 
 .library-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.2)), url(https://pattern.uao.edu.co/images/bg-desktop-index-virtual-img.jpg) no-repeat center center/cover;
-    background-size:cover;
+            rgba(0, 0, 0, 0.2)), url(https://pattern.uao.edu.co/images/bg-desktop-index-virtual-img.jpg) no-repeat center center/cover;
+    background-size: cover;
     padding-bottom: 1.5625rem;
     padding-top: 1.5625rem;
 }
-#intro .library-hero{
-    min-height:512px;
-   }
+
+#intro .library-hero {
+    min-height: 512px;
+}
 
 .library-hero .hero-container::before {
     background-color: rgba(255, 255, 255, 0);
@@ -871,7 +872,7 @@ body>div.profile-hero>div.hero-container>div.info>p.department {
     width: 210px;
     background-color: white;
     padding: 40px 0;
-    box-shadow:0 0.3125rem 0.25rem 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 0.3125rem 0.25rem 0 rgb(0 0 0 / 20%);
 }
 
 #stats>a h4,
@@ -894,17 +895,20 @@ body>div.profile-hero>div.hero-container>div.info>p.department {
 
 .library-hero .hero-container {
     margin-top: 0rem;
-    flex-direction:column;
+    flex-direction: column;
 }
 
-.form-search .input-form-search input[type="search"]:focus ~ label, .form-search .input-form-search input[type="search"]:valid ~ label {
-    color:white;
+.form-search .input-form-search input[type="search"]:focus~label,
+.form-search .input-form-search input[type="search"]:valid~label {
+    color: white;
     text-shadow: rgba(0, 0, 0, 0.5) 0 2px;
     font-style: normal;
 }
+
 .form-search .input-form-search input[type=search] {
     border: 0rem solid #ffffff00;
 }
+
 #header-menu-desktop #hmd-bottom {
     background-color: #fff;
     border-bottom: .0625rem solid #ffffff;
@@ -921,39 +925,132 @@ a.primary-btn {
     min-width: 6rem;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
     text-decoration: none;
 }
 
-#stats > a{
+#stats>a {
     text-align: center;
 }
 
-#stats > a > li > h2{
+#stats>a>li>h2 {
     margin-top: 25px;
 }
-.btnslist{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    height:auto;
+
+.btnslist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
     width: auto;
 }
 
-#intro > div > div > div > a{
+#intro>div>div>div>a {
     margin-left: 20px;
 }
 
-.library-hero h2{
+.library-hero h2 {
     text-shadow: rgba(0, 0, 0, 0.5) 0 2px;
     color: white;
-    margin-bottom:56px;
-   }
+    margin-bottom: 56px;
+}
 
-   video {
+video {
     height: 100%;
     width: 100%;
     object-fit: cover;
     position: absolute;
     opacity: 0.3;
-  }
+}
+
+/* sub menu admin */
+.dropdown {
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    z-index: 1;
+
+}
+
+.main li {
+    list-style: none;
+    background: blue;
+    width: 100px;
+    padding: 0 5px;
+    height: 30px;
+
+    line-height: 30px;
+
+    -webkit-transition: all .5s ease-in-out;
+
+}
+
+.main li:nth-child(odd) {
+
+    -webkit-transform-origin: top;
+    -webkit-transform: perspective(350px) rotateX(-90deg);
+}
+
+.main li:nth-child(even) {
+    margin-top: -65px;
+    -webkit-transform-origin: bottom;
+    -webkit-transform: perspective(350px) rotateX(90deg);
+}
+
+.hov:hover li:nth-child(odd) {
+    -webkit-transform-origin: top;
+    -webkit-transform: perspective(350px) rotateX(0deg);
+    margin-top: 0;
+}
+
+.hov:hover li:nth-child(even) {
+    -webkit-transform-origin: bottom;
+    -webkit-transform: perspective(350px) rotateX(0deg);
+    margin-top: 0;
+}
+
+.main li:first-child {
+    margin-top: 0;
+}
+
+.hov {
+    position: relative;
+    height: 40px;
+    background: green;
+    color: white;
+    font-size: 13px;
+    font-family: Helvetica;
+    font-weight: bold;
+    line-height: 40px;
+    list-style: none;
+    z-index: 2;
+
+}
+
+/* List */
+#hmd-bottom ul ul {
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    margin-top: 70px;
+}
+
+/* List Item */
+#header-menu-desktop #hmd-bottom ul .hov .main li {
+    width: auto !important;
+}
+
+/* List Item */
+.hov .main li {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Hov */
+#hmd-bottom ul .hov {
+    background-color: transparent;
+}
