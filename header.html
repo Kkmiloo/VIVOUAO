@@ -25,6 +25,18 @@
                 <li role="listitem"><a href="/people" title="People menu item">People</a></li>
                 <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
                 <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                        language<span class="icon icon-angle-down"></span></a>
+                    <ul class="sub_menu main">
+                        <li status="selected">
+                            <a href="/selectLocale?selection=en_US" title="select locale -- English">English
+                                (United States)</a>
+                        </li>
+                        <li>
+                            <a href="/selectLocale?selection=es" title="select locale -- español">Español (Latinoamérica)</a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
                     <ul class="main">
                         <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
@@ -32,6 +44,8 @@
                         <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
                     </ul>
                 </li>
+
+
                 <script type="text/javascript">
                     var i18nStringsLangMenu = {
                         selectLanguage: "Select a language"
