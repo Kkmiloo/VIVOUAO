@@ -978,14 +978,13 @@ video {
 
 .main li {
     list-style: none;
-    background: blue;
     width: 100px;
     padding: 0 5px;
     height: 30px;
 
     line-height: 30px;
 
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
 
 }
 
@@ -1035,9 +1034,11 @@ video {
     right:-63px;
     width: 200px;
     margin-top: 70px;
-    
 }
-
+#hmd-bottom .hov li{
+    min-height:40px;
+   }
+   
 /* List Item */
 #header-menu-desktop #hmd-bottom ul .hov .main li {
     width: auto !important;
@@ -1059,6 +1060,11 @@ video {
     color:red;
     transition: 300ms;
 }
+#hmd-bottom > ul > li > a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 #hmd-bottom > ul > li.hov > ul > li > a:hover{
     color:red;
     transition: 300ms;
@@ -1073,6 +1079,7 @@ video {
 #language-menu .sub_menu li{
     position: relative;
     left:-50px;
+    height:35px;
    }
 
    /* List Item */
@@ -1085,4 +1092,28 @@ video {
 /* Icon user circle */
 #hmd-bottom ul .icon-user-circle{
  margin-left:20px;
+}
+
+.form-search .input-form-search input[type="search"]:focus~label,
+.form-search .input-form-search input[type="search"]:valid~label {
+    color: rgb(0, 0, 0);
+    text-shadow: none;
+    font-style: normal;
+}
+#search-homepage{
+    border-radius: 1.75rem;
+    box-shadow: -1px 4px .2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.form-search .input-form-search input[type=search] {
+    border: 0rem solid #ffffff00;
+}
+
+.form-search .input-form-search input[type=search]:focus~label,
+.form-search .input-form-search input[type=search]:valid~label {
+    transform: scale(.7) translateY(-120%);
+    transform-origin: center left;
+    font-style: italic;
+    font-weight: 400;
+    padding: .75rem .9375rem .75rem 2.125rem
 }
