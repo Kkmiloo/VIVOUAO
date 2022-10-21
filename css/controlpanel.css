@@ -56,7 +56,51 @@ div .form-background tbody:nth-child(1) tr:nth-child(1) td:nth-child(2) {
 #wrapper-content .editingForm div .form-background tbody tr td:nth-child(3) form:nth-child(1) .primary-btn {
     width: 75% !important;
 }
+#wrapper-content .editingForm{
+    background-color:#ffffff;
+   }
+   
+   /* Table Data */
+   .editingForm > div > .form-background td{
+    background-color:#ffffff;
+   }
+   
+   /* Table Data */
+   .editingForm > div > div > .form-background td{
+    background-color:#ffffff;
+   }
+.form-background{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+}
+.form-background thead tr {
+    background-color: #9e0b0f;
+    color: #ffffff;
+    text-align: left;
+}
+.form-background th,
+.form-background td {
+    padding: 12px 15px;
+}
+.form-background tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
 
+.form-background tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.form-background tbody tr:last-of-type {
+    border-bottom: 2px solid #9e0b0f;
+}
+
+.form-background tbody tr.active-row {
+    font-weight: bold;
+    color: #9e0b0f;
+}
 /* Primary */
 .editingForm td:nth-child(3) form:nth-child(2) .primary-btn {
     min-width: 75%;
