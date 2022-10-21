@@ -8631,7 +8631,7 @@ section.degree-work-section a {
     }
 }
 
-footer .main .circle-icon {
+footer .mainh .circle-icon {
     border-color: #fff;
     height: 1.4375rem;
     margin-right: .5rem;
@@ -8639,18 +8639,18 @@ footer .main .circle-icon {
     min-width: 1.4375rem
 }
 
-footer .main .circle-icon .icon {
+footer .mainh .circle-icon .icon {
     color: #fff;
     font-size: .75rem
 }
 
-footer .main .top-container {
+footer .mainh .top-container {
     position: relative;
     padding-top: 1.5625rem
 }
 
-footer .main .top-container:before {
-    background: url(../images/bg-desktop-red.jpg) no-repeat;
+footer .mainh .top-container:before {
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-red.jpg) no-repeat;
     background-size: cover;
     border-radius: .625rem .625rem 0 0;
     content: '';
@@ -8664,43 +8664,43 @@ footer .main .top-container:before {
 }
 
 @media(max-width: 800px) {
-    footer .main .top-container:before {
+    footer .mainh .top-container:before {
         height:calc(100% + 1.25rem);
         top: -1.25rem
     }
 }
 
-footer .main .top-container.complete:before {
+footer .mainh .top-container.complete:before {
     height: 100%;
     top: 0
 }
 
 @media(max-width: 800px) {
-    footer .main .top-container.complete:before {
+    footer .mainh .top-container.complete:before {
         height:100%;
         top: 0
     }
 }
 
-footer .main .top-container .hashtag p {
+footer .mainh .top-container .hashtag p {
     color: #fff;
     font-size: 1.375rem;
     font-weight: 700;
     text-align: center
 }
 
-footer .main .top-container .hashtag p span {
+footer .mainh .top-container .hashtag p span {
     color: #ff686c
 }
 
-footer .main .top-container .hashtag .bottom-line {
+footer .mainh .top-container .hashtag .bottom-line {
     background-color: #fff;
     display: block;
     height: .0625rem;
     margin: 1.5625rem 2.5rem 0
 }
 
-footer .main .top-container .hashtag .bottom-line::before {
+footer .mainh .top-container .hashtag .bottom-line::before {
     bottom: .1875rem;
     content: '';
     display: block;
@@ -8711,26 +8711,26 @@ footer .main .top-container .hashtag .bottom-line::before {
     width: .4375rem
 }
 
-footer .main .top-container .social-links {
+footer .mainh .top-container .social-links {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 1.875rem 0
 }
 
-footer .main .top-container .social-links li {
+footer .mainh .top-container .social-links li {
     margin: 0 .5rem
 }
 
-footer .main .top-container .social-links li a {
+footer .mainh .top-container .social-links li a {
     height: 2.125rem;
     width: 2.125rem
 }
 
-footer .main .top-container .social-links li a:before {
+footer .mainh .top-container .social-links li a:before {
     font-size: 2.125rem
 }
 
-footer .main .top-container .info {
+footer .mainh .top-container .info {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
@@ -8739,18 +8739,18 @@ footer .main .top-container .info {
 }
 
 @media(max-width: 800px) {
-    footer .main .top-container .info {
+    footer .mainh .top-container .info {
         display:none
     }
 }
 
-footer .main .top-container .info .section:first-child a {
+footer .mainh .top-container .info .section:first-child a {
     color: #fe6a6f;
     font-size: 1.0625rem;
     text-decoration: none
 }
 
-footer .main .top-container .info .section a,footer .main .top-container .info .section p {
+footer .mainh .top-container .info .section a,footer .mainh .top-container .info .section p {
     color: #fff;
     font-family: Roboto,sans-serif;
     font-size: 1.25rem;
@@ -8758,66 +8758,66 @@ footer .main .top-container .info .section a,footer .main .top-container .info .
     letter-spacing: -.01375rem
 }
 
-footer .main .top-container .info .section>p:first-child {
+footer .mainh .top-container .info .section>p:first-child {
     font-weight: 300;
     margin-bottom: .5rem
 }
 
-footer .main .top-container .info .section .flex-container {
+footer .mainh .top-container .info .section .flex-container {
     display: -ms-flexbox;
     display: flex
 }
 
-footer .main .top-container .info .section .flex-container .right a:hover {
+footer .mainh .top-container .info .section .flex-container .right a:hover {
     opacity: .7
 }
 
-footer .main .top-container .info .section .flex-container .right p {
+footer .mainh .top-container .info .section .flex-container .right p {
     line-height: normal;
     margin-bottom: .3125rem
 }
 
-footer .main .top-container .info .section .flex-container .right p:nth-child(2) {
+footer .mainh .top-container .info .section .flex-container .right p:nth-child(2) {
     margin-bottom: .75rem
 }
 
-footer .main .top-container .info .separator {
+footer .mainh .top-container .info .separator {
     background-color: #fff;
     height: 5.4375rem;
     margin: 0 .625rem;
     width: .0625rem
 }
 
-footer .main .top-container #contact-mobile {
+footer .mainh .top-container #contact-mobile {
     display: none;
     height: 3.5625rem
 }
 
-footer .main .top-container #contact-mobile .list-btn {
+footer .mainh .top-container #contact-mobile .list-btn {
     max-width: none
 }
 
-footer .main .top-container #contact-mobile .list-btn .lb-text {
+footer .mainh .top-container #contact-mobile .list-btn .lb-text {
     background-color: #8b0304;
     border: none;
     color: #fff
 }
 
-footer .main .top-container #contact-mobile .list-btn .lb-arrow {
+footer .mainh .top-container #contact-mobile .list-btn .lb-arrow {
     background-color: #9e0b0f
 }
 
-footer .main .top-container #contact-mobile .list-btn:hover .lb-text {
+footer .mainh .top-container #contact-mobile .list-btn:hover .lb-text {
     background-color: #9e0b0f
 }
 
 @media(max-width: 800px) {
-    footer .main .top-container #contact-mobile {
+    footer .mainh .top-container #contact-mobile {
         display:block
     }
 }
 
-footer .main .prices {
+footer .mainh .prices {
     -ms-flex-align: center;
     align-items: center;
     background-color: #510608;
@@ -8830,7 +8830,7 @@ footer .main .prices {
 }
 
 @media(max-width: 800px) {
-    footer .main .prices {
+    footer .mainh .prices {
         -ms-flex-align:initial;
         align-items: initial;
         border-top: none;
@@ -8841,12 +8841,12 @@ footer .main .prices {
     }
 }
 
-footer .main .prices a,footer .main .prices h1 {
+footer .mainh .prices a,footer .mainh .prices h1 {
     color: #fff;
     margin: 0 .9375rem
 }
 
-footer .main .prices .section-title {
+footer .mainh .prices .section-title {
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: -.04375rem;
@@ -8854,25 +8854,25 @@ footer .main .prices .section-title {
 }
 
 @media(max-width: 800px) {
-    footer .main .prices .section-title {
+    footer .mainh .prices .section-title {
         margin-bottom:.75rem;
         text-align: left
     }
 }
 
-footer .main .prices .link-container {
+footer .mainh .prices .link-container {
     display: -ms-flexbox;
     display: flex;
     margin: 0 1rem
 }
 
 @media(max-width: 800px) {
-    footer .main .prices .link-container {
+    footer .mainh .prices .link-container {
         margin:.625rem 1.25rem
     }
 }
 
-footer .main .prices .link-container .link-btn {
+footer .mainh .prices .link-container .link-btn {
     -ms-flex-align: center;
     align-items: center;
     display: -ms-flexbox;
@@ -8881,7 +8881,7 @@ footer .main .prices .link-container .link-btn {
     margin: 0
 }
 
-footer .main .prices .link-container .link-btn:hover {
+footer .mainh .prices .link-container .link-btn:hover {
     opacity: .7
 }
 
@@ -8951,11 +8951,10 @@ footer .footer-links a::after {
         top: auto
     }
 }
-
 footer .end {
     -ms-flex-align: center;
     align-items: center;
-    background: url(../../images/footer-flower.png) no-repeat right bottom;
+    background: url(https://pattern.uao.edu.co/images/footer-flower.png) no-repeat right bottom;
     background-size: 10rem;
     display: -ms-flexbox;
     display: flex;
@@ -8964,7 +8963,7 @@ footer .end {
 
 @media(max-width: 800px) {
     footer .end {
-        background:url(../../images/footer-flower-mobile.png) no-repeat center bottom;
+        background:url(https://pattern.uao.edu.co/images/footer-flower-mobile.png) no-repeat center bottom;
         background-size: 14.375rem;
         -ms-flex-direction: column;
         flex-direction: column;
@@ -9005,13 +9004,13 @@ footer .end .end-text p:last-child {
 }
 
 .uao-virtual footer .end {
-    background: url(../../images/logo-virtual-mobile.svg) no-repeat right 1.25rem bottom .9375rem;
+    background: url(https://pattern.uao.edu.co/images/logo-virtual-mobile.svg) no-repeat right 1.25rem bottom .9375rem;
     background-size: 10rem
 }
 
 @media(max-width: 800px) {
     .uao-virtual footer .end {
-        background:url(../../images/logo-virtual-mobile.svg) no-repeat center bottom 1.25rem;
+        background:url(https://pattern.uao.edu.co/images/logo-virtual-mobile.svg) no-repeat center bottom 1.25rem;
         background-size: 8.125rem
     }
 }

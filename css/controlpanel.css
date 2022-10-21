@@ -1,0 +1,290 @@
+body {
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-white-grey.jpg);
+}
+
+/* Heading */
+#wrapper-content .editingForm h2 {
+    margin-bottom: 30px;
+}
+
+/* Division */
+#wrapper-content .editingForm>div {
+    margin-top: 30px;
+}
+
+/* Table Data */
+div .form-background tbody:nth-child(1) tr:nth-child(1) td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Primary */
+.editingForm tr .primary-btn {
+    display: flex;
+    flex-direction: column;
+    float: none;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+    min-width: 164px;
+}
+
+/* Form button */
+.form-button{
+    background: none; color: white;
+}
+
+.editingForm .primary-btn .form-button {
+    display: flex;
+    margin-right: 0px;
+}
+
+/* Form button */
+#wrapper-content .editingForm div .form-background tbody tr td form .primary-btn .form-button {
+    width: 100% !important;
+}
+
+/* Primary */
+.editingForm td:nth-child(3) form:nth-child(1) .primary-btn {
+    min-width: 75%;
+}
+
+/* Primary */
+#wrapper-content .editingForm div .form-background tbody tr td:nth-child(3) form:nth-child(1) .primary-btn {
+    width: 75% !important;
+}
+
+/* Primary */
+.editingForm td:nth-child(3) form:nth-child(2) .primary-btn {
+    min-width: 75%;
+}
+
+/* Primary */
+#wrapper-content .editingForm div .form-background tbody tr td:nth-child(3) form:nth-child(2) .primary-btn {
+    width: 75% !important;
+}
+
+/* Form button */
+.editingForm .primary-btn .form-button {
+    justify-content: center;
+}
+
+/* Form button */
+.editingForm td:nth-child(2) form .form-button {
+    justify-content: flex-start;
+}
+
+/* List Item */
+.editingForm tr li{
+    margin-bottom:25px;
+   }
+
+/* Input */
+#propbody .primary-btn input[type=button]{
+    display:block;
+    align-self:center;
+    margin-left:0px !important;
+    margin-right:6px;
+   }
+   
+   /* Primary */
+   #propbody td .primary-btn{
+    min-width:92px;
+    width:92px;
+   }
+
+   /* Primary */
+.editingForm > div > div > .form-background .primary-btn{
+    width:200px;
+   }
+   
+   /* New prop button */
+   #newPropButton{
+    display:block;
+    align-self:center;
+   }
+   
+   /* Input */
+   .editingForm > div > div > .form-background input[type=button]{
+    display:block;
+    align-self:center;
+   }
+
+   /* Table Data */
+#wrapper-content .editingForm div div #propertyTableDiv .form-background #propbody .form-row-odd td{
+    text-align:left !important;
+   }
+   
+   #propertyTableDiv .form-background{
+    margin-top:20px;
+   }
+   
+   /* Input */
+   #propbody .form-row-odd td input[type=button]{
+    padding-left:6px;
+    padding-right:6px;
+    margin-left:12px;
+   }
+   
+   /* Input */
+   #propbody .form-row-even td input[type=button]{
+    margin-left:12px;
+   }
+
+      /*BOTON EDIT*/
+      a.primary-btn-edit {
+        background-color: #9e0b0f;
+        border-radius: 1.25rem;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: -.03125rem;
+        margin: 0 auto;
+        min-width: 13.75rem;
+        padding: .65625rem 2.625rem .65625rem 1.875rem;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    a.primary-btn-edit:after {
+        transition: transform .2s
+    }
+    
+    a.primary-btn-edit:hover:after {
+        transform: translateX(.3125rem)
+    }
+    
+    a.primary-btn-edit:before {
+        border-radius: 1.25rem;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 1.25rem;
+        left: 15%;
+        position: absolute;
+        width: 70%;
+        z-index: -1
+    }
+    
+    a.primary-btn-edit:after {
+        content: '\ea39';
+        color: #fff;
+        font-family: icomoon;
+        font-size: .9375rem;
+        margin-left: .3125rem;
+        padding: .125rem 0;
+        position: absolute
+    }
+    
+    a.primary-btn-edit:hover {
+        background-color: #f82e35;
+        color: #fff
+    }
+   /*BOTON DELETE*/
+   a.primary-btn-delete {
+    background-color: #9e0b0f;
+    border-radius: 1.25rem;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -.03125rem;
+    margin: 0 auto;
+    min-width: 13.75rem;
+    padding: .65625rem 2.625rem .65625rem 1.875rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.primary-btn-delete:after {
+    transition: transform .2s
+}
+
+a.primary-btn-delete:hover:after {
+    transform: translateX(.3125rem)
+}
+
+a.primary-btn-delete:before {
+    border-radius: 1.25rem;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1.25rem;
+    left: 15%;
+    position: absolute;
+    width: 70%;
+    z-index: -1
+}
+
+a.primary-btn-delete:after {
+    content: '\eab4';
+    color: #fff;
+    font-family: icomoon;
+    font-size: .9375rem;
+    margin-left: .3125rem;
+    padding: .125rem 0;
+    position: absolute
+}
+
+a.primary-btn-delete:hover {
+    background-color: #f82e35;
+    color: #fff
+}
+
+/* Primary edit */
+#propbody td .primary-btn-edit{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    width:107px;
+    min-width:74px;
+    padding-right:20px;
+    padding-left:0px;
+   }
+   
+   /* Input */
+   #propbody .primary-btn-edit input[type=button]{
+    align-self:center;
+   }
+
+   /* Primary Unknown */
+#propbody .form-row-odd td .primary-btn-delete{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    margin-left:0px;
+    width:109px;
+    min-width:109px;
+    padding-right:20px;
+    padding-left:0px;
+   }
+   
+   /* Input */
+   #propbody .form-row-odd td .primary-btn-delete input[type=button]{
+    align-self:center;
+   }
+   
+   /* Primary Unknown */
+   #propbody .form-row-even td .primary-btn-delete{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    justify-content:center;
+    min-width:109px;
+    width:109px;
+    padding-left:0px;
+    padding-right:20px;
+    margin-right:0px;
+    margin-left:0px;
+   }
+   
+   /* Input */
+   #propbody .form-row-even td .primary-btn-delete input[type=button]{
+    align-self:center;
+   }

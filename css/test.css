@@ -402,22 +402,6 @@ figure.pc-figure {
     font-weight: bold;
 }
 
-/* FOOTER------>  */
-footer .main .top-container:before {
-    height: calc(100% + 3.125rem);
-    top: 0;
-}
-
-footer {
-    position: relative;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: static;
-    top: 0px;
-}
-
 /*titles siteadmin*/
 .tab {
     margin-top: 10px;
@@ -964,6 +948,270 @@ video {
     position: absolute;
     opacity: 0.3;
 }
+/*USAR ESTE FOOTER*/
+/* Paragraph */
+.mainh .hashtag p{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:25px;
+   }
+   
+
+footer .mainh .circle-icon {
+    border-color: #fff;
+    height: 1.4375rem;
+    margin-right: .5rem;
+    width: 1.4375rem;
+    min-width: 1.4375rem
+}
+
+footer .mainh .circle-icon .icon {
+    color: #fff;
+    font-size: .75rem
+}
+
+footer .mainh .top-container {
+    position: relative;
+    padding-top: 0rem
+}
+
+footer .mainh .top-container:before {
+    background: url(https://pattern.uao.edu.co/images/bg-desktop-red.jpg) no-repeat;
+    background-size: cover;
+    border-radius: .625rem .625rem 0 0;
+    content: '';
+    display: block;
+    height: calc(100% + 3.125rem);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1
+}
+
+@media(max-width:800px) {
+    footer .mainh .top-container:before {
+        height: calc(100% + 1.25rem);
+        top: -1.25rem
+    }
+}
+
+footer .mainh .top-container.complete:before {
+    height: 100%;
+    top: 0
+}
+
+@media(max-width:800px) {
+    footer .mainh .top-container.complete:before {
+        height: 100%;
+        top: 0
+    }
+}
+
+footer .mainh .top-container .hashtag p {
+    color: #fff;
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-align: center
+}
+
+footer .mainh .top-container .hashtag p span {
+    color: #ff686c
+}
+
+footer .mainh .top-container .hashtag .bottom-line {
+    background-color: #fff;
+    display: block;
+    height: .0625rem;
+    margin: 1.5625rem 2.5rem 0
+}
+
+footer .mainh .top-container .hashtag .bottom-line::before {
+    bottom: .1875rem;
+    content: '';
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    height: .4375rem;
+    position: relative;
+    width: .4375rem
+}
+
+footer .mainh .top-container .social-links {
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1.875rem 0
+}
+
+footer .mainh .top-container .social-links li {
+    margin: 0 .5rem
+}
+
+footer .mainh .top-container .social-links li a {
+    height: 2.125rem;
+    width: 2.125rem
+}
+
+footer .mainh .top-container .social-links li a:before {
+    font-size: 2.125rem
+}
+
+footer .mainh .top-container .info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0 2.1875rem 1.25rem
+}
+
+@media(max-width:800px) {
+    footer .mainh .top-container .info {
+        display: none
+    }
+}
+
+footer .mainh .top-container .info .section:first-child a {
+    color: #fe6a6f;
+    font-size: 1.0625rem;
+    text-decoration: none
+}
+
+footer .mainh .top-container .info .section a,
+footer .mainh .top-container .info .section p {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -.01375rem
+}
+
+footer .mainh .top-container .info .section>p:first-child {
+    font-weight: 300;
+    margin-bottom: .5rem
+}
+
+footer .mainh .top-container .info .section .flex-container {
+    display: -ms-flexbox;
+    display: flex
+}
+
+footer .mainh .top-container .info .section .flex-container .right a:hover {
+    opacity: .7
+}
+
+footer .mainh .top-container .info .section .flex-container .right p {
+    line-height: normal;
+    margin-bottom: .3125rem
+}
+
+footer .mainh .top-container .info .section .flex-container .right p:nth-child(2) {
+    margin-bottom: .75rem
+}
+
+footer .mainh .top-container .info .separator {
+    background-color: #fff;
+    height: 5.4375rem;
+    margin: 0 .625rem;
+    width: .0625rem
+}
+
+footer .mainh .top-container #contact-mobile {
+    display: none;
+    height: 3.5625rem
+}
+
+footer .mainh .top-container #contact-mobile .list-btn {
+    max-width: none
+}
+
+footer .mainh .top-container #contact-mobile .list-btn .lb-text {
+    background-color: #8b0304;
+    border: none;
+    color: #fff
+}
+
+footer .mainh .top-container #contact-mobile .list-btn .lb-arrow {
+    background-color: #9e0b0f
+}
+
+footer .mainh .top-container #contact-mobile .list-btn:hover .lb-text {
+    background-color: #9e0b0f
+}
+
+@media(max-width:800px) {
+    footer .mainh .top-container #contact-mobile {
+        display: block
+    }
+}
+
+footer .mainh .prices {
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #510608;
+    border-top: .0625rem solid #8b0304;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1.4375rem 0
+}
+
+@media(max-width:800px) {
+    footer .mainh .prices {
+        -ms-flex-align: initial;
+        align-items: initial;
+        border-top: none;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-bottom: 1.875rem;
+        padding-top: 2.5rem
+    }
+}
+
+footer .mainh .prices a,
+footer .mainh .prices h1 {
+    color: #fff;
+    margin: 0 .9375rem
+}
+
+footer .mainh .prices .section-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -.04375rem;
+    line-height: normal
+}
+
+@media(max-width:800px) {
+    footer .mainh .prices .section-title {
+        margin-bottom: .75rem;
+        text-align: left
+    }
+}
+
+footer .mainh .prices .link-container {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 1rem
+}
+
+@media(max-width:800px) {
+    footer .mainh .prices .link-container {
+        margin: .625rem 1.25rem
+    }
+}
+
+footer .mainh .prices .link-container .link-btn {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: normal;
+    margin: 0
+}
+
+footer .mainh .prices .link-container .link-btn:hover {
+    opacity: .7
+}
 
 /* sub menu admin */
 .dropdown {
@@ -1117,3 +1365,4 @@ video {
     font-weight: 400;
     padding: .75rem .9375rem .75rem 2.125rem
 }
+

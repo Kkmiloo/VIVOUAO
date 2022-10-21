@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/uao.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="css/controlpanel.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <title>Individual Control Panel</title>
+</head>
+
+<body>
+    <!--HEADER AFTER LOGIN ANOTHER PAGE-->
+    <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+        <div id="hmd-bottom">
+            <div id="hmdb-logo-container">
+                <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+            </div>
+            <ul role="list">
+                <div class="nav-search" style="min-width: 400px;">
+                    <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                        class="form-search">
+                        <div id="search-home-field" class="input-form-search">
+                            <input id="search-module-input" type="search" required="required" name="querytext"
+                                class="search-homepage">
+                            <label for="search-module-input"> Buscar </label>
+                        </div>
+                        <button id="search-module-submit" type="submit" value="Search" class="search">
+                            <span class="icon icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+                <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                        language<span class="icon icon-angle-down"></span></a>
+                    <ul class="sub_menu main">
+                        <li status="selected">
+                            <a href="/selectLocale?selection=en_US" title="select locale -- English">English
+                                (United States)</a>
+                        </li>
+                        <li>
+                            <a href="/selectLocale?selection=es" title="select locale -- español">Español
+                                (Latinoamérica)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                    <ul class="main">
+                        <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
+                        <li role="listitem"><a href="/accounts/myAccount" title="My account">My account</a></li>
+                        <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
+                    </ul>
+                </li>
+                <script type="text/javascript">
+                    var i18nStringsLangMenu = {
+                        selectLanguage: "Select a language"
+                    };
+                </script>
+            </ul>
+        </div>
+    </header>
+    <!--Start of individual control panel-->
+    <div id="wrapper-content" role="main">
+
+        <!--[if lte IE 8]>
+        <noscript>
+            <p class="ie-alert">This site uses HTML elements that are not recognized by Internet Explorer 8 and below in the absence of JavaScript. As a result, the site will not be rendered appropriately. To correct this, please either enable JavaScript, upgrade to Internet Explorer 9, or use another browser. Here are the <a href="http://www.enable-javascript.com"  title="java script instructions">instructions for enabling JavaScript in your web browser</a>.</p>
+        </noscript>
+        <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div name="anybody" class="editingForm">
+
+
+
+
+
+
+            <h2>Individual Control Panel</h2>
+
+
+
+
+
+
+            <table border="0" cellpadding="2" cellspacing="0" width="100%">
+
+                <tbody>
+                    <tr valign="top" class="header">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            Name
+
+                        </td>
+
+                        <td class="rowbold">
+
+                            Pradilla, Juan Vicente
+
+                        </td>
+
+                    </tr>
+
+                    <tr valign="top" class="rowvert">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            class
+
+                        </td>
+
+                        <td class="row">
+
+                            <a href="vclassEdit?uri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FAgent">Agent (foaf)</a>, <a
+                                href="vclassEdit?uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000002">Continuant
+                                (obo)</a>, <a
+                                href="vclassEdit?uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000001">Entity
+                                (obo)</a>, <a
+                                href="vclassEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23FacultyMember">Faculty
+                                Member (vivo)</a>, <a
+                                href="vclassEdit?uri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FBFO_0000004">Independent
+                                Continuant (obo)</a>, <a
+                                href="vclassEdit?uri=http%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2FPerson">Person (foaf)</a>, <a
+                                href="vclassEdit?uri=http%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23Thing">Thing</a>
+
+                        </td>
+
+                    </tr>
+
+                    <tr valign="top" class="rowvert">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            display level
+
+                        </td>
+
+                        <td class="row">
+
+                            unspecified
+
+                        </td>
+
+                    </tr>
+
+                    <tr valign="top" class="rowvert">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            edit level
+
+                        </td>
+
+                        <td class="row">
+
+                            unspecified
+
+                        </td>
+
+                    </tr>
+
+                    <tr valign="top" class="rowvert">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            last updated
+
+                        </td>
+
+                        <td class="row">
+
+                            &nbsp;
+
+                        </td>
+
+                    </tr>
+
+                    <tr valign="top" class="rowvert">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            URI
+
+                        </td>
+
+                        <td class="row">
+
+                            http://vivo.mydomain.edu/individual/n6438
+
+                        </td>
+
+                    </tr>
+
+                    <tr valign="top" class="rowvert">
+                        <!-- okay to start even a dropRow because it will get no <td> elements -->
+
+                        <td width="15%" class="verticalfieldlabel">
+                            publish level
+
+                        </td>
+
+                        <td class="row">
+
+                            unspecified
+
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+            <div name="authorized" align="center">
+                <table class="form-background" border="0" cellpadding="2" cellspacing="2" width="100%">
+                    <tbody>
+                        <tr valign="top" align="center">
+                            <td>
+                                <form action="entity" method="get">
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button"
+                                            value="Display This Individual (public)"
+                                            style="background: none; color:white;">
+                                    </a>
+
+                                    <input type="hidden" name="uri" value="http://vivo.mydomain.edu/individual/n6438">
+                                </form>
+
+
+                                <form action="admin/sparqlquery" method="get">
+                                    <input type="hidden" name="query" value="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            SELECT   ?pred ?obj ?graph
+                            WHERE
+                            {
+                              GRAPH ?graph { <http://vivo.mydomain.edu/individual/n6438> ?pred ?obj}
+                            } ORDER BY ?graph ?pred
+                            limit 10000">
+                                    <input type="hidden" name="resultFormat" value="text/plain">
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button"
+                                            value="Raw Statements with This Resource as Subject"
+                                            style="background: none; color:white;">
+                                    </a>
+                                </form>
+
+
+                                <form action="admin/sparqlquery" method="get">
+                                    <input type="hidden" name="query" value="PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                            SELECT ?sub ?pred ?graph
+                            WHERE
+                            {
+                              GRAPH ?graph { ?sub ?pred <http://vivo.mydomain.edu/individual/n6438> }
+                            } ORDER BY ?graph ?pred
+                            limit 10000">
+                                    <input type="hidden" name="resultFormat" value="text/plain">
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button"
+                                            value="Raw Statements with This Resource as Object"
+                                            style="background: none; color:white;">
+                                    </a>
+                                </form>
+
+                            </td>
+                            <td valign="bottom" align="center">
+                                <form action="editForm" method="get">
+                                    <input name="uri" type="hidden" value="http://vivo.mydomain.edu/individual/n6438">
+                                    <input name="controller" type="hidden" value="Entity">
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button" value="Edit This Individual"
+                                            style="background: none; color:white;">
+                                    </a>
+
+                                </form><br>
+
+
+                            </td>
+                            <td valign="bottom">
+                                <form name="newEntityForm" action="editForm" method="get">
+                                    <select id="VClassURI" name="VClassURI" class="form-item">
+                                        <option value="http://vivoweb.org/ontology/core#Abstract">Abstract (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/AcademicArticle">Academic Article
+                                            (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AcademicDegree">Academic Degree
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AcademicDepartment">Academic
+                                            Department (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AcademicTerm">Academic Term
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AcademicYear">Academic Year
+                                            (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000391">Access Service (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Acquaintance">Acquaintance
+                                            (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000007">Action Specification
+                                            (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Address">Address (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Addressing">Addressing (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#AdministratorRole">Administrator
+                                            Role (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AdviseeRole">Advisee Role (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#AdvisingProcess">Advising
+                                            Process (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AdvisingRelationship">Advising
+                                            Relationship (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AdvisorRole">Advisor Role (vivo)
+                                        </option>
+                                        <option value="http://xmlns.com/foaf/0.1/Agent">Agent (foaf)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Agent">Agent (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001261">Analysis Service
+                                            (obo)</option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#area">Area (geo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_0000008">ARG_0000008 (obo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Article">Article (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Association">Association (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#AttendeeRole">Attendee Role
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#AttendingProcess">Attending
+                                            Process (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/AudioDocument">Audio Document
+                                            (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/AudioVisualDocument">Audio-Visual
+                                            Document (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Authorship">Authorship (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#AwardedDegree">Awarded Degree
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Award">Award or Honor (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#AwardReceipt">Award or Honor
+                                            Receipt (vivo)</option>
+                                        <option value="http://purl.org/spar/c4o/BibliographicInformationSource">
+                                            Bibliographic Information Source (c4o)</option>
+                                        <option value="http://purl.org/ontology/bibo/Bill">Bill (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000020">Biological Specimen
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Blog">Blog (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#BlogPosting">Blog Posting (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Book">Book (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/BookSection">Book Section (bibo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Brief">Brief (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Building">Building (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Calendar">Calendar (vcard)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#CalendarBusy">Calendar Busy
+                                            (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#CalendarLink">Calendar Link
+                                            (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#CalendarRequest">Calendar Request
+                                            (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Campus">Campus (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#CaseStudy">Case Study (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Catalog">Catalog (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Category">Category (vcard)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Cell">Cell (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Center">Center (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Certificate">Certificate (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Certification">Certification
+                                            (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Chapter">Chapter (bibo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Child">Child (vcard)</option>
+                                        <option value="http://purl.org/spar/fabio/ClinicalGuideline">Clinical Guideline
+                                            (fabio)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ClinicalOrganization">Clinical
+                                            Organization (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ClinicalRole">Clinical Role
+                                            (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000016">Clinical Trial (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Code">Code (vcard)</option>
+                                        <option value="http://purl.org/ontology/bibo/Code">Code (bibo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Colleague">Colleague (vcard)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/CollectedDocument">Collected
+                                            Document (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Collection">Collection (bibo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#CollectionProcess">Collection
+                                            Process (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#College">College (vivo)</option>
+                                        <option value="http://purl.org/spar/fabio/Comment">Comment (fabio)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Committee">Committee (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Communication">Communication
+                                            (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Company">Company (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Competition">Competition (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2004/02/skos/core#Concept">Concept (skos)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000144">Conclusion Textual
+                                            Entity (obo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Conference">Conference (bibo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#ConferencePaper">Conference
+                                            Paper (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ConferencePoster">Conference
+                                            Poster (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ConferenceSeries">Conference
+                                            Series (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Consortium">Consortium (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000379">Contact (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Contact">Contact (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000376">Contact Qualifier
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Continent">Continent (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000002">Continuant (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Contract">Contract (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#CoPrincipalInvestigatorRole">
+                                            Co-Principal Investigator Role (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#CoreLaboratory">Core Laboratory
+                                            (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Coresident">Coresident (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Country">Country (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#County">County (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Course">Course (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/CourtReporter">Court Reporter
+                                            (bibo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Coworker">Coworker (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Credential">Credential (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Crush">Crush (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#CurationProcess">Curation
+                                            Process (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000102">Data about an
+                                            Ontology Part (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001262">Data Analysis Service
+                                            (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001716">Database (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Database">Database (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BCO_0000003">Data Collection
+                                            Process (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000027">Data Item (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001260">Data Maintenance
+                                            Service (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Dataset">Dataset (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001257">Data Storage Service
+                                            (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Date">Date (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#DateTimeInterval">Date/Time
+                                            Interval (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#DateTimeValue">Date/Time Value
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#DateTimeValuePrecision">
+                                            Date/Time Value Precision (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000009">Datum Label (obo)
+                                        </option>
+                                        <option value="http://www.geneontology.org/formats/oboInOwl#DbXref">DbXref
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/LegalDecision">Decision (bibo)
+                                        </option>
+                                        <option value="http://www.geneontology.org/formats/oboInOwl#Definition">
+                                            Definition</option>
+                                        <option value="http://vivoweb.org/ontology/core#Department">Department (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000033">Directive Information
+                                            Entity (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000016">Disposition (obo)
+                                        </option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#disputed">Disputed (geo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Division">Division (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Document">Document (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/DocumentPart">Document Part (bibo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/DocumentStatus">Document Status
+                                            (bibo)</option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#economic_region">
+                                            Economic Region (geo)</option>
+                                        <option value="http://purl.org/ontology/bibo/EditedBook">Edited Book (bibo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#EditorialArticle">Editorial
+                                            Article (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#EditorRole">Editor Role (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Editorship">Editorship (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#EducationalProcess">Educational
+                                            Process (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000225">Educator Role (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Email">Email (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Emergency">Emergency (vcard)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000787">Employee Role (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000001">Entity (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Equipment">Equipment (vivo)
+                                        </option>
+                                        <option value="http://purl.org/spar/fabio/Erratum">Erratum (fabio)</option>
+                                        <option value="http://org.semanticweb.owlapi/error#Error1">Error1</option>
+                                        <option value="http://purl.org/NET/c4dm/event.owl#Event">Event (event)</option>
+                                        <option value="http://vivoweb.org/ontology/core#EventSeries">Event Series (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Excerpt">Excerpt (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Exhibit">Exhibit (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000021">Experience (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000009">Expertise Measurement
+                                            (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000011">Expertise Measurement
+                                            Process (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Explanatory">Explanatory (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#ExtensionUnit">Extension Unit
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#F1000Link">F1000 Link (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Facility">Facility (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#FacultyAdministrativePosition">
+                                            Faculty Administrative Position (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#FacultyMember"
+                                            selected="selected">Faculty Member (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#EmeritusFaculty">Faculty Member
+                                            Emeritus (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#FacultyMentoringRelationship">
+                                            Faculty Mentoring Relationship (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#FacultyPosition">Faculty
+                                            Position (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000788">Faculty Role (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Fax">Fax (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Female">Female (vcard)</option>
+                                        <option value="http://vitro.mannlib.cornell.edu/ns/vitro/public#File">File
+                                            (vitro-public)</option>
+                                        <option value="http://vitro.mannlib.cornell.edu/ns/vitro/public#FileByteStream">
+                                            FileByteStream (vitro-public)</option>
+                                        <option value="http://purl.org/ontology/bibo/Film">Film (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000377">FOAF Profile (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#FormattedName">Formatted Name
+                                            (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Foundation">Foundation (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Friend">Friend (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000034">Function (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#FundingOrganization">Funding
+                                            Organization (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000224">Funding Role (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Gender">Gender (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000031">Generically Dependent
+                                            Continuant (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Geo">Geo (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Geographical">Geographical
+                                            (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GeographicLocation">Geographic
+                                            Location (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GeographicRegion">Geographic
+                                            Region (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GeopoliticalEntity">Geopolitical
+                                            Entity (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GeoreferencingProcess">
+                                            Georeferencing Process (vivo)</option>
+                                        <option value="http://purl.org/spar/c4o/GlobalCitationCount">Global Citation
+                                            Count (c4o)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GovernmentAgency">Government
+                                            Agency (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GraduateAdvisingRelationship">
+                                            Graduate Advising Relationship (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#GraduateStudent">Graduate
+                                            Student (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000785">Graduate Student Role
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Grant">Grant (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Group">Group (vcard)</option>
+                                        <option value="http://xmlns.com/foaf/0.1/Group">Group (foaf)</option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#group">Group (geo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Hearing">Hearing (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000786">High School Student
+                                            Role (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Home">Home (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Hospital">Hospital (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000015">Human Study (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Identification">Identification
+                                            (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#IdentificationProcess">
+                                            Identification Process (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Image">Image (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000141">Immaterial Entity
+                                            (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000004">Independent
+                                            Continuant (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Individual">Individual (vcard)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000030">Information Content
+                                            Entity (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Institute">Institute (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000004">Instrument (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Internship">Internship (vivo)
+                                        </option>
+                                        <option value="http://purl.org/net/OCRe/research.owl#Interventional_study">
+                                            Interventional_study (ocrer)</option>
+                                        <option value="http://purl.org/ontology/bibo/Interview">Interview (bibo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#InvestigatorRole">Investigator
+                                            Role (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#InvitedTalk">Invited Talk (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Issue">Issue (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#IssuedCredential">Issued
+                                            Credential (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Journal">Journal (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000013">Journal Article (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Key">Key (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Kin">Kin (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Laboratory">Laboratory (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Language">Language (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#LeaderRole">Leader Role (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/LegalCaseDocument">Legal Case
+                                            Document (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/LegalDocument">Legal Document
+                                            (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Legislation">Legislation (bibo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Letter">Letter (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Librarian">Librarian (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#EmeritusLibrarian">Librarian
+                                            Emeritus (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#LibrarianPosition">Librarian
+                                            Position (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Library">Library (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#License">License (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001245">Licensing (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Licensure">Licensure (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Location">Location (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Location">Location (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Logo">Logo (vcard)</option>
+                                        <option value="http://purl.org/ontology/bibo/Magazine">Magazine (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001258">Maintenance Service
+                                            (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Male">Male (vcard)</option>
+                                        <option value="http://purl.org/ontology/bibo/Manual">Manual (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000835">Manufacturer (obo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Manuscript">manuscript (bibo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Map">Map (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000395">Material Analysis
+                                            Service (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000040">Material Entity (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001259">Material Maintenance
+                                            Service (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001263">Material Modification
+                                            Service (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000394">Material Processing
+                                            Service (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000396">Material Production
+                                            Service (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001256">Material Storage
+                                            Service (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Me">Me (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000109">Measurement Datum
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#MeasurementProcess">Measurement
+                                            Process (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000003">Measurement Unit
+                                            Label (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#MedicalResidency">Medical
+                                            Residency (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Meeting">Meeting (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#MemberRole">Member Role (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#InstantMessage">Messaging (vcard)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Met">Met (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Muse">Muse (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Museum">Museum (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Name">Name (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Neighbor">Neighbor (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Newsletter">Newsletter (vivo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Newspaper">Newspaper (bibo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#NewsRelease">News Release (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Nickname">Nickname (vcard)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#NonAcademic">Non-Academic (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#NonAcademicPosition">
+                                            Non-Academic Position (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#None">None (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#NonFacultyAcademic">Non-Faculty
+                                            Academic (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#NonFacultyAcademicPosition">
+                                            Non-Faculty Academic Position (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000780">Non-Permanent
+                                            Resident Role (obo)</option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#non_self_governing">Non
+                                            Self Governing (geo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000778">Non-US Citizen (obo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Note">Note (bibo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Note">Note (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000066">OBI_0000066 (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000086">OBI_0000086 (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000094">OBI_0000094 (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000571">OBI_0000571 (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000005">Objective
+                                            Specification (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000003">Occurrent (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000038">One-Dimensional
+                                            Temporal Region (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0100026">Organism (obo)
+                                        </option>
+                                        <option value="http://xmlns.com/foaf/0.1/Organization">Organization (foaf)
+                                        </option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#organization">
+                                            Organization (geo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Organization">Organization
+                                            (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Organizational">Organizational
+                                            (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#OrganizationUnitName">
+                                            Organizational Unit Name (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#OrganizationName">Organization
+                                            Name (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#OrganizerRole">Organizer Role
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#OrganizingProcess">Organizing
+                                            Process (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Other">Other (vcard)</option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#other">Other (geo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#OutreachProviderRole">Outreach
+                                            Provider Role (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Pager">Pager (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Parent">Parent (vcard)</option>
+                                        <option value="http://purl.org/ontology/bibo/Patent">Patent (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PeerReviewerRole">Peer Reviewer
+                                            Role (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Performance">Performance (bibo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Periodical">Periodical (bibo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000779">Permanent Resident
+                                            Role (obo)</option>
+                                        <option value="http://xmlns.com/foaf/0.1/Person">Person (foaf)</option>
+                                        <option value="http://purl.org/ontology/bibo/PersonalCommunicationDocument">
+                                            Personal Communication Document (bibo)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#OCRE100038">Phase
+                                            (ocresd)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#Phase_0">Phase 0
+                                            (ocresd)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/scientific-research#Phase0ClinicalTrial">
+                                            Phase 0 Clinical Trial (scires)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#Phase_1">Phase 1
+                                            (ocresd)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/scientific-research#Phase1ClinicalTrial">
+                                            Phase 1 Clinical Trial (scires)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#Phase_2">Phase 2
+                                            (ocresd)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/scientific-research#Phase2ClinicalTrial">
+                                            Phase 2 Clinical Trial (scires)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#Phase_3">Phase 3
+                                            (ocresd)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/scientific-research#Phase3ClinicalTrial">
+                                            Phase 3 Clinical Trial (scires)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#Phase_4">Phase 4
+                                            (ocresd)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/scientific-research#Phase4ClinicalTrial">
+                                            Phase 4 Clinical Trial (scires)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Photo">Photo (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000011">Planned Process (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000104">Plan Specification
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PopulatedPlace">Populated Place
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Position">Position (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000790">Post-Baccalaureate
+                                            Trainee (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Postdoc">Postdoc (vivo)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/core#PostdocOrFellowAdvisingRelationship">
+                                            Postdoc or Fellow Advising Relationship (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PostdocPosition">Postdoctoral
+                                            Position (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PostdoctoralTraining">
+                                            Postdoctoral Training (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000914">Post-Graduate Student
+                                            Trainee Role (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Presentation">Presentation
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PresenterRole">Presenter Role
+                                            (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PresentingProcess">Presenting
+                                            Process (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PrimaryPosition">Primary
+                                            Position (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PrincipalInvestigatorRole">
+                                            Principal Investigator Role (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#PrivateCompany">Private Company
+                                            (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Proceedings">Proceedings (bibo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000015">Process (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#EmeritusProfessor">Professor
+                                            Emeritus (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Program">Program (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Project">Project (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000272">Protocol (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Publisher">Publisher (vivo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000019">Quality (obo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Quote">Quote (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0001554">Rate Measurement
+                                            Datum (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/UO_0000280">Rate Unit (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000006">Reagent (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000017">Realizable Entity
+                                            (obo)</option>
+                                        <option value="http://purl.org/ontology/bibo/ReferenceSource">Reference Source
+                                            (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0000017">Regulatory Role (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Related">Related (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Relationship">Relationship
+                                            (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#RelatedType">Relation Type
+                                            (vcard)</option>
+                                        <option value="http://purl.org/ontology/bibo/Report">Report (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ResearcherRole">Researcher Role
+                                            (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000595">Research Opportunity
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ResearchOrganization">Research
+                                            Organization (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000014">Research Project
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ResearchProposal">Research
+                                            Proposal (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Review">Review (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ReviewerRole">Reviewer Role
+                                            (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000023">Role (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Role">Role (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Room">Room (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000032">Scalar Measurement
+                                            Datum (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#School">School (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Score">Score (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Screenplay">Screenplay (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Security">Security (vcard)
+                                        </option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#self_governing">Self
+                                            Governing (geo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#SeminarSeries">Seminar Series
+                                            (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Series">Series (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000005">Service (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000012">Service Provider Role
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#ServiceProvidingLaboratory">
+                                            Service Providing Lab (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Sibling">Sibling (vcard)</option>
+                                        <option value="http://purl.org/net/OCRe/study_design.owl#Single_group_study">
+                                            Single Group Study (ocresd)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000029">Site (obo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Slide">Slide (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Slideshow">Slideshow (bibo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000071">Software (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Sound">Sound (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000006">Spatial Region (obo)
+                                        </option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#special_group">Special
+                                            Group (geo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000022">specialty (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000020">Specifically
+                                            Dependent Continuant (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Speech">Speech (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Spouse">Spouse (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000789">Staff Role (obo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Standard">Standard (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#StateOrProvince">State or
+                                            Province (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Statute">Statute (bibo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000392">Storage Service (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Student">Student (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#StudentOrganization">Student
+                                            Organization (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000783">Student Role (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/OBI_0500000">Study Design (obo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#SubnationalRegion">Subnational
+                                            Region (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001255">Support Service (obo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Sweetheart">Sweetheart (vcard)
+                                        </option>
+                                        <option value="http://www.geneontology.org/formats/oboInOwl#Synonym">Synonym
+                                        </option>
+                                        <option value="http://www.geneontology.org/formats/oboInOwl#SynonymType">
+                                            SynonymType</option>
+                                        <option value="http://purl.obolibrary.org/obo/BCO_0000042">Taxonomic
+                                            Identification Process (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#TeacherRole">Teacher Role (vivo)
+                                        </option>
+                                        <option value="http://vivoweb.org/ontology/core#Team">Team (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000007">Technique (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000565">Technology Transfer
+                                            Office (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Telephone">Telephone (vcard)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#TelephoneType">Telephone Type
+                                            (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000008">Temporal Region (obo)
+                                        </option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#territory">Territory
+                                            (geo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Text">Text (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#TextPhone">Text Phone (vcard)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/IAO_0000300">Textual Entity (obo)
+                                        </option>
+                                        <option value="http://purl.org/ontology/bibo/Thesis">Thesis (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/ThesisDegree">Thesis Degree (bibo)
+                                        </option>
+                                        <option value="http://www.w3.org/2002/07/owl#Thing">Thing</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#TimeZone">Time Zone (vcard)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Title">Title (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000008">Topic Weight
+                                            Measurement (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ARG_2000010">Topic Weight
+                                            Measurement Process (obo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000393">Training Service
+                                            (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Translation">Translation (vivo)
+                                        </option>
+                                        <option value="http://aims.fao.org/aos/geopolitical.owl#geographical_region">
+                                            Transnational Region (geo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0001254">Transport Service
+                                            (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Type">Type (vcard)</option>
+                                        <option
+                                            value="http://vivoweb.org/ontology/core#UndergraduateAdvisingRelationship">
+                                            Undergraduate Advising Relationship (vivo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#UndergraduateStudent">
+                                            Undergraduate Student (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000784">Undergraduate Student
+                                            Role (obo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#University">University (vivo)
+                                        </option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Unknown">Unknown (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#URL">URL (vcard)</option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000777">US Citizen Role (obo)
+                                        </option>
+                                        <option value="http://purl.obolibrary.org/obo/ERO_0000776">US Resident Role
+                                            (obo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Kind">VCard Kind (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#Video">Video (vivo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Video">Video (vcard)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Voice">Voice (vcard)</option>
+                                        <option value="http://purl.org/ontology/bibo/Webpage">Webpage (bibo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Website">Website (bibo)</option>
+                                        <option value="http://www.w3.org/2006/vcard/ns#Work">Work (vcard)</option>
+                                        <option value="http://vivoweb.org/ontology/core#WorkingPaper">Working Paper
+                                            (vivo)</option>
+                                        <option value="http://purl.org/ontology/bibo/Workshop">Workshop (bibo)</option>
+                                        <option value="http://vivoweb.org/ontology/core#WorkshopSeries">Workshop Series
+                                            (vivo)</option>
+                                        <option value="http://purl.obolibrary.org/obo/BFO_0000148">Zero-Dimensional
+                                            Temporal Region (obo)</option>
+
+                                    </select><br>
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button"
+                                            value="Add New Individual of above Type"
+                                            style="background: none; color:white;">
+                                    </a>
+                                    <input type="hidden" name="controller" value="Entity">
+                                </form>
+                                <form action="editForm" method="get">
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button" value="Change URI"
+                                            style="background: none; color:white;"></a>
+                                    <input type="hidden" name="oldURI"
+                                        value="http://vivo.mydomain.edu/individual/n6438">
+                                    <input type="hidden" name="mode" value="renameResource">
+                                    <input type="hidden" name="controller" value="Refactor">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <hr>
+                            </td>
+                        </tr>
+
+                        <!-- TYPES -->
+
+                        <tr valign="bottom" align="center">
+                            <td colspan="1" valign="bottom" align="left">
+
+                                <form action="individualTypeOp" method="get">
+                                    <ul style="list-style-type:none;">
+
+
+
+                                        <li><input type="checkbox" name="TypeURI"
+                                                value="http://vivoweb.org/ontology/core#FacultyMember"
+                                                class="form-item"><a
+                                                href="/vclassEdit?uri=http%3A%2F%2Fvivoweb.org%2Fontology%2Fcore%23FacultyMember">
+                                                Faculty Member (vivo) </a></li>
+
+                                    </ul>
+                                    <input type="hidden" name="individualURI"
+                                        value="http://vivo.mydomain.edu/individual/n6438">
+                                    <a href="" class="primary-btn">
+                                        <input type="submit" class="form-button" value="Remove Checked Asserted Types"
+                                            style="background: none; color:white;">
+                                    </a>
+
+                                    <input type="hidden" name="operation" value="remove">
+                                    <input type="hidden" name="_epoKey" value="183f9e5cb0bda6afc80">
+                                </form>
+
+                                <form action="editForm" method="get">
+                                    <input type="hidden" name="controller" value="IndividualType">
+                                    <input type="hidden" name="IndividualURI"
+                                        value="http://vivo.mydomain.edu/individual/n6438">
+                                    <a href="" class="primary-btn"><input type="submit" class="form-button"
+                                            value="Add Type" style="background: none; color:white;"></a>
+
+                                </form>
+                            </td>
+
+                            <td colspan="2">
+                                &nbsp;
+                                <!--  empty now that flags are gone -->
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+
+
+                <div id="entityUriForDwr" style="visibility:hidden;">http://vivo.mydomain.edu/individual/n6438</div>
+                <div>
+                    <table class="form-background" border="0" cellpadding="2" cellspacing="2" width="100%">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" align="center">
+                                    <h2>Object (individual-to-individual) Property Statements</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="" class="primary-btn"><input id="newPropButton" class="form-button"
+                                            type="button" value="add new statement" onclick="newProp();"
+                                            style="background: none; color:white;"></a>
+
+                                </td>
+                                <td>
+                                    <a href="" class="primary-btn"><input class="form-button" type="button"
+                                            value="refresh list" onclick="update();"
+                                            style="background: none; color:white;"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div align="center">
+                    <!-- ____________________ properties table using dwr ____________________ -->
+                    <div id="propertyTableDiv">
+                        <table class="form-background" border="1" width="100%" align="center">
+                            <thead class="form-table-head">
+                                <tr>
+                                    <th rowspan="1" colspan="1">Subject</th>
+                                    <th rowspan="1" colspan="1">Predicate</th>
+                                    <th rowspan="1" colspan="1">Object</th>
+                                    <th colspan="3" rowspan="1">actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="propbody">
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/ARG_2000028">has
+                                            contact info</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n5826">n5826</a>
+                                    </td>
+                                    <td>
+                                        
+                                        
+                                            <a class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/ARG_2000028', 'http://vivo.mydomain.edu/individual/n5826')"></a>
+                                        
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/ARG_2000028', 'http://vivo.mydomain.edu/individual/n5826', 'n5826', 'has contact info' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a
+                                            href="propertyEdit?uri=http%3A//vitro.mannlib.cornell.edu/ns/vitro/public%23mainImage">mainImage</a>
+                                    </td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n4718">n4718</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vitro.mannlib.cornell.edu/ns/vitro/public#mainImage', 'http://vivo.mydomain.edu/individual/n4718')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vitro.mannlib.cornell.edu/ns/vitro/public#mainImage', 'http://vivo.mydomain.edu/individual/n4718', 'n4718', 'mainImage' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n3136">Docente</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit">
+                                            <input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n3136')">
+                                        </a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n3136', 'Docente', 'related by' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n1553">n1553</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n1553')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n1553', 'n1553', 'related by' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n2802">n2802</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n2802')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n2802', 'n2802', 'related by' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n4590">n4590</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n4590')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n4590', 'n4590', 'related by' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n7200">n7200</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n7200')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n7200', 'n7200', 'related by' )">
+                                    </td></a>
+                                        
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n8177">Pradilla,
+                                            Juan Vicente: M.E. Master of Engineering</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n8177')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n8177', 'Pradilla, Juan Vicente: M.E. Master of Engineering', 'related by' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23relatedBy">related
+                                            by</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n151">Pradilla,
+                                            Juan Vicente: M.Eng. Master of Engineering</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n151')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#relatedBy', 'http://vivo.mydomain.edu/individual/n151', 'Pradilla, Juan Vicente: M.Eng. Master of Engineering', 'related by' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000056">participates
+                                            in</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n1723">n1723</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n1723')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n1723', 'n1723', 'participates in' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000056">participates
+                                            in</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n3855">n3855</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"> <input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n3855')"></a>
+                                       
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n3855', 'n3855', 'participates in' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000056">participates
+                                            in</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n559">n559</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n559')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n559', 'n559', 'participates in' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000056">participates
+                                            in</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n7152">n7152</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n7152')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n7152', 'n7152', 'participates in' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000056">participates
+                                            in</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n7566">n7566</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n7566')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000056', 'http://vivo.mydomain.edu/individual/n7566', 'n7566', 'participates in' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000053">bearer
+                                            of</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n3178">Docente</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000053', 'http://vivo.mydomain.edu/individual/n3178')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000053', 'http://vivo.mydomain.edu/individual/n3178', 'Docente', 'bearer of' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//purl.obolibrary.org/obo/RO_0000053">bearer
+                                            of</a></td>
+                                    <td><a
+                                            href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n2581">Investigador</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000053', 'http://vivo.mydomain.edu/individual/n2581')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://purl.obolibrary.org/obo/RO_0000053', 'http://vivo.mydomain.edu/individual/n2581', 'Investigador', 'bearer of' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23hasResearchArea">research
+                                            areas</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n5938">Cloud &amp;
+                                            Fog Computing</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n5938')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n5938', 'Cloud &amp; Fog Computing', 'research areas' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23hasResearchArea">research
+                                            areas</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n5239">Cyber-Physical
+                                            Systems</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n5239')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n5239', 'Cyber-Physical Systems', 'research areas' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23hasResearchArea">research
+                                            areas</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n2759">Internet of
+                                            Things</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n2759')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n2759', 'Internet of Things', 'research areas' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23hasResearchArea">research
+                                            areas</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n1689">Physical
+                                            Computing</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"> <input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n1689')"></a>
+                                       
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n1689', 'Physical Computing', 'research areas' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-odd">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23hasResearchArea">research
+                                            areas</a></td>
+                                    <td><a href="entityEdit?uri=http%3A//vivo.mydomain.edu/individual/n1233">Sensor
+                                            Networks</a></td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n1233')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#hasResearchArea', 'http://vivo.mydomain.edu/individual/n1233', 'Sensor Networks', 'research areas' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                                <tr class="form-row-even">
+                                    <td>Pradilla, Juan Vicente</td>
+                                    <td><a href="propertyEdit?uri=http%3A//vivoweb.org/ontology/core%23geographicFocus">geographic
+                                            focus</a></td>
+                                    <td><a
+                                            href="entityEdit?uri=http%3A//aims.fao.org/aos/geopolitical.owl%23Colombia">Colombia</a>
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-edit"><input type="button" value="Edit" class="form-button"
+                                            onclick="editTable(this,'http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#geographicFocus', 'http://aims.fao.org/aos/geopolitical.owl#Colombia')"></a>
+                                        
+                                    </td>
+                                    <td>
+                                        <a href="" class="primary-btn-delete"><input type="button" value="Delete" class="form-button"
+                                            onclick="deleteProp('http://vivo.mydomain.edu/individual/n6438', 'http://vivoweb.org/ontology/core#geographicFocus', 'http://aims.fao.org/aos/geopolitical.owl#Colombia', 'Colombia', 'geographic focus' )"></a>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ____________________  End of properties table ______________________ -->
+
+                    <!--  _____________________ Start of hidden area ____________________ -->
+                    <!-- This is hidden and a copy gets put into the table when editing happens  -->
+                    <div id="propeditdiv" style="display:none" class="form-editingRow">
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td>Predicate:</td>
+                                    <td colspan="9">
+                                        <select id="propertyList" class="form-item"
+                                            onchange="fillRangeVClassList();"></select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Object Class:</td>
+                                    <td colspan="9">
+                                        <select id="vClassList" class="form-item" onchange="fillEntsList();"></select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Object Individual:</td>
+                                    <td colspan="9"><select id="entitiesList" class="form-item"></select></td>
+                                </tr>
+
+
+                                <tr>
+                                    <td><input type="button" id="saveButt" class="form-button" value="Save"
+                                            onclick="writeProp()"></td>
+                                    <td><input type="button" id="dismissButt" class="form-button" value="cancel"
+                                            onclick="update()"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="buildArea" style="display:none"></div>
+                </div><!-- END div "entityUriForDwr" -->
+                <!-- _________  End hidden area _________ -->
+
+                <!-- end dwr section -->
+
+            </div><!-- END div "authorized" -->
+            <!-- end if (securityLevel less than MIN_EDIT_ROLE) -->
+        </div><!-- END div "anybody" -->
+
+
+
+
+
+
+
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="mainh">
+            <div class="top-container ">
+                <div class="hashtag">
+                    <p><span>#</span>SomosUAO</p>
+                    <span class="bottom-line"></span>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+                    <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+                    <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+                    <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+                    <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+                </ul>
+
+                <div class="info">
+                    <div class="section">
+                        <p>Teléfono</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-phone"></span>
+                            </div>
+                            <div class="right">
+                                <p>PBX:+ 2 318 8000</p>
+                                <p>Línea gratuita: 01 8000 91 34 35</p>
+                                <a href="">Ver directorio general ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Correo Electrónico</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-envelope"></span>
+                            </div>
+                            <div class="right">
+                                <a href="">buzon@uao.edu.co</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Dirección de Campus principal</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-university"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cll 25 # 115-85</p>
+                                <p>Km 2 Vía Cali - Jamundi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Ciudad</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-map-marker-alt"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cali, Colombia</p>
+                                <p>Código Postal: 760030</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-mobile">
+                    <a class="list-btn" href="#">
+                        <div class="lb-text">
+                            Contacto
+                        </div>
+                        <div class="lb-arrow">
+                            <span class="icon icon-chevron-right"></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="prices">
+                <h1 class="section-title">Valores de Matrículas</h1>
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Pregrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Posgrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Política de Tratamiento de Datos Personales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Reglamento Estudiantil
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Documentos Legales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Transparencia y Acceso a la Información Pública
+                </a>
+            </li>
+        </ul>
+
+        <div class="end">
+            <div class="logos">
+                <figure class="gf-figure-logo">
+                    <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+                </figure>
+            </div>
+
+            <div class="end-text">
+                <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de
+                    1970.<br>
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+                    noviembre de 2003.<br>
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia
+                    hasta el 2021.<br>
+                    Universidad Vigilada MinEducación</p>
+
+                <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de
+                    Educación Nacional - Artículo 39 del decreto 1295 de 2010</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
