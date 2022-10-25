@@ -41,7 +41,10 @@ div .form-background tbody:nth-child(1) tr:nth-child(1) td:nth-child(2) {
     display: flex;
     margin-right: 0px;
 }
-
+/* Form button */
+.editingForm form .form-button{
+ margin-right:10px !important;
+}
 /* Form button */
 #wrapper-content .editingForm div .form-background tbody tr td form .primary-btn .form-button {
     width: 100% !important;
@@ -49,12 +52,15 @@ div .form-background tbody:nth-child(1) tr:nth-child(1) td:nth-child(2) {
 
 /* Primary */
 .editingForm td:nth-child(3) form:nth-child(1) .primary-btn {
-    min-width: 75%;
+ padding-right:15px;
+ min-width:0px;
+ margin-right:30px;
+ margin-left:30px;
 }
 
 /* Primary */
 #wrapper-content .editingForm div .form-background tbody tr td:nth-child(3) form:nth-child(1) .primary-btn {
-    width: 75% !important;
+    width: 250px !important;
 }
 #wrapper-content .editingForm{
     background-color:#ffffff;
@@ -103,12 +109,14 @@ div .form-background tbody:nth-child(1) tr:nth-child(1) td:nth-child(2) {
 }
 /* Primary */
 .editingForm td:nth-child(3) form:nth-child(2) .primary-btn {
-    min-width: 75%;
+ margin-left:30px;
+ margin-right:30px;
+ padding-right:15px;
 }
 
 /* Primary */
 #wrapper-content .editingForm div .form-background tbody tr td:nth-child(3) form:nth-child(2) .primary-btn {
-    width: 75% !important;
+    width: 250px !important;
 }
 
 /* Form button */
