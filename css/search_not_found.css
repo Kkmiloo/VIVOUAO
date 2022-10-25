@@ -1,0 +1,126 @@
+/* Wrapper content */
+#wrapper-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper-content img {
+    display: block;
+    min-height: 250px;
+    height: 250px;
+    animation: odsoky 1s ease-in-out infinite alternate;
+}
+
+#wrapper-content h2 {
+    margin-top: 0px;
+    display: block;
+}
+/*No matching results*/
+#nomatchingresults {
+     height:330px;
+    text-align: center;
+}
+#nomatchingresults .con{
+ min-height:36px;
+ height:36px;
+}
+#nomatchingresults .con .con-tooltip{
+ min-height:36px;
+ height:36px;
+}
+/* Paragraph */
+#nomatchingresults p{
+ margin-bottom:5px;
+ margin-top:5px !important;
+}
+/*tooltip */
+.tooltip {
+    visibility: hidden;
+    z-index: 1;
+    opacity: .40;
+    width: 100%;
+    padding: 20px;
+    background: #333;
+    color: #ffffff;
+    position: relative;
+    border-radius: 9px;
+    transform: translateY(9px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+}
+/*tooltip Box*/
+.con-tooltip {
+    position: relative;
+    background: #00000000;
+    padding: 0 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+}
+/* List */
+.con-tooltip .tooltip ul{
+ list-style-type:disc;
+    margin-top: 20px;
+ list-style-position:inside;
+ margin-left:20px;
+}
+.con .con-tooltip .tooltip {
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    width: 500px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+/* Heading */
+.con-tooltip .tooltip h3 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+/* List Item */
+.tooltip .searchTips li {
+    font-size: 16px;
+}
+/* tooltip  after*/
+.tooltip::after {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+.con-tooltip:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition: .3s linear;
+}
+.right:hover {
+    cursor: pointer;
+    color: red;
+    transform: translateY(4px);
+}
+@keyframes odsoky {
+    0% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(1px);
+    }
+}
+
