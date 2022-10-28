@@ -44,9 +44,9 @@ input[type="password"] {
 input.block {
     margin-bottom: 20px;
 }
-label {
+label {/* 
     margin-top: .5em;
-    margin-bottom: .5em;
+    margin-bottom: .5em; */
 }
 label.inline {
     display: inline;
@@ -373,7 +373,6 @@ tr.editformcell td textarea.matchingInput {
     width: 95%;
     height:10ex;
     margin-top:0.7em;
-    font-family: "Lucida Sans Unicode","Lucida Grande", Geneva, helvetica, sans-serif;
     font-size:0.95em;
 }
 hr.formDivider {
@@ -1365,25 +1364,25 @@ form.customForm p {
 }
 section.accounts input.delete,
 section.accounts input.delete:visited {
-    background-color: #FFF;
+/*     background-color: #FFF;
     color: #2485AE;
-    border: 1px solid #96c5da;
+    border: 1px solid #96c5da; */
 }
-section.accounts input.delete:hover {
+section.accounts input.delete:hover {/* 
     color: #fff;
     background-color: #88acbb;
-    border: 1px solid #88acbb;
+    border: 1px solid #88acbb; */
 }
 input.add-account,
 input.add-account:visited {
-    background: url(http://20.197.178.150:8080/themes/wilma/images/addNewAccount.png) 0 center no-repeat;
+    /* background: url(http://20.197.178.150:8080/themes/wilma/images/addNewAccount.png) 0 center no-repeat; */
     color: #fff;
     padding-left: 35px;
 }
 input.add-account:hover {
     color: #fff;
     background-color: #88acbb;
-    background: url(http://20.197.178.150:8080/themes/wilma/images/addNewAccountOver.png) 0 center no-repeat;
+    /* background: url(http://20.197.178.150:8080/themes/wilma/images/addNewAccountOver.png) 0 center no-repeat; */
 }
 .disabledSubmit {
     color: #ede ! important;
@@ -1877,3 +1876,81 @@ table#table-listing td  a {
 #wrapper-content{
     box-sizing: content-box;
 }
+
+/* Submit Button */
+#add-account h3 .add-account{
+    font-family:roboto, sans-serif;
+   }
+   
+   /* Filter roles */
+   #filter-roles{
+    font-family:roboto, sans-serif;
+   }
+   
+   /* Form Division */
+   #filter-roles form{
+    font-family:'roboto';
+   }
+   
+   /* Role filter uri */
+   #roleFilterUri{
+    font-family:'roboto';
+   }
+   
+   /* Form Division */
+   #search-accounts form{
+    font-family:'roboto';
+   }
+   
+   /* Input */
+   #search-accounts .customForm input[type=text]{
+    font-family:'roboto';
+   }
+   
+   /* Submit Button */
+   #search-accounts .customForm .submit{
+    font-family:'roboto';
+   }
+   
+   /* Account display */
+   #account-display{
+    font-family:'roboto';
+   }
+   
+   /* Delete account */
+   #account-display .accounts .delete-account{
+    font-family:'roboto';
+   }
+   
+   /* Span Tag */
+   #account-display .accounts span{
+    font-family:'roboto';
+   }
+   
+   /* Select */
+   #account-display .accounts select{
+    font-family:'roboto';
+   }
+   
+   /* Th */
+   #table-listing tr th{
+    font-family:'roboto';
+   }
+   
+   /* Table Data */
+   #table-listing tr td{
+    font-family:'roboto';
+    font-size:14px;
+   }
+   
+   /* Link */
+   #table-listing td a{
+    font-family:'roboto';
+   }
+   
+   /* Navigation */
+   #account-display .accounts nav{
+    font-family:'roboto';
+   }
+   
+   

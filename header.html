@@ -33,17 +33,18 @@
                 <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
                         language<span class="icon icon-angle-down"></span></a>
                     <ul class="sub_menu main">
-                        <li status="selected">
+                        <li class="selection1">
                             <a href="/selectLocale?selection=en_US" title="select locale -- English">English
                                 (United States)</a>
                         </li>
-                        <li>
+                        <li class="selection2">
                             <a href="/selectLocale?selection=es" title="select locale -- español">Español
                                 (Latinoamérica)</a>
                         </li>
                     </ul>
                 </li>
-                <li role="listitem"><a href="#" style="text-decoration: none;">Login<span class="icon icon-user-circle" style="font-size: 50px;"></span></a>
+                <li role="listitem"><a href="#" style="text-decoration: none;">Login<span class="icon icon-user-circle"
+                            style="font-size: 50px;"></span></a>
                 </li>
 
             </ul>
@@ -74,8 +75,10 @@
                 <li role="listitem"><a href="/" title="Home menu item" class="selected" style="">Home</a></li>
                 <li role="listitem"><a href="/people" title="People menu item" style="text-decoration: none;">People</a>
                 </li>
-                <li role="listitem"><a href="/organizations" title="Organizations menu item" style="text-decoration: none;">Organizations</a></li>
-                <li role="listitem"><a href="/research" title="Research menu item" style="text-decoration: none;">Research</a>
+                <li role="listitem"><a href="/organizations" title="Organizations menu item"
+                        style="text-decoration: none;">Organizations</a></li>
+                <li role="listitem"><a href="/research" title="Research menu item"
+                        style="text-decoration: none;">Research</a>
                 </li>
                 <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
                         language<span class="icon icon-angle-down"></span></a>
@@ -90,14 +93,15 @@
                         </li>
                     </ul>
                 </li>
-                <li role="listitem"><a href="#" style="text-decoration: none;">Login<span class="icon icon-user-circle" style="font-size: 50px;"></span></a>
+                <li role="listitem"><a href="#" style="text-decoration: none;">Login<span class="icon icon-user-circle"
+                            style="font-size: 50px;"></span></a>
                     </span>
                 </li>
 
             </ul>
         </div>
     </header>
-    
+
     <!--salto-->
     <div class="nomeuses" style="margin-bottom: 100px;"></div>
     <!--HEADER AFTER LOGIN-->
@@ -141,56 +145,58 @@
     </header>
     <!--salto-->
     <div class="nomeuses" style="margin-bottom: 100px;"></div>
-        <!--HEADER AFTER LOGIN ANOTHER PAGE-->
-        <header id="header-menu-desktop" class="fixed has-scroll-indicator">
-            <div id="hmd-bottom">
-                <div id="hmdb-logo-container">
-                    <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
-                </div>
-                <ul role="list">
-                    <div class="nav-search" style="min-width: 400px;">
-                        <form id="search-homepage" action="/search" name="search-home" role="search" method="post" class="form-search">
-                            <div id="search-home-field" class="input-form-search">
-                                <input id="search-module-input" type="search" required="required" name="querytext" class="search-homepage">
-                                <label for="search-module-input"> Buscar </label>
-                            </div>
-                            <button id="search-module-submit" type="submit" value="Search" class="search">
-                                <span class="icon icon-search"></span>
-                            </button>
-                        </form>
-                    </div>
-                    <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
-                    <li role="listitem"><a href="/people" title="People menu item">People</a></li>
-                    <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
-                    <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
-                    <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
-                            language<span class="icon icon-angle-down"></span></a>
-                        <ul class="sub_menu main">
-                            <li status="selected">
-                                <a href="/selectLocale?selection=en_US" title="select locale -- English">English
-                                    (United States)</a>
-                            </li>
-                            <li>
-                                <a href="/selectLocale?selection=es" title="select locale -- español">Español
-                                    (Latinoamérica)</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
-                        <ul class="main">
-                            <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
-                            <li role="listitem"><a href="/accounts/myAccount" title="My account">My account</a></li>
-                            <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
-                        </ul>
-                    </li>
-                    <script type="text/javascript">
-                        var i18nStringsLangMenu = {
-                            selectLanguage: "Select a language"
-                        };
-                    </script>
-                </ul>
+    <!--HEADER AFTER LOGIN ANOTHER PAGE-->
+    <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+        <div id="hmd-bottom">
+            <div id="hmdb-logo-container">
+                <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
             </div>
-        </header>
+            <ul role="list">
+                <div class="nav-search" style="min-width: 400px;">
+                    <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                        class="form-search">
+                        <div id="search-home-field" class="input-form-search">
+                            <input id="search-module-input" type="search" required="required" name="querytext"
+                                class="search-homepage">
+                            <label for="search-module-input"> Buscar </label>
+                        </div>
+                        <button id="search-module-submit" type="submit" value="Search" class="search">
+                            <span class="icon icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+                <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                        language<span class="icon icon-angle-down"></span></a>
+                    <ul class="sub_menu main">
+                        <li status="selected">
+                            <a href="/selectLocale?selection=en_US" title="select locale -- English">English
+                                (United States)</a>
+                        </li>
+                        <li>
+                            <a href="/selectLocale?selection=es" title="select locale -- español">Español
+                                (Latinoamérica)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                    <ul class="main">
+                        <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
+                        <li role="listitem"><a href="/accounts/myAccount" title="My account">My account</a></li>
+                        <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
+                    </ul>
+                </li>
+                <script type="text/javascript">
+                    var i18nStringsLangMenu = {
+                        selectLanguage: "Select a language"
+                    };
+                </script>
+            </ul>
+        </div>
+    </header>
 </body>
 
 </html>

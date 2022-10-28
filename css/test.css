@@ -811,6 +811,7 @@ body>div.profile-hero>div.hero-container>div.info>p.department {
     text-decoration: none;
 }
 
+
 .library-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.3),
             rgba(0, 0, 0, 0.2)), url(https://pattern.uao.edu.co/images/bg-desktop-index-virtual-img.jpg) no-repeat center center/cover;
@@ -1283,6 +1284,7 @@ footer .mainh .prices .link-container .link-btn:hover {
     width: 150px;
 }
 
+
 #hmd-bottom ul ul {
     top: 0px;
     bottom: 0px;
@@ -1292,7 +1294,7 @@ footer .mainh .prices .link-container .link-btn:hover {
     align-items: center;
     text-align: center;
     left: 0px !important;
-    width: 200px;
+    width: 150px;
     margin-top: 70px;
 }
 
@@ -1344,6 +1346,7 @@ footer .mainh .prices .link-container .link-btn:hover {
     width: 250px;
 }
 
+
 /* Sub Menu */
 #language-menu ul {
     right: -100px !important;
@@ -1359,6 +1362,8 @@ footer .mainh .prices .link-container .link-btn:hover {
     height: 35px;
     padding-right:0px;
 }
+
+
 
 /* List Item */
 #hmd-bottom>ul>li {
