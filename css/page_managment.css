@@ -39,3 +39,15 @@ input#submit:hover {
 #pageList .tab{
     margin-top:0px;
    }
+
+/* Heading */
+#wrapper-content h2{
+    margin-bottom:20px;
+   }
+   
+   /* Submit */
+   #submit{
+    margin-top:20px !important;
+   }
+   
+
