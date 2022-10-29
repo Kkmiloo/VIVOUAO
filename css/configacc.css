@@ -1,0 +1,35 @@
+/* Main form */
+#main-form{
+    margin-top:20px;
+   }
+   
+   /* Note */
+   #main-form .note{
+    margin-top:20px;
+    margin-bottom:20px;
+   }
+   
+   /* Paragraph */
+   #main-form p{
+    margin-top:20px;
+   }
+
+   .note,.requiredHint{
+    font-weight:500;
+    color: #9E0B0F;
+    font-size:14px;
+}
+
+/* Link */
+#main-form p a{
+    color:#9e0b0f;
+   }
+   
+   /* Submit Button */
+   #submitMyAccount{
+    margin-right:15px;
+   }
+
+
+  
+

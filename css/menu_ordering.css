@@ -1,0 +1,38 @@
+/* $This file is distributed under the terms of the license in LICENSE$ */
+
+/* MENU ITEMS------>  */
+ul.menuItems {
+    width: 35%;
+    margin-bottom: 1.5em;
+}
+
+ul.menuItems li {
+    margin: .2em 0;
+    padding: .5em;
+    background: white;
+}
+
+ul.menuItems li:nth-child(2),
+ul.menuItems li:nth-child(4),
+ul.menuItems li:nth-child(6) {
+    background: rgb(255 0 0 / 5%);
+}
+
+ul.menuItems.dragNdrop li {
+    /* background: url("../../templates/freemarker/edit/forms/images/sortable_icon.png") no-repeat .4em center #f3f3f0; */
+    cursor: move;
+}
+
+span.controls {
+    float: right;
+}
+
+/* Heading */
+#wrapper-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Icon */
+.ui-sortable .menuItem .icon {
+    color: #000000;
+}

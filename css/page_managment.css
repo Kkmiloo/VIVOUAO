@@ -1,0 +1,41 @@
+.icon-address-book:before,
+.icon-pencil-alt:before,
+.icon-trash-alt:before,
+.icon-check:before {
+    color: #444;
+    font-size: 18px;
+}
+
+input#submit {
+    background-color: #9e0b0f;
+    border-radius: 1.25rem;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -.03125rem;
+    margin: 0 auto;
+    padding: .65625rem 2.625rem .65625rem 2.625rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 1.25rem .3125rem -.9375rem rgba(248, 46, 53, .35);
+    min-width: 100px;
+    width: 100px;
+}
+
+input#submit:hover {
+    background-color: #f82e35;
+    color: #fff
+}
+
+#pageListForm {
+    margin-top: 20px;
+}
+
+#pageList p {
+    margin-top: 0px !important;
+}
+
+#pageList .tab{
+    margin-top:0px;
+   }

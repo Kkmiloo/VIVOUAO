@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/uao.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="css/vivostyles.css">
+    <link rel="stylesheet" href="css/accountsAdmin.css">
+    <link rel="stylesheet" href="css/site_information.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <title>ADMIN: Site Information</title>
+</head>
+
+<body>
+    <!--HEADER AFTER LOGIN ANOTHER PAGE-->
+    <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+        <div id="hmd-bottom">
+            <div id="hmdb-logo-container">
+                <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+            </div>
+            <ul role="list">
+                <div class="nav-search" style="min-width: 400px;">
+                    <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                        class="form-search">
+                        <div id="search-home-field" class="input-form-search">
+                            <input id="search-module-input" type="search" required="required" name="querytext"
+                                class="search-homepage">
+                            <label for="search-module-input"> Buscar </label>
+                        </div>
+                        <button id="search-module-submit" type="submit" value="Search" class="search">
+                            <span class="icon icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+                <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                        language<span class="icon icon-angle-down"></span></a>
+                    <ul class="sub_menu main">
+                        <li status="selected">
+                            <a href="/selectLocale?selection=en_US" title="select locale -- English">English
+                                (United States)</a>
+                        </li>
+                        <li>
+                            <a href="/selectLocale?selection=es" title="select locale -- español">Español
+                                (Latinoamérica)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                    <ul class="main">
+                        <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
+                        <li role="listitem"><a href="/accounts/myAccount" title="My account">My account</a></li>
+                        <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
+                    </ul>
+                </li>
+                <script type="text/javascript">
+                    var i18nStringsLangMenu = {
+                        selectLanguage: "Select a language"
+                    };
+                </script>
+            </ul>
+        </div>
+    </header>
+    <!--Start of site information-->
+    <div id="wrapper-content" role="main">
+
+        <!--[if lte IE 8]>
+        <noscript>
+            <p class="ie-alert">This site uses HTML elements that are not recognized by Internet Explorer 8 and below in the absence of JavaScript. As a result, the site will not be rendered appropriately. To correct this, please either enable JavaScript, upgrade to Internet Explorer 9, or use another browser. Here are the <a href="http://www.enable-javascript.com"  title="java script instructions">instructions for enabling JavaScript in your web browser</a>.</p>
+        </noscript>
+        <![endif]-->
+
+
+
+
+
+
+
+        <div class="editingForm">
+
+
+
+
+
+
+
+
+            <form id="editForm" name="editForm" action="doEdit" method="post" onsubmit="return true;">
+                <input type="hidden" name="_epoKey" value="18424eae2a8">
+
+
+                <h2 style="padding-bottom:0px!important;">Site Information</h2>
+
+
+
+                <h3 class="blue">Editing Existing Record</h3>
+
+
+                <!--<span class="entryFormHeadInstructions">(<sup>*</sup> Required Fields)</span>-->
+
+
+
+                <span class="warning"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <label for="site-name">Site name<span class="note"> (max 50 characters)</span></label>
+                <input type="text" name="ApplicationName" value="VIVO" maxlength="50">
+
+
+
+                <!-- With introduction of new logo that includes tagline as part of the image, hiding this field for now to reduce user confusion -->
+                <!-- <tr class="editformcell">
+        <td valign="top" colspan="2">
+            <b>Tagline </b> <i>appears in header, just to the right of the logo (leave blank to have no tagline)</i><br />
+            <input type="text" name="ShortHand" value=""  maxlength="50" />
+            <font color="red"></font>
+        </td>
+    </tr> -->
+
+                <label>Contact email address <span class="note">contact form submissions will be sent to this
+                        address</span></label>
+                <input type="text" name="ContactMail" value="" maxlength="255" size="30">
+
+
+                <br>
+
+                <label class="display-inline">Theme</label>
+                <select id="ThemeDir" name="ThemeDir">
+                    <option value="themes/nemo/">nemo</option>
+                    <option value="themes/tenderfoot/">tenderfoot</option>
+                    <option value="themes/UAOtheme/">UAOtheme</option>
+                    <option value="themes/vitro/">vitro</option>
+                    <option value="themes/wilma/" selected="selected">wilma</option>
+
+                </select>
+
+                <label>Copyright text<span class="note"> used in footer (e.g., name of your institution)</span></label>
+                <input type="text" name="CopyrightAnchor" value="VIVO Project" maxlength="120" size="40">
+
+
+
+                <label>Copyright URL<span class="note"> copyright text links to this URL</span></label>
+                <input type="text" name="CopyrightURL" value="" maxlength="120" size="30">
+
+
+
+                <!--
+    <tr class="editformcell">
+        <td valign="bottom" colspan="4">
+            <b>About message</b> <i>used for main content area on About page (HTML is allowed)</i><br />
+            <textarea name="AboutText" style="width: 90%;" ROWS="20" wrap="physical">&lt;p&gt;VIVO is an open source semantic
+            web application originally developed and implemented at Cornell. When installed and populated with content at
+            an institution, it enables the discovery of research and scholarship across disciplines at that institution.
+            VIVO supports browsing and a search function which returns faceted results for rapid retrieval of desired
+            information. Content in any local VIVO installation may be maintained manually or brought into the database
+            in automated ways from local systems of record, such as HR, grants, course, and faculty activity databases.
+            &lt;/p&gt;&lt;p&gt;See more information on the &lt;a href=&quot;http://vivoweb.org&quot;&gt;VIVO Project&lt;/a&gt;.
+            &lt;/p&gt;</textarea>
+            <font color="red"></font>
+        </td>
+    </tr>
+    <tr class="editformcell">
+        <td valign="bottom" colspan="4">
+            <b>Acknowledgement message</b> <i>used for acknowledgement area on About page (HTML is allowed)</i></b><br />
+            <textarea name="AcknowledgeText" style="width: 90%;" ROWS="5" wrap="physical"></textarea>
+            <font color="red"></font>
+        </td>
+    </tr>
+    -->
+                <!--
+            <label>Banner image</label>
+            <input type="text" name="BannerImage" value="" style="width:90%" maxlength="255" />
+            <font color="red"></font>
+    
+            <label>Banner image width</label>
+            <input type="text" name="BannerWidth" value=""  maxlength="11" />
+            <font color="red"></font>
+    
+            <label>Banner image height</label>
+            <input type="text" name="BannerHeight" value=""  maxlength="11" />
+            <font color="red"></font>
+    
+            <label>Logotype image</label>
+            <input type="text" name="LogotypeImage" value="" style="width:90%" maxlength="255" />
+            <font color="red"></font>
+    
+            <label>Logotype image width</label>
+            <input type="text" name="LogotypeWidth" value=""  maxlength="11" />
+            <font color="red"></font>
+    
+            <label>Logotype image height</label>
+            <input type="text" name="LogotypeHeight" value=""  maxlength="11" />
+            <font color="red"></font>
+    
+    -->
+
+                <br>
+
+
+
+
+                <input id="primaryAction" type="submit" class="submit" name="_update" value="Save changes">
+
+                <!--<input type="submit" class="delete" name="_delete" onclick="return confirmDelete();" value="Delete"/>-->
+
+
+
+
+                <!--<input type="reset" class="delete" value="Reset"/>-->
+
+
+
+
+                <input type="submit" class="delete" name="_cancel" value="Cancel">
+
+
+
+
+            </form>
+
+        </div>
+        <!--editingform-->
+
+
+
+
+
+
+
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="mainh">
+            <div class="top-container ">
+                <div class="hashtag">
+                    <p><span>#</span>SomosUAO</p>
+                    <span class="bottom-line"></span>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+                    <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+                    <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+                    <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+                    <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+                </ul>
+
+                <div class="info">
+                    <div class="section">
+                        <p>Teléfono</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-phone"></span>
+                            </div>
+                            <div class="right">
+                                <p>PBX:+ 2 318 8000</p>
+                                <p>Línea gratuita: 01 8000 91 34 35</p>
+                                <a href="">Ver directorio general ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Correo Electrónico</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-envelope"></span>
+                            </div>
+                            <div class="right">
+                                <a href="">buzon@uao.edu.co</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Dirección de Campus principal</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-university"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cll 25 # 115-85</p>
+                                <p>Km 2 Vía Cali - Jamundi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Ciudad</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-map-marker-alt"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cali, Colombia</p>
+                                <p>Código Postal: 760030</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-mobile">
+                    <a class="list-btn" href="#">
+                        <div class="lb-text">
+                            Contacto
+                        </div>
+                        <div class="lb-arrow">
+                            <span class="icon icon-chevron-right"></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="prices">
+                <h1 class="section-title">Valores de Matrículas</h1>
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Pregrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Posgrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Política de Tratamiento de Datos Personales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Reglamento Estudiantil
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Documentos Legales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Transparencia y Acceso a la Información Pública
+                </a>
+            </li>
+        </ul>
+
+        <div class="end">
+            <div class="logos">
+                <figure class="gf-figure-logo">
+                    <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+                </figure>
+            </div>
+
+            <div class="end-text">
+                <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de
+                    1970.<br>
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+                    noviembre de 2003.<br>
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia
+                    hasta el 2021.<br>
+                    Universidad Vigilada MinEducación</p>
+
+                <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de
+                    Educación Nacional - Artículo 39 del decreto 1295 de 2010</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

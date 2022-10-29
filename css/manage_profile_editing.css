@@ -1,0 +1,74 @@
+/* Relationcontainer */
+#add-relation .relationcontainer{
+    display:grid;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:0px;
+   }
+   
+   /* Relationcontainer */
+   #wrapper-content .proxy-profile #add-relation .relationcontainer{
+    grid-template-columns:1fr 1fr !important;
+   }
+   
+   /* Heading */
+   #wrapper-content .proxy-profile h4{
+    margin-bottom:20px;
+    margin-top:0px;
+   }
+   
+   /* Add relation */
+   #add-relation{
+    margin-bottom:10px;
+   }
+   
+   /* Proxy profile */
+   #wrapper-content .proxy-profile{
+    padding-bottom:20px;
+    background-color:rgba(255,0,0,5%);
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:20px;
+    margin-top:20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    transform:translatex(0px) translatey(0px);
+    margin-bottom:20px;
+   }
+   
+   /* Input */
+   #search-proxy form input[type=text]{
+    margin-right:15px;
+    width:200px;
+   }
+   
+   /* Form Division */
+   #search-proxy form{
+    margin-top:20px;
+   }
+   
+   /* Proxy */
+   #add-relation .proxy{
+    border-style:none;
+   }
+   
+   /* Profile */
+   #add-relation .profile{
+    border-style:none;
+   }
+   
+   /* Submit Button */
+#add-relation .pos-submit{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    float:right;
+   }
+   
+   /* Proxy profile */
+   #wrapper-content .proxy-profile{
+    min-height:200px;
+   }
+   

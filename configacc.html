@@ -9,12 +9,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/uao.css" />
     <link rel="stylesheet" href="./css/test.css" />
-    <link rel="stylesheet" href="./css/vivostyles.css">
-    
-    <link rel="stylesheet" href="./css/man-profile-edit.css">
+    <link rel="stylesheet" href="css/vivostyles.css">
+    <link rel="stylesheet" href="css/accountsAdmin.css">
+    <link rel="stylesheet" href="css/configacc.css">
     <!-- Boxicons CSS -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <title>Manage profile editing</title>
+    <title>ADMIN: Account configuration</title>
 </head>
 
 <body>
@@ -70,96 +70,39 @@
             </ul>
         </div>
     </header>
-    <!--Start of Manage profile editing-->
+    <!--Start of account-->
     <div id="wrapper-content" role="main">
-
         <!--[if lte IE 8]>
         <noscript>
             <p class="ie-alert">This site uses HTML elements that are not recognized by Internet Explorer 8 and below in the absence of JavaScript. As a result, the site will not be rendered appropriately. To correct this, please either enable JavaScript, upgrade to Internet Explorer 9, or use another browser. Here are the <a href="http://www.enable-javascript.com"  title="java script instructions">instructions for enabling JavaScript in your web browser</a>.</p>
         </noscript>
         <![endif]-->
-    
-    
-            
-    <h3>Manage profile editing</h3>
-    
-    
-    <section id="error-alert" role="alert" class="hidden">
-        <img src="/images/iconAlert.png" width="24" height="24" alt="Error alert icon">
-        <p></p>
-    </section>
-    
-    <section class="proxy-profile">
-        <h4>Relate profile editors and profiles <img src="/images/iconInfo.png" alt="info icon" title="The editors you select on the left hand side will have the ability to edit the VIVO profiles you select on the right hand side. You can select multiple editors and multiple profiles, but you must select a minimum of 1 each."></h4>
-    
-        <form id="add-relation" action="/manageProxies/create" method="POST">
-            <fieldset class="proxy">
-                <legend>Select editors</legend>
-    
-                <section name="proxyProxiesPanel" role="section">
-                    <label for="selectProfileEditors">Select editors</label>
-                    <input id="selectProfileEditors" type="text" name="proxySelectorAC" class="acSelector ui-autocomplete-input" size="35" value="Select an existing last name" role="input" autocomplete="off"><span><img class="loading-relateEditor hidden" src="/images/indicatorWhite.gif" alt="processing time indicator"></span>
-                    <p class="search-status"><span name="proxySelectorSearchStatus" morecharstext="type more character" nomatchtext="no match">&nbsp;</span></p>
-    
-                    <ul name="proxyData" role="navigation">
-                        
-                    </ul>
-                </section>
-            </fieldset>
-    
-            <fieldset class="profile">
-              <legend>Select profiles</legend>
-    
-              <section name="proxyProfilesPanel" role="region">
-                  <label for="selectProfiles">Select profiles</label>
-                  <input id="selectProfiles" type="text" name="proxySelectorAC" class="acSelector ui-autocomplete-input" size="35" value="Select an existing last name" role="input" autocomplete="off"><span><img class="loading-relateProfile hidden" src="/images/indicatorWhite.gif" alt="processing time indicator"></span>
-    
-                  <p class="search-status"><span name="proxySelectorSearchStatus" morecharstext="type more character" nomatchtext="no match">&nbsp;</span></p>
-    
-                    <ul name="proxyData" role="navigation">
-                        
-                    </ul>
-                </section>
-            </fieldset>
-    
-            <input class="submit pos-submit" type="submit" name="createRelationship" value="Save" role="button">
-        </form>
-    </section>
-    
-    
-    <h4 class="profile-editors">Profile editors</h4>
-    
-    <section id="search-proxy" role="region">
-        <form action="/manageProxies/list" method="POST">
-            <input type="text" name="searchTerm" role="input">
-            <input class="submit" type="submit" name="searchByProxy" value="Search" role="button">
-    
-    
-    
-        </form>
-    </section>
-    
-    
-    <script type="text/javascript">
-    var proxyContextInfo = {
-        baseUrl: '',
-        ajaxUrl: '/proxiesAjax'
-    };
-    var i18nStrings = {
-        selectEditorAndProfile: 'You must select a minimum of 1 editor and profile.'
-    };
-    </script>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        <h2>My account</h2>
+        <section id="my-account" role="region">
+            <form id="main-form" method="POST" action="/accounts/myAccount" class="customForm" role="my account">
+                <label for="email-address">Email Address<span class="requiredHint"> *</span></label>
+                <input type="text" name="emailAddress" value="vivo_root@mydomain.edu" id="email-address" role="input">
+                <p class="note">Note: if email changes, a confirmation email will be sent to the new email address
+                    entered above.</p>
+                <label for="first-name">First name<span class="requiredHint"> *</span></label>
+                <input type="text" name="firstName" value="root" id="first-name" role="input">
+                <label for="last-name">Last name<span class="requiredHint"> *</span></label>
+                <input type="text" name="lastName" value="user" id="last-name" role="input">
+                <label for="new-password">New password</label>
+                <input type="password" name="newPassword" value="" id="new-password" role="input">
+                <p class="note">Minimum of 6 characters in length; maximum of 12. (Leaving this blank means that the
+                    password will not be changed).</p>
+                <label for="confirm-password">Confirm new password</label>
+                <input type="password" name="confirmPassword" value="" id="confirm-password" role="input">
+                <p>
+                    <input type="submit" id="submitMyAccount" name="submitMyAccount" value="Save"
+                        class="submit disabledSubmit" disabled="">
+                    or
+                    <a class="cancel" href="http://20.197.178.150:8080/siteAdmin" title="cancel">Cancel</a>
+                </p>
+                <p class="requiredHint">* required fields</p>
+            </form>
+        </section>
     </div>
     <!--Footer-->
     <footer>

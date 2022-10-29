@@ -66,7 +66,7 @@ input#submit,
 input#submit:visited,
 input.form-button,
 input.form-button:visited {
-    background: #222 url(http://20.197.178.150:8080/themes/wilma/images/alert-overlay.png) repeat-x;
+    /* background: #222 url(http://20.197.178.150:8080/themes/wilma/images/alert-overlay.png) repeat-x; */
     display: inline-block;
     padding: 5px 18px 7px;
     color: #fff;
@@ -1384,11 +1384,7 @@ input.add-account:hover {
     background-color: #88acbb;
     /* background: url(http://20.197.178.150:8080/themes/wilma/images/addNewAccountOver.png) 0 center no-repeat; */
 }
-.disabledSubmit {
-    color: #ede ! important;
-    background-color: #b2d15a ! important;
-    cursor: default ! important;
-}
+
 /* ------------------------------------------------->  */
 /* CONTACT FORM ------------------------------------>  */
 /* ------------------------------------------------->  */
@@ -1848,7 +1844,7 @@ table#table-listing {
 	width: 930px;
 }
 table#table-listing tr:nth-child(2n) {
-	background-color: rgba(200, 200, 180,.25);
+	background:rgb(255 0 0 / 5%);
 }
 table#table-listing caption {
 	display: none;
@@ -1856,7 +1852,6 @@ table#table-listing caption {
 table#table-listing th {
 	background-color: #F7F9F9;
 	border-bottom: none;
-	border: 1px solid #d9e4ea;
 	font-size: .9em;
 	height: 40px;
 	padding-left: 6px;
@@ -1864,7 +1859,6 @@ table#table-listing th {
 	text-align: left;
 }
 table#table-listing td {
-	border: 1px solid #d9e4ea;
 	font-size: .825em;
 	padding: .5em;
 	vertical-align: top;

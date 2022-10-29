@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/uao.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="css/vivostyles.css">
+    <link rel="stylesheet" href="css/page_managment.css">
+    <link rel="stylesheet" href="css/menu_ordering.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <title>ADMIN: Menu ordering</title>
+</head>
+
+<body>
+    <!--HEADER AFTER LOGIN ANOTHER PAGE-->
+    <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+        <div id="hmd-bottom">
+            <div id="hmdb-logo-container">
+                <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+            </div>
+            <ul role="list">
+                <div class="nav-search" style="min-width: 400px;">
+                    <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                        class="form-search">
+                        <div id="search-home-field" class="input-form-search">
+                            <input id="search-module-input" type="search" required="required" name="querytext"
+                                class="search-homepage">
+                            <label for="search-module-input"> Buscar </label>
+                        </div>
+                        <button id="search-module-submit" type="submit" value="Search" class="search">
+                            <span class="icon icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+                <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                        language<span class="icon icon-angle-down"></span></a>
+                    <ul class="sub_menu main">
+                        <li status="selected">
+                            <a href="/selectLocale?selection=en_US" title="select locale -- English">English
+                                (United States)</a>
+                        </li>
+                        <li>
+                            <a href="/selectLocale?selection=es" title="select locale -- español">Español
+                                (Latinoamérica)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                    <ul class="main">
+                        <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
+                        <li role="listitem"><a href="/accounts/myAccount" title="My account">My account</a></li>
+                        <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
+                    </ul>
+                </li>
+                <script type="text/javascript">
+                    var i18nStringsLangMenu = {
+                        selectLanguage: "Select a language"
+                    };
+                </script>
+            </ul>
+        </div>
+    </header>
+    <!--Start of menu ordering-->
+    <div id="wrapper-content" role="main">
+
+        <!--[if lte IE 8]>
+        <noscript>
+            <p class="ie-alert">This site uses HTML elements that are not recognized by Internet Explorer 8 and below in the absence of JavaScript. As a result, the site will not be rendered appropriately. To correct this, please either enable JavaScript, upgrade to Internet Explorer 9, or use another browser. Here are the <a href="http://www.enable-javascript.com"  title="java script instructions">instructions for enabling JavaScript in your web browser</a>.</p>
+        </noscript>
+        <![endif]-->
+    
+    
+            
+    
+    
+        <script type="text/javascript">
+            var menuItemData = [];
+        </script>
+    
+        <h2>Menu Ordering</h2>
+    
+        <ul class="menuItems dragNdrop ui-sortable">
+                <li class="menuItem ui-sortable-handle" title="Drag and drop to reorder menu items">
+    <a href="" class="icon icon-arrows-alt-v"></a> Home
+    
+    <script type="text/javascript">
+        menuItemData.push({
+            'menuItemUri': 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#HomeMenuItem'
+        });
+    </script>
+     <span class="controls"><!--p.editingLinks "hasElement" "" statement editable /--></span></li>
+                <li class="menuItem ui-sortable-handle" title="Drag and drop to reorder menu items">
+                    <a href="" class="icon icon-arrows-alt-v"></a>People
+    
+    <script type="text/javascript">
+        menuItemData.push({
+            'menuItemUri': 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#PeopleMenuItem'
+        });
+    </script>
+     <span class="controls"><!--p.editingLinks "hasElement" "" statement editable /--></span></li>
+                <li class="menuItem ui-sortable-handle" title="Drag and drop to reorder menu items">
+                    <a href="" class="icon icon-arrows-alt-v"></a>Organizations
+    
+    <script type="text/javascript">
+        menuItemData.push({
+            'menuItemUri': 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#OrganizationsMenuItem'
+        });
+    </script>
+     <span class="controls"><!--p.editingLinks "hasElement" "" statement editable /--></span></li>
+                <li class="menuItem ui-sortable-handle" title="Drag and drop to reorder menu items">
+                    <a href="" class="icon icon-arrows-alt-v"></a>Research
+    
+    <script type="text/javascript">
+        menuItemData.push({
+            'menuItemUri': 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#ResearchMenuItem'
+        });
+    </script>
+     <span class="controls"><!--p.editingLinks "hasElement" "" statement editable /--></span></li>
+                <li class="menuItem ui-sortable-handle" title="Drag and drop to reorder menu items">
+                    <a href="" class="icon icon-arrows-alt-v"></a>Events
+    
+    <script type="text/javascript">
+        menuItemData.push({
+            'menuItemUri': 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#EventsMenuItem'
+        });
+    </script>
+     <span class="controls"><!--p.editingLinks "hasElement" "" statement editable /--></span></li>
+                <li class="menuItem ui-sortable-handle" title="Drag and drop to reorder menu items">
+                    <a href="" class="icon icon-arrows-alt-v"></a>Capability Map
+    
+    <script type="text/javascript">
+        menuItemData.push({
+            'menuItemUri': 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#CapabilityMapMenuItem'
+        });
+    </script>
+     <span class="controls"><!--p.editingLinks "hasElement" "" statement editable /--></span></li>
+        </ul>
+    
+            <form id="pageListForm" action="/editRequestDispatch" method="get">
+                <input type="hidden" name="typeOfNew" value="http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page">
+                <input type="hidden" name="switchToDisplayModel" value="1">
+                <input type="hidden" name="editForm" value="edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator" role="input">
+                   <input type="hidden" name="addMenuItem" value="true">
+                   <input id="submit" value="Add new menu page" role="button" type="submit">
+                   <input type="hidden" name="returnURL" value="%2Fvivo%2Findividual%3Furi%3Dhttp%253A%252F%252Fvitro.mannlib.cornell.edu%252Fontologies%252Fdisplay%252F1.1%2523DefaultMenu%26switchToDisplayModel%3Dtrue">
+    
+            </form>
+            <br>
+            <p class="note">Refresh page after reordering menu items</p>
+    
+        
+    
+        
+    
+    
+        <script type="text/javascript">
+            // 
+            var menuManagementData = {
+                reorderUrl: '/menuManagementEdit?cmd=Reorder&switchToDisplayModel=true',
+                positionPredicate: 'http://vitro.mannlib.cornell.edu/ontologies/display/1.1#menuPosition'
+            };
+            var i18nStrings = {
+                dragDropMenus: 'Drag and drop to reorder menu items',
+                reorderingFailed: 'Reordering of menu items failed.'
+            };
+        </script>
+    
+        
+    
+    
+    
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="mainh">
+            <div class="top-container ">
+                <div class="hashtag">
+                    <p><span>#</span>SomosUAO</p>
+                    <span class="bottom-line"></span>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+                    <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+                    <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+                    <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+                    <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+                </ul>
+
+                <div class="info">
+                    <div class="section">
+                        <p>Teléfono</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-phone"></span>
+                            </div>
+                            <div class="right">
+                                <p>PBX:+ 2 318 8000</p>
+                                <p>Línea gratuita: 01 8000 91 34 35</p>
+                                <a href="">Ver directorio general ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Correo Electrónico</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-envelope"></span>
+                            </div>
+                            <div class="right">
+                                <a href="">buzon@uao.edu.co</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Dirección de Campus principal</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-university"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cll 25 # 115-85</p>
+                                <p>Km 2 Vía Cali - Jamundi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Ciudad</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-map-marker-alt"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cali, Colombia</p>
+                                <p>Código Postal: 760030</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-mobile">
+                    <a class="list-btn" href="#">
+                        <div class="lb-text">
+                            Contacto
+                        </div>
+                        <div class="lb-arrow">
+                            <span class="icon icon-chevron-right"></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="prices">
+                <h1 class="section-title">Valores de Matrículas</h1>
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Pregrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Posgrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Política de Tratamiento de Datos Personales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Reglamento Estudiantil
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Documentos Legales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Transparencia y Acceso a la Información Pública
+                </a>
+            </li>
+        </ul>
+
+        <div class="end">
+            <div class="logos">
+                <figure class="gf-figure-logo">
+                    <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+                </figure>
+            </div>
+
+            <div class="end-text">
+                <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de
+                    1970.<br>
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+                    noviembre de 2003.<br>
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia
+                    hasta el 2021.<br>
+                    Universidad Vigilada MinEducación</p>
+
+                <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de
+                    Educación Nacional - Artículo 39 del decreto 1295 de 2010</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

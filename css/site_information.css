@@ -1,0 +1,34 @@
+/* Submit Button */
+#primaryAction{
+    background-color:#9e0b0f;
+    margin-top:20px;
+    margin-right:15px;
+   }
+   
+   /* Heading */
+   #editForm h3{
+    color:#9e0b0f;
+    margin-bottom:20px;
+    font-size:20px;
+    margin-top:10px;
+   }
+   
+   /* Input */
+   #editForm input[type=text]{
+    margin-top:20px;
+   }
+   
+   /* Delete */
+   #editForm .delete{
+    background-image:none;
+    background-color:transparent;
+    color:#000000;
+    padding-left:0px;
+   }
+   
+   /* Delete (hover) */
+   #editForm .delete:hover{
+    box-shadow:none;
+   }
+   
+   

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/uao.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="css/vivostyles.css">
+    <link rel="stylesheet" href="css/accountsAdmin.css">
+    <link rel="stylesheet" href="css/manage_profile_editing.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <title>ADMIN: Manage profile editing</title>
+</head>
+
+<body>
+
+    <!--Start of page manage profile editing-->
+    <div id="wrapper-content" role="main">
+
+        <!--[if lte IE 8]>
+        <noscript>
+            <p class="ie-alert">This site uses HTML elements that are not recognized by Internet Explorer 8 and below in the absence of JavaScript. As a result, the site will not be rendered appropriately. To correct this, please either enable JavaScript, upgrade to Internet Explorer 9, or use another browser. Here are the <a href="http://www.enable-javascript.com"  title="java script instructions">instructions for enabling JavaScript in your web browser</a>.</p>
+        </noscript>
+        <![endif]-->
+    
+    
+            
+    <h3>Manage profile editing</h3>
+    
+    
+    <section id="error-alert" role="alert" class="hidden">
+        <img src="/images/iconAlert.png" width="24" height="24" alt="Error alert icon">
+        <p></p>
+    </section>
+    
+    <section class="proxy-profile">
+        <h4>Relate profile editors and profiles 
+            <a href="" class="icon icon-info-circle" title="The editors you select on the left hand side will have the ability to edit the VIVO profiles you select on the right hand side. You can select multiple editors and multiple profiles, but you must select a minimum of 1 each."></a></h4>
+    
+        <form id="add-relation" action="/manageProxies/create" method="POST">
+            <div class="relationcontainer">
+            <fieldset class="proxy">
+                <legend>Select editors</legend>
+    
+                <section name="proxyProxiesPanel" role="section">
+                    <label for="selectProfileEditors">Select editors</label>
+                    <input id="selectProfileEditors" type="text" name="proxySelectorAC" class="acSelector ui-autocomplete-input" size="35" value="Select an existing last name" role="input" autocomplete="off"><span><img class="loading-relateEditor hidden" src="/images/indicatorWhite.gif" alt="processing time indicator"></span>
+                    <p class="search-status"><span name="proxySelectorSearchStatus" morecharstext="type more character" nomatchtext="no match">&nbsp;</span></p>
+    
+                    <ul name="proxyData" role="navigation">
+                        
+                    </ul>
+                </section>
+            </fieldset>
+    
+            <fieldset class="profile">
+              <legend>Select profiles</legend>
+    
+              <section name="proxyProfilesPanel" role="region">
+                  <label for="selectProfiles">Select profiles</label>
+                  <input id="selectProfiles" type="text" name="proxySelectorAC" class="acSelector ui-autocomplete-input" size="35" value="Select an existing last name" role="input" autocomplete="off"><span><img class="loading-relateProfile hidden" src="/images/indicatorWhite.gif" alt="processing time indicator"></span>
+    
+                  <p class="search-status"><span name="proxySelectorSearchStatus" morecharstext="type more character" nomatchtext="no match">&nbsp;</span></p>
+    
+                    <ul name="proxyData" role="navigation">
+                        
+                    </ul>
+                </section>
+            </fieldset>
+    </div>
+            <input class="submit pos-submit" type="submit" name="createRelationship" value="Save" role="button">
+        </form>
+    </section>
+    
+    
+    <h4 class="profile-editors">Profile editors</h4>
+    
+    <section id="search-proxy" role="region">
+        <form action="/manageProxies/list" method="POST">
+            <input type="text" name="searchTerm" role="input">
+            <input class="submit" type="submit" name="searchByProxy" value="Search" role="button">
+    
+    
+    
+        </form>
+    </section>
+    
+    
+    <script type="text/javascript">
+    var proxyContextInfo = {
+        baseUrl: '',
+        ajaxUrl: '/proxiesAjax'
+    };
+    var i18nStrings = {
+        selectEditorAndProfile: 'You must select a minimum of 1 editor and profile.'
+    };
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="mainh">
+            <div class="top-container ">
+                <div class="hashtag">
+                    <p><span>#</span>SomosUAO</p>
+                    <span class="bottom-line"></span>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+                    <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+                    <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+                    <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+                    <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+                </ul>
+
+                <div class="info">
+                    <div class="section">
+                        <p>Teléfono</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-phone"></span>
+                            </div>
+                            <div class="right">
+                                <p>PBX:+ 2 318 8000</p>
+                                <p>Línea gratuita: 01 8000 91 34 35</p>
+                                <a href="">Ver directorio general ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Correo Electrónico</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-envelope"></span>
+                            </div>
+                            <div class="right">
+                                <a href="">buzon@uao.edu.co</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Dirección de Campus principal</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-university"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cll 25 # 115-85</p>
+                                <p>Km 2 Vía Cali - Jamundi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Ciudad</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-map-marker-alt"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cali, Colombia</p>
+                                <p>Código Postal: 760030</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-mobile">
+                    <a class="list-btn" href="#">
+                        <div class="lb-text">
+                            Contacto
+                        </div>
+                        <div class="lb-arrow">
+                            <span class="icon icon-chevron-right"></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="prices">
+                <h1 class="section-title">Valores de Matrículas</h1>
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Pregrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Posgrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Política de Tratamiento de Datos Personales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Reglamento Estudiantil
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Documentos Legales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Transparencia y Acceso a la Información Pública
+                </a>
+            </li>
+        </ul>
+
+        <div class="end">
+            <div class="logos">
+                <figure class="gf-figure-logo">
+                    <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+                </figure>
+            </div>
+
+            <div class="end-text">
+                <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de
+                    1970.<br>
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+                    noviembre de 2003.<br>
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia
+                    hasta el 2021.<br>
+                    Universidad Vigilada MinEducación</p>
+
+                <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de
+                    Educación Nacional - Artículo 39 del decreto 1295 de 2010</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

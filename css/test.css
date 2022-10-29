@@ -1279,9 +1279,9 @@ footer .mainh .prices .link-container .link-btn:hover {
 /* List */
 /* Main */
 #hmd-bottom .hov:nth-child(7) .main {
-    left: -30px !important;
     right: 0px;
-    width: 150px;
+    min-width:10px;
+    width:100%;
 }
 
 
@@ -1401,3 +1401,43 @@ footer .mainh .prices .link-container .link-btn:hover {
     font-weight: 400;
     padding: .75rem .9375rem .75rem 2.125rem
 }
+
+
+/*HEADER CONTAIN SIZES*/
+/* List */
+#header-menu-desktop #hmd-bottom > ul{
+    width:100% !important;
+   }
+   
+   /* List Item */
+   #header-menu-desktop #hmd-bottom > ul > li{
+    width:100% !important;
+   }
+   
+   /* Link */
+   #header-menu-desktop #hmd-bottom > ul > li > a{
+    width:100% !important;
+   }
+   
+   /* Lang link */
+   #lang-link{
+    transform:translatex(0px) translatey(0px);
+    min-width:200px;
+   }
+   
+   /* Sub Menu */
+   #language-menu ul{
+    width:100% !important;
+   }
+   
+   /* List */
+   #header-menu-desktop #hmd-bottom ul .hov ul{
+    width:100% !important;
+   }
+   
+   /* List */
+   #hmd-bottom ul ul{
+    min-width:140px;
+   }
+   
+   

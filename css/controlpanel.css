@@ -91,12 +91,9 @@ div .form-background tbody:nth-child(1) tr:nth-child(1) td:nth-child(2) {
 .form-background td {
     padding: 12px 15px;
 }
-.form-background tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
 
 .form-background tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: rgb(255 0 0 / 5%);
 }
 
 .form-background tbody tr:last-of-type {
