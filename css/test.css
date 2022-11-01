@@ -432,8 +432,6 @@ figure.pc-figure {
     justify-content: center;
 }
 
-#admin {}
-
 #admin h3 {
     background-color: #510608;
     color: #fff;
@@ -810,6 +808,7 @@ body>div.profile-hero>div.hero-container>div.info>p.department {
     color: black;
     text-decoration: none;
 }
+
 
 .library-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.3),

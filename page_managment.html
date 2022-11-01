@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/uao.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="stylesheet" href="css/vivostyles.css">
+    <link rel="stylesheet" href="css/accountsAdmin.css">
+    <link rel="stylesheet" href="css/page_managment.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <title>ADMIN: Pages</title>
+</head>
+
+<body>
+    <!--HEADER AFTER LOGIN ANOTHER PAGE-->
+    <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+        <div id="hmd-bottom">
+            <div id="hmdb-logo-container">
+                <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+            </div>
+            <ul role="list">
+                <div class="nav-search" style="min-width: 400px;">
+                    <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                        class="form-search">
+                        <div id="search-home-field" class="input-form-search">
+                            <input id="search-module-input" type="search" required="required" name="querytext"
+                                class="search-homepage">
+                            <label for="search-module-input"> Buscar </label>
+                        </div>
+                        <button id="search-module-submit" type="submit" value="Search" class="search">
+                            <span class="icon icon-search"></span>
+                        </button>
+                    </form>
+                </div>
+                <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                        language<span class="icon icon-angle-down"></span></a>
+                    <ul class="sub_menu main">
+                        <li status="selected">
+                            <a href="/selectLocale?selection=en_US" title="select locale -- English">English
+                                (United States)</a>
+                        </li>
+                        <li>
+                            <a href="/selectLocale?selection=es" title="select locale -- español">Español
+                                (Latinoamérica)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hov"><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                    <ul class="main">
+                        <li role="listitem"><a href="/siteAdmin" title="Site Admin">Site Admin</a></li>
+                        <li role="listitem"><a href="/accounts/myAccount" title="My account">My account</a></li>
+                        <li role="listitem"><a href="/logout" title="Log out">Log out</a></li>
+                    </ul>
+                </li>
+                <script type="text/javascript">
+                    var i18nStringsLangMenu = {
+                        selectLanguage: "Select a language"
+                    };
+                </script>
+            </ul>
+        </div>
+    </header>
+    <!--Start of page management-->
+    <div id="wrapper-content" role="main">
+        <!--[if lte IE 8]>
+        <noscript>
+            <p class="ie-alert">This site uses HTML elements that are not recognized by Internet Explorer 8 and below in the absence of JavaScript. As a result, the site will not be rendered appropriately. To correct this, please either enable JavaScript, upgrade to Internet Explorer 9, or use another browser. Here are the <a href="http://www.enable-javascript.com"  title="java script instructions">instructions for enabling JavaScript in your web browser</a>.</p>
+        </noscript>
+        <![endif]-->
+        <section id="pageList">
+            <div class="tab">
+                <h2>Page management</h2>
+            </div>
+            <table id="table-listing" style="margin-bottom:2px">
+                <caption>Page management</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <!--th scope="col">Type</th-->
+                        <th scope="col">URL</th>
+                        <th scope="col">Custom Template</th>
+                        <th id="isMenuPage" scope="col">Menu Page</th>
+                        <th id="iconColumns" scope="col">Controls</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fabout%23ABOUTPAGE&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">About Page</a>
+
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/about</td>
+                        <td></td>
+                        <td style="text-align:center">
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fabout%23ABOUTPAGE&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fabout%23ABOUTPAGE&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" About Page"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fabout%23ABOUTPAGE"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedDepartments&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Affiliated Departments</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/affiliatedDepartments</td>
+                        <td>individual-affiliated-dept-details.ftl</td>
+                        <td style="text-align:center">
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedDepartments&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedDepartments&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Affiliated Departments"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedDepartments"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedResearchAreas&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Affiliated Research Areas</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/affiliatedResearchAreas</td>
+                        <td>individual-affiliated-res-area-details.ftl</td>
+                        <td style="text-align:center">
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedResearchAreas&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedResearchAreas&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Affiliated Research Areas"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23AffiliatedResearchAreas"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23CapabilityMap&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Capability Map</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/vis/capabilitymap</td>
+                        <td></td>
+                        <td style="text-align:center">
+                            <a class="icon icon-check" style="text-decoration: none;"></a>
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23CapabilityMap&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23CapabilityMap&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Capability Map"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23CapabilityMap"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalGrants&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Departmental Grants</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/deptGrants</td>
+                        <td>individual-dept-active-grants.ftl</td>
+                        <td style="text-align:center">
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalGrants&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalGrants&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Departmental Grants"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalGrants"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalResearchAreas&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Departmental Research Areas</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/deptResearchAreas</td>
+                        <td>individual-dept-res-area-details.ftl</td>
+                        <td style="text-align:center">
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalResearchAreas&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalResearchAreas&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Departmental Research Areas"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fns%2Fdefault%2Fpage%23DepartmentalResearchAreas"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Events&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Events</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/events</td>
+                        <td></td>
+                        <td style="text-align:center">
+                            <a class="icon icon-check" style="text-decoration: none;"></a>
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Events&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Events&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Events"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Events"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Home
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/</td>
+                        <td></td>
+                        <td style="text-align:center">
+                            <a class="icon icon-check" style="text-decoration: none;"></a>
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Home&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Home&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Organizations&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Organizations</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/organizations</td>
+                        <td></td>
+                        <td style="text-align:center">
+                            <a class="icon icon-check" style="text-decoration: none;"></a>
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Organizations&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Organizations&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Organizations"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Organizations"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23pageListPage&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Pages</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/pageList</td>
+                        <td>pageList.ftl</td>
+                        <td style="text-align:center">
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23pageListPage&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23pageListPage&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23People&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">People</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/people</td>
+                        <td></td>
+                        <td style="text-align:center">
+                            <a class="icon icon-check" style="text-decoration: none;"></a>
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23People&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title=""></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23People&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" People"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23People"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Research&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="listed page title">Research</a>
+                        </td>
+                        <!--td> {pagex.dataGetterLabel}</td-->
+                        <td>/research</td>
+                        <td></td>
+                        <td style="text-align:center">
+                            <a class="icon icon-check" style="text-decoration: none;"></a>
+                        </td>
+                        <td>
+                            <a class="icon icon-pencil-alt" href="/editRequestDispatch?subjectUri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Research&amp;switchToDisplayModel=1&amp;editForm=edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                                title="Edit {0} Page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-address-book" href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Research&amp;switchToDisplayModel=1"
+                                title="view the individual profile for this page"></a>
+                            &nbsp;&nbsp;
+                            <a class="icon icon-trash-alt" cmd="deletePage" pagetitle=" Research"
+                                href="/deletePageController?pageURI=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23Research"
+                                title="delete this page"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="pageListForm" action="/editRequestDispatch" method="get">
+                <input type="hidden" name="typeOfNew"
+                    value="http://vitro.mannlib.cornell.edu/ontologies/display/1.1#Page">
+                <input type="hidden" name="switchToDisplayModel" value="1">
+                <input type="hidden" name="editForm"
+                    value="edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.ManagePageGenerator"
+                    role="input">
+                <input id="submit" value="Add Page" role="button" type="submit">
+            </form>
+            <br>
+            <p style="margin-top:10px">Use <a id="menuMgmtLink"
+                    href="/individual?uri=http%3A%2F%2Fvitro.mannlib.cornell.edu%2Fontologies%2Fdisplay%2F1.1%23DefaultMenu&amp;switchToDisplayModel=true&amp;previous=pageManagement"
+                    title="">Menu Ordering</a> to set the order of menu items.</p>
+        </section>
+        <script>
+            var i18nStrings = {
+                confirmPageDeletion: 'Are you sure you wish to delete this page:'
+            };
+        </script>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="mainh">
+            <div class="top-container ">
+                <div class="hashtag">
+                    <p><span>#</span>SomosUAO</p>
+                    <span class="bottom-line"></span>
+                </div>
+
+                <ul class="social-links">
+                    <li><a href="" class="icon icon-Facebook">Facebook</a></li>
+                    <li><a href="" class="icon icon-Twitter">Twitter</a></li>
+                    <li><a href="" class="icon icon-Instagram">Instagram</a></li>
+                    <li><a href="" class="icon icon-Youtube">YouTube</a></li>
+                    <li><a href="" class="icon icon-Linkedin">LinkedIn</a></li>
+                </ul>
+
+                <div class="info">
+                    <div class="section">
+                        <p>Teléfono</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-phone"></span>
+                            </div>
+                            <div class="right">
+                                <p>PBX:+ 2 318 8000</p>
+                                <p>Línea gratuita: 01 8000 91 34 35</p>
+                                <a href="">Ver directorio general ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Correo Electrónico</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-envelope"></span>
+                            </div>
+                            <div class="right">
+                                <a href="">buzon@uao.edu.co</a>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Dirección de Campus principal</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-university"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cll 25 # 115-85</p>
+                                <p>Km 2 Vía Cali - Jamundi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="section">
+                        <p>Ciudad</p>
+                        <div class="flex-container">
+                            <div class="circle-icon">
+                                <span class="icon icon-map-marker-alt"></span>
+                            </div>
+                            <div class="right">
+                                <p>Cali, Colombia</p>
+                                <p>Código Postal: 760030</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact-mobile">
+                    <a class="list-btn" href="#">
+                        <div class="lb-text">
+                            Contacto
+                        </div>
+                        <div class="lb-arrow">
+                            <span class="icon icon-chevron-right"></span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="prices">
+                <h1 class="section-title">Valores de Matrículas</h1>
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Pregrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Posgrados 2019</a>
+                </div>
+
+                <div class="link-container">
+                    <div class="circle-icon">
+                        <span class="icon icon-download"></span>
+                    </div>
+                    <a href="" class="link-btn">Programas Tecnológicos UAOTEC 2019</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="footer-links">
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Política de Tratamiento de Datos Personales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Reglamento Estudiantil
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Documentos Legales
+                </a>
+            </li>
+            <li>
+                <!--
+        Variable Styles (for dark backgrounds)
+        mustache:   -  class: dark-background
+        mustache:   -  class: white-arrow
+      -->
+
+                <a class="secondary-btn  " href="#">
+                    Transparencia y Acceso a la Información Pública
+                </a>
+            </li>
+        </ul>
+
+        <div class="end">
+            <div class="logos">
+                <figure class="gf-figure-logo">
+                    <img src="https://pattern.uao.edu.co/images/UAO-logo-acreditacion.png" alt="UAO">
+                </figure>
+            </div>
+
+            <div class="end-text">
+                <p>Personería jurídica, Res. No. 0618, de la Gobernación del Valle del Cauca, del 20 de febrero de
+                    1970.<br>
+                    Universidad Autónoma de Occidente, Res. No. 2766, del Ministerio de Educación Nacional, del 13 de
+                    noviembre de 2003.<br>
+                    Acreditación Institucional de Alta Calidad, Res. No. 16740, del 24 de agosto de 2017, con vigencia
+                    hasta el 2021.<br>
+                    Universidad Vigilada MinEducación</p>
+
+                <p>La Universidad Autónoma de Occidente está sujeta a inspección y vigilancia por el Ministerio de
+                    Educación Nacional - Artículo 39 del decreto 1295 de 2010</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
