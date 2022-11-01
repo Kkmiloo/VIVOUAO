@@ -1214,157 +1214,11 @@ footer .mainh .prices .link-container .link-btn:hover {
     opacity: .7
 }
 
-/* sub menu admin */
-.dropdown {
-    position: relative;
-}
 
-.main {
-    position: absolute;
-    z-index: 1;
-
-}
-
-.main li {
-    list-style: none;
-    width: 100px;
-    padding: 0 5px;
-    height: 30px;
-
-    line-height: 30px;
-
-    -webkit-transition: all 0.2s ease-in-out;
-
-}
-
-.main li:nth-child(odd) {
-    transform: translateY(-50px);
-    opacity: 0;
-}
-
-.main li:nth-child(even) {
-    transform: translateY(-50px);
-    opacity: 0;
-}
-
-.hov:hover li:nth-child(odd) {
-    transform: translateY(0px);
-    opacity: 100;
-}
-
-.hov:hover li:nth-child(even) {
-    transform: translateY(0px);
-    opacity: 100;
-}
-
-.main li:first-child {
-    margin-top: 0;
-}
-/* Link */
-#hmd-bottom .hov a{
- min-height:100px;
-}
-.hov {
-    position: relative;
-    height: 40px;
-    color: white;
-    font-size: 13px;
-    line-height: 40px;
-    list-style: none;
-    z-index: 2;
-
-}
-
-/* List */
-/* Main */
-#hmd-bottom .hov:nth-child(7) .main {
-    left: -30px !important;
-    right: 0px;
-    width: 150px;
-}
-
-#hmd-bottom ul ul {
-    top: 0px;
-    bottom: 0px;
-    right: -63px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    left: 0px !important;
-    width: 200px;
-    margin-top: 70px;
-}
-
-#hmd-bottom .hov li {
-    min-height: 40px;
-    padding-left: 0px;
-}
-
-/* List Item */
-#header-menu-desktop #hmd-bottom ul .hov .main li {
-    width: auto !important;
-}
-
-/* List Item */
-.hov .main li {
-    background-color: #ffffff;
-    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
-    padding-left: 50px;
-}
-
-/* Hov */
-#hmd-bottom ul .hov {
-    background-color: transparent;
-}
 
 #hmd-bottom>ul>li>a:hover {
     color: red;
     transition: 300ms;
-}
-
-#hmd-bottom>ul>li>a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#hmd-bottom>ul>li.hov>ul>li>a:hover {
-    color: red;
-    transition: 300ms;
-}
-
-/* Language menu */
-#language-menu {
-    width: 250px;
-}
-
-/* Lang link */
-#lang-link {
-    width: 250px;
-}
-
-/* Sub Menu */
-#language-menu ul {
-    right: -100px !important;
-    width: 250px !important;
-    left: 0px;
-}
-
-/* List Item */
-#language-menu .sub_menu li {
-    position: relative;
-    width: 250px;
-    left: 0px;
-    height: 35px;
-    padding-right:0px;
-}
-
-/* List Item */
-#hmd-bottom>ul>li {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Icon user circle */
@@ -1396,3 +1250,4 @@ footer .mainh .prices .link-container .link-btn:hover {
     font-weight: 400;
     padding: .75rem .9375rem .75rem 2.125rem
 }
+

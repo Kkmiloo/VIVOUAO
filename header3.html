@@ -11,27 +11,22 @@
         <link rel="stylesheet" href="./css/header1y3.css">
         <!-- Boxicons CSS -->
         <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-        <title>Menu header</title>
+        <title>Header: after login - home</title>
     </head>
 
     <body style="background-color: bisque ;">
 
-        <!--HEADER MAIN-->
+        <!--HEADER AFTER LOGIN-->
         <header id="header-menu-desktop" class="fixed has-scroll-indicator">
             <div id="hmd-bottom">
                 <div id="hmdb-logo-container">
                     <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
                 </div>
                 <ul role="list">
-                    <li role="listitem"><a href="/" title="Home menu item" class="selected" style="">Home</a></li>
-                    <li role="listitem"><a href="/people" title="People menu item"
-                            style="text-decoration: none;">People</a>
-                    </li>
-                    <li role="listitem"><a href="/organizations" title="Organizations menu item"
-                            style="text-decoration: none;">Organizations</a></li>
-                    <li role="listitem"><a href="/research" title="Research menu item"
-                            style="text-decoration: none;">Research</a>
-                    </li>
+                    <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                    <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                    <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                    <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
                     <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
                             language<span class="icon icon-angle-down"></span></a>
                         <ul class="dropdown-languages">
@@ -45,10 +40,24 @@
                             </li>
                         </ul>
                     </li>
-                    <li role="listitem"><a href="#" style="text-decoration: none;">Login<span
-                                class="icon icon-user-circle" style="font-size: 50px;"></span></a>
+                    <li><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                        <ul class="dropdown-user">
+                            <li role="listitem"><a href="/siteAdmin" title="Site Admin">
+                                    <i class="icon icon-desktop"></i>
+                                    Site Admin</a></li>
+                            <li role="listitem"><a href="/accounts/myAccount" title="My account">
+                                    <i class="icon icon-wrench"></i>
+                                    My account</a></li>
+                            <li role="listitem"><a href="/logout" title="Log out">
+                                    <i class="icon icon-sign-out-alt"></i>
+                                    Log out</a></li>
+                        </ul>
                     </li>
-
+                    <script type="text/javascript">
+                        var i18nStringsLangMenu = {
+                            selectLanguage: "Select a language"
+                        };
+                    </script>
                 </ul>
             </div>
         </header>

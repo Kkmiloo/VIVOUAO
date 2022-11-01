@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/uao.css" />
+        <link rel="stylesheet" href="./css/test.css" />
+        <link rel="stylesheet" href="css/header2y4.css">
+        <!-- Boxicons CSS -->
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+        <title>Header: Admin another page</title>
+    </head>
+
+    <body style="background-color: bisque ;">
+        <!--HEADER AFTER LOGIN ANOTHER PAGE-->
+        <header id="header-menu-desktop" class="fixed has-scroll-indicator">
+            <div id="hmd-bottom">
+                <div id="hmdb-logo-container">
+                    <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
+                </div>
+                <ul role="list">
+                    <div class="nav-search" style="min-width: 400px;">
+                        <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                            class="form-search">
+                            <div id="search-home-field" class="input-form-search">
+                                <input id="search-module-input" type="search" required="required" name="querytext"
+                                    class="search-homepage">
+                                <label for="search-module-input"> Buscar </label>
+                            </div>
+                            <button id="search-module-submit" type="submit" value="Search" class="search">
+                                <span class="icon icon-search"></span>
+                            </button>
+                        </form>
+                    </div>
+                    <li role="listitem"><a href="/" title="Home menu item" class="selected">Home</a></li>
+                    <li role="listitem"><a href="/people" title="People menu item">People</a></li>
+                    <li role="listitem"><a href="/organizations" title="Organizations menu item">Organizations</a></li>
+                    <li role="listitem"><a href="/research" title="Research menu item">Research</a></li>
+                    <li class="hov" id="language-menu"><a id="lang-link" href="#" title="Select a language">Select a
+                            language<span class="icon icon-angle-down"></span></a>
+                        <ul class="dropdown-languages">
+                            <li status="selected">
+                                <a href="/selectLocale?selection=en_US" title="select locale -- English">🇺🇸 English
+                                    (United States)</a>
+                            </li>
+                            <li>
+                                <a href="/selectLocale?selection=es" title="select locale -- español">🇨🇴 Español
+                                    (Latinoamérica)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="user">Hola, root<span class="icon icon-angle-down"></span></a>
+                        <ul class="dropdown-user">
+                            <li role="listitem"><a href="/siteAdmin" title="Site Admin">
+                                    <i class="icon icon-desktop"></i>
+                                    Site Admin</a></li>
+                            <li role="listitem"><a href="/accounts/myAccount" title="My account">
+                                    <i class="icon icon-wrench"></i>
+                                    My account</a></li>
+                            <li role="listitem"><a href="/logout" title="Log out">
+                                    <i class="icon icon-sign-out-alt"></i>
+                                    Log out</a></li>
+                        </ul>
+                    </li>
+                    <script type="text/javascript">
+                        var i18nStringsLangMenu = {
+                            selectLanguage: "Select a language"
+                        };
+                    </script>
+                </ul>
+            </div>
+        </header>
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+/*----------------------------------------------------------------------*/
+/*ROOT MENU*/
+/*----------------------------------------------------------------------*/
+/*cada list item del dropdown-user*/
+ul li ul.dropdown-user li {
+    display: block;
+    margin-bottom:20px;
+}
+
+/*estilo de el dropdown-user*/
+ul li ul.dropdown-user {
+    width: 160px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 5px 20px 5px 20px;
+    background-color: #ffffff;
+    /*positioning*/
+     padding-top:50px;
+     right:0px;
+}
+ul li a{
+     display:flex;
+ align-items:center;
+ border-radius: 15px;
+ padding: 0px 5px 0px 5px;
+}
+ul li a:hover {
+    background: #9E0B0F15;
+    transition: 300ms;
+}
+
+ul li:hover ul.dropdown-user {
+    display: block;
+}
+
+/*margen de los iconos*/
+.dropdown-user a .icon{
+ margin-right:5px;
+}
+
+/*----------------------------------------------------------------------*/
+/*LANGUAGES MENU*/
+/*----------------------------------------------------------------------*/
+ul li ul.dropdown-languages li {
+    display: block;
+    margin-bottom:20px;
+}
+
+/*estilo de el dropdown-user*/
+ul li ul.dropdown-languages {
+    width: 250px;
+    background: white;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 5px 20px 5px 20px;
+    background-color: #ffffff;
+    /*positioning*/
+     padding-top:50px;
+     right:150px;
+}
+
+
+ul li:hover ul.dropdown-languages {
+    display: block;
+}

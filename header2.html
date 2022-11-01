@@ -8,21 +8,33 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./css/uao.css" />
         <link rel="stylesheet" href="./css/test.css" />
-        <link rel="stylesheet" href="./css/header1y3.css">
+        <link rel="stylesheet" href="./css/header2y4.css">
         <!-- Boxicons CSS -->
         <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-        <title>Menu header</title>
+        <title>Header: no login - another page</title>
     </head>
 
     <body style="background-color: bisque ;">
-
-        <!--HEADER MAIN-->
+        <!--HEADER DIFFERENT VIEW-->
         <header id="header-menu-desktop" class="fixed has-scroll-indicator">
             <div id="hmd-bottom">
                 <div id="hmdb-logo-container">
                     <a id="hmdb-logo" href="https://www.uao.edu.co"></a>
                 </div>
                 <ul role="list">
+                    <div class="nav-search" style="min-width: 400px;">
+                        <form id="search-homepage" action="/search" name="search-home" role="search" method="post"
+                            class="form-search">
+                            <div id="search-home-field" class="input-form-search">
+                                <input id="search-module-input" type="search" required="required" name="querytext"
+                                    class="search-homepage">
+                                <label for="search-module-input"> Buscar </label>
+                            </div>
+                            <button id="search-module-submit" type="submit" value="Search" class="search">
+                                <span class="icon icon-search"></span>
+                            </button>
+                        </form>
+                    </div>
                     <li role="listitem"><a href="/" title="Home menu item" class="selected" style="">Home</a></li>
                     <li role="listitem"><a href="/people" title="People menu item"
                             style="text-decoration: none;">People</a>
@@ -47,6 +59,7 @@
                     </li>
                     <li role="listitem"><a href="#" style="text-decoration: none;">Login<span
                                 class="icon icon-user-circle" style="font-size: 50px;"></span></a>
+                        </span>
                     </li>
 
                 </ul>
